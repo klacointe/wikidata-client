@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.wikidata.org/w/api.php?action=wbgetentities&format=json&sites=enwiki&titles=Le%20Batofar
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,X-Use-HHVM
+      X-Varnish:
+      - 248673831, 4022589486, 4153807074
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 26 Sep 2014 08:12:42 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Cache:
+      - cp1052 miss (0), amssq37 miss (0), amssq52 frontend miss (0)
+      X-Analytics:
+      - php=zend
+      Set-Cookie:
+      - GeoIP=FR:Sainte-luce-sur-loire:47.2500:-1.5000:v4; Path=/; Domain=.wikidata.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entities":{"Q2365441":{"pageid":2285361,"ns":0,"title":"Q2365441","lastrevid":137406427,"modified":"2014-06-11T14:10:05Z","id":"Q2365441","type":"item","labels":{"fr":{"language":"fr","value":"Batofar"},"en":{"language":"en","value":"Le
+        Batofar"},"fa":{"language":"fa","value":"\u0644\u0648 \u0628\u062a\u0641\u0627\u0631"}},"claims":{"P373":[{"id":"q2365441$F39C1823-9BFF-4D28-BA7D-B8F85507DB1A","mainsnak":{"snaktype":"value","property":"P373","datatype":"string","datavalue":{"value":"Batofar
+        (ship, 1955)","type":"string"}},"type":"statement","rank":"normal"}],"P31":[{"id":"q2365441$09451F5F-BE7F-40FA-B8BA-BA31F74CDC75","mainsnak":{"snaktype":"value","property":"P31","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11446},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P625":[{"id":"Q2365441$A6B68412-69D9-4137-95A4-A6DAF6FF960B","mainsnak":{"snaktype":"value","property":"P625","datatype":"globe-coordinate","datavalue":{"value":{"latitude":48.83337778,"longitude":2.37925278,"altitude":null,"precision":2.77777777778e-6,"globe":"http://www.wikidata.org/entity/Q2"},"type":"globecoordinate"}},"type":"statement","rank":"normal","references":[{"hash":"f70116eac7f49194478b3025330bfd8dcffa3c69","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":8447},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P127":[{"id":"Q2365441$92680BFF-9735-4F69-9AE9-1E44D52799C8","mainsnak":{"snaktype":"value","property":"P127","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":3684800},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P198":[{"id":"Q2365441$4EA437ED-170D-4497-9169-537ECBC317B0","mainsnak":{"snaktype":"value","property":"P198","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":1240384},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P18":[{"id":"Q2365441$BB85BD82-202A-4CB5-8F37-AD144F8CAB5A","mainsnak":{"snaktype":"value","property":"P18","datatype":"commonsMedia","datavalue":{"value":"Batofar
+        - Paris.JPG","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P1004":[{"id":"Q2365441$D934EDD2-4B57-494E-BCC4-779238CC59BE","mainsnak":{"snaktype":"value","property":"P1004","datatype":"string","datavalue":{"value":"01d0982a-6c6e-4fff-98a8-55207c29d6fb","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"73057782312f850e2ed69c4c28ad162f57f6d390","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":14005},"type":"wikibase-entityid"}}]},"snaks-order":["P248"]}]}]},"sitelinks":{"enwiki":{"site":"enwiki","title":"Le
+        Batofar","badges":[]},"fawiki":{"site":"fawiki","title":"\u0644\u0648 \u0628\u062a\u0641\u0627\u0631","badges":[]},"frwiki":{"site":"frwiki","title":"Batofar","badges":[]}}}},"success":1}'
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 08:12:42 GMT
+recorded_with: VCR 2.9.3

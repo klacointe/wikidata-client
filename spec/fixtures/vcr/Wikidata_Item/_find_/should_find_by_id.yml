@@ -1,0 +1,319 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q2831&sites=enwiki
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,X-Use-HHVM
+      X-Varnish:
+      - 2084892529, 3134476651, 2416303147
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 26 Sep 2014 08:12:45 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Cache:
+      - cp1067 miss (0), amssq49 miss (0), amssq35 frontend miss (0)
+      X-Analytics:
+      - php=zend
+      Set-Cookie:
+      - GeoIP=FR:Sainte-luce-sur-loire:47.2500:-1.5000:v4; Path=/; Domain=.wikidata.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entities":{"Q2831":{"pageid":3813,"ns":0,"title":"Q2831","lastrevid":158157277,"modified":"2014-09-18T07:35:04Z","id":"Q2831","type":"item","aliases":{"de":[{"language":"de","value":"King
+        of Pop"},{"language":"de","value":"MJ"},{"language":"de","value":"Jacko"}],"it":[{"language":"it","value":"Re
+        del Pop"},{"language":"it","value":"Michael Joseph Jackson"},{"language":"it","value":"Jacko"},{"language":"it","value":"Michael
+        Joe Jackson"},{"language":"it","value":"Michael J. Jackson"}],"en":[{"language":"en","value":"MJ"},{"language":"en","value":"King
+        of Pop"},{"language":"en","value":"Michael Joseph Jackson"}],"pl":[{"language":"pl","value":"Kr\u00f3l
+        Popu"}],"ru":[{"language":"ru","value":"\u0414\u0436\u0435\u043a\u0441\u043e\u043d,
+        \u041c\u0430\u0439\u043a\u043b"}],"nl":[{"language":"nl","value":"Michael
+        Joseph Jackson"},{"language":"nl","value":"The King of Pop"}],"zh":[{"language":"zh","value":"\u8fc8\u514b\u5c14\u6770\u514b\u900a"}]},"labels":{"en":{"language":"en","value":"Michael
+        Jackson"},"fr":{"language":"fr","value":"Michael Jackson"},"eo":{"language":"eo","value":"Michael
+        Jackson"},"de":{"language":"de","value":"Michael Jackson"},"en-ca":{"language":"en-ca","value":"Michael
+        Jackson"},"en-gb":{"language":"en-gb","value":"Michael Jackson"},"af":{"language":"af","value":"Michael
+        Jackson"},"am":{"language":"am","value":"\u121b\u12ed\u12ad\u120d \u1303\u12ad\u1230\u1295"},"an":{"language":"an","value":"Michael
+        Jackson"},"ar":{"language":"ar","value":"\u0645\u0627\u064a\u0643\u0644 \u062c\u0627\u0643\u0633\u0648\u0646"},"arz":{"language":"arz","value":"\u0645\u0627\u064a\u0643\u0644
+        \u0686\u0627\u0643\u0633\u0648\u0646"},"az":{"language":"az","value":"Maykl
+        Cekson"},"bar":{"language":"bar","value":"Michael Jackson"},"bcl":{"language":"bcl","value":"Michael
+        Jackson"},"be":{"language":"be","value":"\u041c\u0430\u0439\u043a\u043b \u0414\u0436\u044d\u043a\u0441\u0430\u043d"},"bg":{"language":"bg","value":"\u041c\u0430\u0439\u043a\u044a\u043b
+        \u0414\u0436\u0430\u043a\u0441\u044a\u043d"},"bn":{"language":"bn","value":"\u09ae\u09be\u0987\u0995\u09c7\u09b2
+        \u099c\u09cd\u09af\u09be\u0995\u09b8\u09a8"},"bo":{"language":"bo","value":"\u0f58\u0f60\u0f7a\u0f0b\u0f41\u0f7c\u0f60\u0f7c\u0f0b\u0f45\u0f66\u0f0b\u0f41\u0f0b\u0f64\u0f74\u0f53\u0f0d"},"br":{"language":"br","value":"Michael
+        Jackson"},"bs":{"language":"bs","value":"Michael Jackson"},"ca":{"language":"ca","value":"Michael
+        Jackson"},"cbk-zam":{"language":"cbk-zam","value":"Michael Jackson"},"ceb":{"language":"ceb","value":"Michael
+        Jackson"},"ckb":{"language":"ckb","value":"\u0645\u0627\u06cc\u06a9\u06b5
+        \u062c\u0627\u06a9\u0633\u0646"},"co":{"language":"co","value":"Michael Jackson"},"cs":{"language":"cs","value":"Michael
+        Jackson"},"cy":{"language":"cy","value":"Michael Jackson"},"da":{"language":"da","value":"Michael
+        Jackson"},"diq":{"language":"diq","value":"Michael Jackson"},"el":{"language":"el","value":"\u039c\u03ac\u03b9\u03ba\u03bb
+        \u03a4\u03b6\u03ac\u03ba\u03c3\u03bf\u03bd"},"eml":{"language":"eml","value":"Michael
+        Jackson"},"es":{"language":"es","value":"Michael Jackson"},"et":{"language":"et","value":"Michael
+        Jackson"},"eu":{"language":"eu","value":"Michael Jackson"},"fa":{"language":"fa","value":"\u0645\u0627\u06cc\u06a9\u0644
+        \u062c\u06a9\u0633\u0648\u0646"},"fi":{"language":"fi","value":"Michael Jackson"},"fo":{"language":"fo","value":"Michael
+        Jackson"},"fy":{"language":"fy","value":"Michael Jackson"},"ga":{"language":"ga","value":"Michael
+        Jackson"},"gan":{"language":"gan","value":"\u9ea5\u53ef\u00b7\u5091\u514b\u905c"},"gl":{"language":"gl","value":"Michael
+        Jackson"},"glk":{"language":"glk","value":"\u0645\u0627\u06cc\u06a9\u0644
+        \u062c\u06a9\u0633\u0648\u0646"},"gu":{"language":"gu","value":"\u0aae\u0abe\u0a87\u0a95\u0ab2
+        \u0a9c\u0ac7\u0a95\u0ab8\u0aa8"},"gv":{"language":"gv","value":"Michael Jackson"},"hak":{"language":"hak","value":"Michael
+        Jackson"},"he":{"language":"he","value":"\u05de\u05d9\u05d9\u05e7\u05dc \u05d2''\u05e7\u05e1\u05d5\u05df"},"hi":{"language":"hi","value":"\u092e\u093e\u0907\u0915\u0932
+        \u091c\u0948\u0915\u094d\u0938\u0928"},"hr":{"language":"hr","value":"Michael
+        Jackson"},"hsb":{"language":"hsb","value":"Michael Jackson"},"ht":{"language":"ht","value":"Michael
+        Jackson"},"hu":{"language":"hu","value":"Michael Jackson"},"hy":{"language":"hy","value":"\u0544\u0561\u0575\u0584\u056c
+        \u054b\u0565\u0584\u057d\u0578\u0576"},"ia":{"language":"ia","value":"Michael
+        Jackson"},"id":{"language":"id","value":"Michael Jackson"},"ie":{"language":"ie","value":"Michael
+        Jackson"},"ilo":{"language":"ilo","value":"Michael Jackson"},"io":{"language":"io","value":"Michael
+        Jackson"},"is":{"language":"is","value":"Michael Jackson"},"it":{"language":"it","value":"Michael
+        Jackson"},"ja":{"language":"ja","value":"\u30de\u30a4\u30b1\u30eb\u30fb\u30b8\u30e3\u30af\u30bd\u30f3"},"jv":{"language":"jv","value":"Michael
+        Jackson"},"ka":{"language":"ka","value":"\u10db\u10d0\u10d8\u10d9\u10da \u10ef\u10d4\u10e5\u10e1\u10dd\u10dc\u10d8"},"kaa":{"language":"kaa","value":"Michael
+        Jackson"},"kk":{"language":"kk","value":"\u041c\u0430\u0439\u043a\u043b \u0414\u0436\u0435\u043a\u0441\u043e\u043d"},"kn":{"language":"kn","value":"\u0cae\u0cc8\u0c96\u0cc7\u0cb2\u0ccd
+        \u0c9c\u0ccd\u0caf\u0cbe\u0c95\u0ccd\u0cb8\u0ca8\u0ccd"},"ko":{"language":"ko","value":"\ub9c8\uc774\ud074
+        \uc7ad\uc2a8"},"ku":{"language":"ku","value":"Michael Jackson"},"kv":{"language":"kv","value":"\u0414\u0436\u0435\u043a\u0441\u043e\u043d
+        \u041c\u0430\u0439\u043a\u043b \u0414\u0436\u043e\u0437\u0435\u0444"},"la":{"language":"la","value":"Michael
+        Jackson"},"lad":{"language":"lad","value":"Michael Jackson"},"lb":{"language":"lb","value":"Michael
+        Jackson"},"li":{"language":"li","value":"Michael Jackson"},"lmo":{"language":"lmo","value":"Michael
+        Jackson"},"lt":{"language":"lt","value":"Michael Jackson"},"lv":{"language":"lv","value":"Maikls
+        D\u017eeksons"},"mg":{"language":"mg","value":"Michael Jackson"},"mhr":{"language":"mhr","value":"\u0414\u0436\u0435\u043a\u0441\u043e\u043d,
+        \u041c\u0430\u0439\u043a\u043b"},"mk":{"language":"mk","value":"\u041c\u0430\u0458\u043a\u043b
+        \u040f\u0435\u043a\u0441\u043e\u043d"},"ml":{"language":"ml","value":"\u0d2e\u0d48\u0d15\u0d4d\u0d15\u0d4d\u200c\u0d7e
+        \u0d1c\u0d3e\u0d15\u0d4d\u0d38\u0d7a"},"mn":{"language":"mn","value":"\u041c\u0430\u0439\u043a\u043b
+        \u0416\u044d\u043a\u0441\u043e\u043d"},"mr":{"language":"mr","value":"\u092e\u093e\u092f\u0915\u0947\u0932
+        \u091c\u0945\u0915\u094d\u0938\u0928"},"ms":{"language":"ms","value":"Michael
+        Jackson"},"mt":{"language":"mt","value":"Michael Jackson"},"my":{"language":"my","value":"\u1019\u102d\u102f\u1000\u103a\u1000\u101a\u103a\u101c\u103a
+        \u1002\u103b\u1000\u103a\u1006\u1004\u103a"},"mzn":{"language":"mzn","value":"\u0645\u0627\u06cc\u06a9\u0644
+        \u062c\u06a9\u0633\u0648\u0646"},"nah":{"language":"nah","value":"Michael
+        Jackson"},"nds":{"language":"nds","value":"Michael Jackson"},"nds-nl":{"language":"nds-nl","value":"Michael
+        Jackson"},"ne":{"language":"ne","value":"\u092e\u093e\u0907\u0915\u0932 \u091c\u094d\u092f\u093e\u0915\u094d\u0938\u0928"},"new":{"language":"new","value":"\u092e\u093e\u0907\u0915\u0932
+        \u091c\u094d\u092f\u093e\u0915\u094d\u0938\u0928"},"nl":{"language":"nl","value":"Michael
+        Jackson"},"nn":{"language":"nn","value":"Michael Jackson"},"nov":{"language":"nov","value":"Michael
+        Jackson"},"oc":{"language":"oc","value":"Michael Jackson"},"pag":{"language":"pag","value":"Michael
+        Jackson"},"pap":{"language":"pap","value":"Michael Jackson"},"pl":{"language":"pl","value":"Michael
+        Jackson"},"pms":{"language":"pms","value":"Michael Jackson"},"pnb":{"language":"pnb","value":"\u0645\u0627\u0626\u06cc\u06a9\u0644
+        \u062c\u06cc\u06a9\u0633\u0646"},"ps":{"language":"ps","value":"\u0645\u0627\u064a\u06a9\u0644
+        \u062c\u06d0\u06a9\u0633\u0646"},"pt":{"language":"pt","value":"Michael Jackson"},"qu":{"language":"qu","value":"Michael
+        Jackson"},"ro":{"language":"ro","value":"Michael Jackson"},"ru":{"language":"ru","value":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d"},"rw":{"language":"rw","value":"Michael
+        Jackson"},"sah":{"language":"sah","value":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d"},"scn":{"language":"scn","value":"Michael
+        Jackson"},"sco":{"language":"sco","value":"Michael Jackson"},"se":{"language":"se","value":"Michael
+        Jackson"},"sh":{"language":"sh","value":"Michael Jackson"},"si":{"language":"si","value":"\u0db8\u0dba\u0dd2\u0d9a\u0dbd\u0dca
+        \u0da2\u0dd0\u0d9a\u0dca\u0dc3\u0db1\u0dca"},"sk":{"language":"sk","value":"Michael
+        Jackson"},"sl":{"language":"sl","value":"Michael Jackson"},"so":{"language":"so","value":"Michael
+        Jackson"},"sq":{"language":"sq","value":"Michael Jackson"},"sr":{"language":"sr","value":"\u041c\u0430\u0458\u043a\u043b
+        \u040f\u0435\u043a\u0441\u043e\u043d"},"su":{"language":"su","value":"Michael
+        Jackson"},"sv":{"language":"sv","value":"Michael Jackson"},"sw":{"language":"sw","value":"Michael
+        Jackson"},"szl":{"language":"szl","value":"Michael Jackson"},"ta":{"language":"ta","value":"\u0bae\u0bc8\u0b95\u0bcd\u0b95\u0bb2\u0bcd
+        \u0b9c\u0bbe\u0b95\u0bcd\u0b9a\u0ba9\u0bcd"},"te":{"language":"te","value":"\u0c2e\u0c48\u0c15\u0c32\u0c4d
+        \u0c1c\u0c3e\u0c15\u0c4d\u0c38\u0c28\u0c4d"},"tg":{"language":"tg","value":"\u041c\u0430\u0439\u043a\u043b
+        \u04b6\u0435\u043a\u0441\u043e\u043d"},"th":{"language":"th","value":"\u0e44\u0e21\u0e40\u0e04\u0e34\u0e25
+        \u0e41\u0e08\u0e47\u0e01\u0e2a\u0e31\u0e19"},"tl":{"language":"tl","value":"Michael
+        Jackson"},"tpi":{"language":"tpi","value":"Michael Jackson"},"tr":{"language":"tr","value":"Michael
+        Jackson"},"tt":{"language":"tt","value":"\u041c\u0430\u0439\u043a\u043b \u0414\u0436\u0435\u043a\u0441\u043e\u043d"},"ug":{"language":"ug","value":"\u0645\u0627\u064a\u0643\u06d0\u0644
+        \u062c\u06d0\u0643\u0633\u06c7\u0646"},"uk":{"language":"uk","value":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d"},"ur":{"language":"ur","value":"\u0645\u0627\u0626\u06cc\u06a9\u0644
+        \u062c\u06cc\u06a9\u0633\u0646"},"uz":{"language":"uz","value":"Michael Jackson"},"vi":{"language":"vi","value":"Michael
+        Jackson"},"vls":{"language":"vls","value":"Michael Jackson"},"war":{"language":"war","value":"Michael
+        Jackson"},"wuu":{"language":"wuu","value":"\u7c73\u53e3 \u79ef\u514b\u68ee"},"xmf":{"language":"xmf","value":"\u10db\u10d0\u10d8\u10d9\u10da
+        \u10ef\u10d4\u10e5\u10e1\u10dd\u10dc\u10d8"},"yi":{"language":"yi","value":"\u05de\u05d9\u05d9\u05e7\u05dc
+        \u05d6\u05e9\u05e2\u05e7\u05e1\u05d0\u05df"},"yo":{"language":"yo","value":"Michael
+        Jackson"},"zh":{"language":"zh","value":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a"},"zh-cn":{"language":"zh-cn","value":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a"},"zh-hans":{"language":"zh-hans","value":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a"},"zh-hant":{"language":"zh-hant","value":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a"},"zu":{"language":"zu","value":"Michael
+        Jackson"},"nb":{"language":"nb","value":"Michael Jackson"},"de-ch":{"language":"de-ch","value":"Michael
+        Jackson"},"pt-br":{"language":"pt-br","value":"Michael Jackson"},"yue":{"language":"yue","value":"\u7c73\u9ad8\u7a4d\u81e3"},"ace":{"language":"ace","value":"Michael
+        Jackson"},"kab":{"language":"kab","value":"Michael Jackson"},"sc":{"language":"sc","value":"Michael
+        Jackson"},"lo":{"language":"lo","value":"\u0ec4\u0ea1\u0ec0\u0e84\u0eb4\u0ec9\u0e99
+        \u0ec1\u0e88\u0eb1\u0e81\u0e8a\u0eb1\u0ec9\u0e99"},"wo":{"language":"wo","value":"Michael
+        Jackson"},"wa":{"language":"wa","value":"Michael Jackson"},"dsb":{"language":"dsb","value":"Michael
+        Jackson"},"gsw":{"language":"gsw","value":"Michael Jackson"},"sgs":{"language":"sgs","value":"Maiklos
+        D\u017eeksuons"},"nan":{"language":"nan","value":"Michael Jackson"},"be-tarask":{"language":"be-tarask","value":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u044d\u043a\u0441\u0430\u043d"},"rup":{"language":"rup","value":"Michael
+        Jackson"},"ast":{"language":"ast","value":"Michael Jackson"},"ig":{"language":"ig","value":"Michael
+        Jackson"},"kw":{"language":"kw","value":"Michael Jackson"},"ln":{"language":"ln","value":"Michael
+        Jackson"},"nap":{"language":"nap","value":"Michael Jackson"},"na":{"language":"na","value":"Michael
+        Jackson"},"pa":{"language":"pa","value":"\u0a2e\u0a3e\u0a08\u0a15\u0a32 \u0a1c\u0a48\u0a15\u0a38\u0a28"},"pcd":{"language":"pcd","value":"Michael
+        Jackson"},"zea":{"language":"zea","value":"Michael Jackson"},"vec":{"language":"vec","value":"Michael
+        Jackson"},"xh":{"language":"xh","value":"UMichael Joseph Jackson"},"vo":{"language":"vo","value":"Michael
+        Jackson"}},"descriptions":{"en":{"language":"en","value":"American singer
+        and dancer"},"fr":{"language":"fr","value":"auteur-compositeur-interpr\u00e8te
+        et danseur am\u00e9ricain"},"eo":{"language":"eo","value":"Usona pop-muzikisto,
+        spektaklisto kaj dancisto (1958-2009)"},"de":{"language":"de","value":"US-amerikanischer
+        S\u00e4nger"},"it":{"language":"it","value":"cantante statunitense"},"pl":{"language":"pl","value":"ameryka\u0144ski
+        muzyk, kompozytor i autor tekst\u00f3w"},"es":{"language":"es","value":"cantante,
+        compositor y bailar\u00edn estadounidense de m\u00fasica pop"},"ilo":{"language":"ilo","value":"Amerikano
+        a kumakanta"},"ta":{"language":"ta","value":"\u0b85\u0bae\u0bc6\u0bb0\u0bbf\u0b95\u0bcd\u0b95
+        \u0baa\u0bbe\u0b9f\u0b95\u0bb0\u0bcd"},"pt-br":{"language":"pt-br","value":"Cantor,
+        compositor, dan\u00e7arino, produtor, empres\u00e1rio, arranjador vocal e
+        filantropo estadunidense (1958 - 2009)"},"pt":{"language":"pt","value":"cantautor,
+        compositor e int\u00e9rprete americano"},"ja":{"language":"ja","value":"\u6b4c\u624b"},"nl":{"language":"nl","value":"Amerikaans
+        zanger, danser en componist"},"dsb":{"language":"dsb","value":"amerika\u0144ski
+        spiwa\u0155 a muzika\u0155"},"hsb":{"language":"hsb","value":"ameriski sp\u011bwar
+        a hud\u017abnik"},"ru":{"language":"ru","value":"\u0430\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0439
+        \u0430\u0440\u0442\u0438\u0441\u0442, \u0430\u043a\u0442\u0451\u0440, \u0430\u0432\u0442\u043e\u0440
+        \u0438 \u0438\u0441\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c
+        \u043f\u0435\u0441\u0435\u043d"},"zh":{"language":"zh","value":"\u7f8e\u56fd\u4f20\u5947\u6b4c\u624b\u3001\u5a31\u4e50\u660e\u661f\u548c\u5546\u4eba"}},"claims":{"P910":[{"id":"Q2831$5507C4A5-77E9-40E9-99C5-2EEF9BB35556","mainsnak":{"snaktype":"value","property":"P910","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":7215695},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P1151":[{"id":"Q2831$bf34efac-45ef-2122-3ca5-071f2bfea274","mainsnak":{"snaktype":"value","property":"P1151","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":13217614},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P26":[{"id":"q2831$F985DD87-7167-4C5B-87A6-7DF51E28D696","mainsnak":{"snaktype":"value","property":"P26","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":237324},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q2831$8BCF5132-7635-4155-8330-27CB76ED0365","mainsnak":{"snaktype":"value","property":"P26","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":3078773},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P7":[{"id":"q2831$B85667EF-AF86-44AE-AF35-E327F9A67DDA","mainsnak":{"snaktype":"value","property":"P7","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":317784},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q2831$A9DEAF89-A851-4053-9A80-ACEA137C3283","mainsnak":{"snaktype":"value","property":"P7","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":319392},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q2831$b091a7e2-4870-0f57-ba6c-5e70669da2f0","mainsnak":{"snaktype":"value","property":"P7","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":349461},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q2831$77fc7b24-48e0-e585-902f-9f8539f0a856","mainsnak":{"snaktype":"value","property":"P7","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":44855},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$352fcd6e-4f51-5948-c4f2-87d4c4b5da16","mainsnak":{"snaktype":"value","property":"P7","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":336222},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P25":[{"id":"q2831$4C323E0F-EC45-4DE4-870C-02024084D781","mainsnak":{"snaktype":"value","property":"P25","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":238402},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P22":[{"id":"q2831$7662C543-7C04-4C4E-899B-631369C936B5","mainsnak":{"snaktype":"value","property":"P22","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":361297},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P9":[{"id":"q2831$B43A15FD-2D09-4945-8797-CC11D6282534","mainsnak":{"snaktype":"value","property":"P9","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":234388},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q2831$F6592F06-9CB0-4FE7-AC0B-3775EDEA7F52","mainsnak":{"snaktype":"value","property":"P9","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":131324},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q2831$F6A1B94B-17DF-47EB-9B10-13C2874EB675","mainsnak":{"snaktype":"value","property":"P9","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":217427},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P21":[{"id":"q2831$98771245-E1A6-4141-97EC-2D2A6F171EFF","mainsnak":{"snaktype":"value","property":"P21","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":6581097},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"39f3ce979f9d84a0ebf09abe1702bf22326695e9","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":169514},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"a51d6594fee36c7452eaed2db35a4833613a7078","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":54919},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"f991bf419530b161a136a5c4e55c49909074ce49","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":36578},"type":"wikibase-entityid"}}],"P813":[{"snaktype":"value","property":"P813","datatype":"time","datavalue":{"value":{"time":"+00000002014-04-09T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P813"]}]}],"P106":[{"id":"q2831$E705F0D8-DC96-4563-8F87-B150E80BEDAA","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":177220},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q2831$78DE8DA3-A162-44A1-B692-CA31035FCE89","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":5716684},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$4792CBBF-28DD-4F03-85FB-C4175123DFFD","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":488205},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]},{"id":"Q2831$0B112660-D921-4F51-BC77-BD8CD9B82B25","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":33999},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$3C084EB3-9F18-4EA4-8D78-6DDA9648AEE2","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":43845},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$CAAEC283-F2A5-4106-B572-6D34AE58E91C","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":13472585},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$6D6DA6B0-C70D-4BD5-8227-0904909A837D","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":2526255},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$8A3C3D23-AF42-49A6-819F-5BA5B3DC2DAD","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":28389},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$8D409E92-EC0F-49FD-906A-F3152BE7F814","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":49757},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$EABEC055-12BC-4C69-BA03-F68D46B8B97A","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":36834},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P358":[{"id":"q2831$7404E524-E58B-4C48-AAA2-DF3F6C36FFB9","mainsnak":{"snaktype":"value","property":"P358","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":259448},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P373":[{"id":"q2831$3B055768-5566-404F-A92D-6D0110A6F568","mainsnak":{"snaktype":"value","property":"P373","datatype":"string","datavalue":{"value":"Michael
+        Jackson","type":"string"}},"type":"statement","rank":"normal"}],"P434":[{"id":"q2831$CF2DEE73-FF77-48B7-A020-CACD65471E2E","mainsnak":{"snaktype":"value","property":"P434","datatype":"string","datavalue":{"value":"f27ec8db-af05-4f36-916e-3d57f91ecf5e","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"cc53937a15e6b6d1d36a4ea24bf2674d2fd4e2a5","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":14005},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P244":[{"id":"q2831$D7A682DD-580D-4CEF-9405-E962DD42E023","mainsnak":{"snaktype":"value","property":"P244","datatype":"string","datavalue":{"value":"n83133203","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"004ec6fbee857649acdbdbad4f97b2c8571df97b","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":48183},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P214":[{"id":"q2831$BC29ACFD-36D8-4D19-8395-14518D170CBC","mainsnak":{"snaktype":"value","property":"P214","datatype":"string","datavalue":{"value":"27092134","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"004ec6fbee857649acdbdbad4f97b2c8571df97b","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":48183},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P227":[{"id":"q2831$E41C4AE0-389A-4F3B-B481-C2D264898A25","mainsnak":{"snaktype":"value","property":"P227","datatype":"string","datavalue":{"value":"118711083","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"004ec6fbee857649acdbdbad4f97b2c8571df97b","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":48183},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P213":[{"id":"q2831$DB656283-0037-4C03-8F6D-9F326523737F","mainsnak":{"snaktype":"value","property":"P213","datatype":"string","datavalue":{"value":"0000
+        0001 1023 081X","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"500bf0768a4645f1e00ad451f904d3a010fa43ae","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":423048},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P18":[{"id":"q2831$2733e0c7-4040-9bb1-05a1-408177fce8a5","mainsnak":{"snaktype":"value","property":"P18","datatype":"commonsMedia","datavalue":{"value":"Michael
+        Jackson in 1988.jpg","type":"string"}},"type":"statement","rank":"normal"}],"P109":[{"id":"q2831$cd8bf55d-4b3a-6e72-4808-a7392741dee7","mainsnak":{"snaktype":"value","property":"P109","datatype":"commonsMedia","datavalue":{"value":"Michael
+        Jackson signature.svg","type":"string"}},"type":"statement","rank":"normal"}],"P40":[{"id":"q2831$1504496e-47db-63b4-806e-625a232d0e8c","mainsnak":{"snaktype":"value","property":"P40","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":7244161},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$103F2E98-4FC6-48E6-B391-E0C18F87C484","mainsnak":{"snaktype":"value","property":"P40","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":7137312},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$179044BE-2275-4638-99C1-CAC60E9D4026","mainsnak":{"snaktype":"value","property":"P40","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":16240598},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P345":[{"id":"q2831$F3655A56-A7B3-4213-89EA-26A381090F05","mainsnak":{"snaktype":"value","property":"P345","datatype":"string","datavalue":{"value":"nm0001391","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P349":[{"id":"q2831$76C551CF-FA97-43B7-ACFD-5C32A6001F04","mainsnak":{"snaktype":"value","property":"P349","datatype":"string","datavalue":{"value":"00468849","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"004ec6fbee857649acdbdbad4f97b2c8571df97b","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":48183},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P19":[{"id":"q2831$7f084652-43b2-73bf-3c2c-4e0b7de2f37b","mainsnak":{"snaktype":"value","property":"P19","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":184116},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P20":[{"id":"q2831$a71ff589-4ebf-48dd-e854-453f47a25540","mainsnak":{"snaktype":"value","property":"P20","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":65},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P569":[{"id":"q2831$5645ee52-4f80-088a-cda3-9ddb820752e9","mainsnak":{"snaktype":"value","property":"P569","datatype":"time","datavalue":{"value":{"time":"+00000001958-08-29T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}},"type":"statement","rank":"normal","references":[{"hash":"d6e3ab4045fb3f3feea77895bc6b27e663fc878a","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":206855},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"f991bf419530b161a136a5c4e55c49909074ce49","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":36578},"type":"wikibase-entityid"}}],"P813":[{"snaktype":"value","property":"P813","datatype":"time","datavalue":{"value":{"time":"+00000002014-04-09T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P813"]}]}],"P691":[{"id":"q2831$FA394726-21B4-4465-9EE1-6F5A333F2E15","mainsnak":{"snaktype":"value","property":"P691","datatype":"string","datavalue":{"value":"jn20000603166","type":"string"}},"type":"statement","rank":"normal"}],"P856":[{"id":"Q2831$10F8A2C9-2AB2-4264-B6F6-C580C6B38645","mainsnak":{"snaktype":"value","property":"P856","datatype":"url","datavalue":{"value":"http://www.michaeljackson.com","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P31":[{"id":"Q2831$1cc10533-4739-5bf7-a95f-219035b6d789","mainsnak":{"snaktype":"value","property":"P31","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":5},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"d6e3ab4045fb3f3feea77895bc6b27e663fc878a","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":206855},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P935":[{"id":"Q2831$A1B66C17-AEF3-47CA-B8EC-4639F68B9C41","mainsnak":{"snaktype":"value","property":"P935","datatype":"string","datavalue":{"value":"Michael
+        Jackson","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"2f183743080f8e1970847d13a04fde9a796f1476","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":191168},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P646":[{"id":"Q2831$F4DCEB29-0FD5-451C-890F-A13367D179AD","mainsnak":{"snaktype":"value","property":"P646","datatype":"string","datavalue":{"value":"/m/09889g","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"b923b0d68beb300866b87ead39f61e63ec30d8af","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":15241312},"type":"wikibase-entityid"}}],"P577":[{"snaktype":"value","property":"P577","datatype":"time","datavalue":{"value":{"time":"+00000002013-10-28T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P577"]}]}],"P865":[{"id":"Q2831$3D3696AC-8F4B-491C-B16D-DAF5E984D94E","mainsnak":{"snaktype":"value","property":"P865","datatype":"string","datavalue":{"value":"j0406","type":"string"}},"type":"statement","rank":"normal"}],"P268":[{"id":"Q2831$470B465D-D939-481C-8F27-8D043B7BF69F","mainsnak":{"snaktype":"value","property":"P268","datatype":"string","datavalue":{"value":"12088047p","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"a51d6594fee36c7452eaed2db35a4833613a7078","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":54919},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P513":[{"id":"Q2831$572D19C1-7DE4-46D9-98EE-8EDD5C6643F4","mainsnak":{"snaktype":"value","property":"P513","datatype":"string","datavalue":{"value":"Michael
+        Joe Jackson","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"ee68603cf4fcd172052bbcb77a1ce2df535ac97f","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":766705},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P551":[{"id":"Q2831$8AD6B680-69A5-407B-8607-365D888CC001","mainsnak":{"snaktype":"value","property":"P551","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":953021},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"Q2831$CC864CAE-BA63-454C-860F-7513C7388502","mainsnak":{"snaktype":"value","property":"P551","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":2100996},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P742":[{"id":"Q2831$10F1BAF7-D70A-4CAC-8AFD-8CF097992CBF","mainsnak":{"snaktype":"value","property":"P742","datatype":"string","datavalue":{"value":"Michael
+        Joseph Jackson","type":"string"}},"type":"statement","rank":"normal"}],"P1273":[{"id":"Q2831$750AF52D-218E-4699-BAC4-143E4570B7D2","mainsnak":{"snaktype":"value","property":"P1273","datatype":"string","datavalue":{"value":"a10299695","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"321d72cc7fab525c66a26f0f4dfb1707629f57e9","snaks":{"P854":[{"snaktype":"value","property":"P854","datatype":"url","datavalue":{"value":"https://viaf.org/viaf/27092134/","type":"string"}}]},"snaks-order":["P854"]}]}],"P27":[{"id":"Q2831$6939DC7E-FF04-48D3-AE04-746E28E2A4BF","mainsnak":{"snaktype":"value","property":"P27","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":30},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P1343":[{"id":"Q2831$D7E80B6A-2D21-44FB-A275-8DA2C6B0DF46","mainsnak":{"snaktype":"value","property":"P1343","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":17290934},"type":"wikibase-entityid"}},"qualifiers":{"P357":[{"hash":"73072255e998da72b0b8cfce949bcbbf64dfbe00","snaktype":"value","property":"P357","datatype":"string","datavalue":{"value":"\u0414\u0436\u0435\u043a\u0441\u043e\u043d,
+        \u041c\u0430\u0439\u043a\u043b","type":"string"}}],"P248":[{"hash":"99a70fb4fc6db45d7f4f7bf67d5a0890ef66ae84","snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":17316277},"type":"wikibase-entityid"}}]},"qualifiers-order":["P357","P248"],"type":"statement","rank":"normal"}],"P412":[{"id":"Q2831$93CE921A-1AA8-4E83-ACFD-36772C5696B3","mainsnak":{"snaktype":"value","property":"P412","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":30903},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P735":[{"id":"Q2831$F2B86139-6D13-4BE0-8930-F48888348C4A","mainsnak":{"snaktype":"value","property":"P735","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":4927524},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}]},"sitelinks":{"afwiki":{"site":"afwiki","title":"Michael
+        Jackson","badges":[]},"alswiki":{"site":"alswiki","title":"Michael Jackson","badges":[]},"amwiki":{"site":"amwiki","title":"\u121b\u12ed\u12ad\u120d
+        \u1303\u12ad\u1230\u1295","badges":[]},"anwiki":{"site":"anwiki","title":"Michael
+        Jackson","badges":[]},"arwiki":{"site":"arwiki","title":"\u0645\u0627\u064a\u0643\u0644
+        \u062c\u0627\u0643\u0633\u0648\u0646","badges":[]},"arzwiki":{"site":"arzwiki","title":"\u0645\u0627\u064a\u0643\u0644
+        \u0686\u0627\u0643\u0633\u0648\u0646","badges":[]},"astwiki":{"site":"astwiki","title":"Michael
+        Jackson","badges":[]},"azwiki":{"site":"azwiki","title":"Maykl Cekson","badges":[]},"barwiki":{"site":"barwiki","title":"Michael
+        Jackson","badges":[]},"bat_smgwiki":{"site":"bat_smgwiki","title":"Maiklos
+        D\u017eeksuons","badges":[]},"bclwiki":{"site":"bclwiki","title":"Michael
+        Jackson","badges":[]},"be_x_oldwiki":{"site":"be_x_oldwiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u044d\u043a\u0441\u0430\u043d","badges":[]},"bewiki":{"site":"bewiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u044d\u043a\u0441\u0430\u043d","badges":[]},"bgwiki":{"site":"bgwiki","title":"\u041c\u0430\u0439\u043a\u044a\u043b
+        \u0414\u0436\u0430\u043a\u0441\u044a\u043d","badges":[]},"bnwiki":{"site":"bnwiki","title":"\u09ae\u09be\u0987\u0995\u09c7\u09b2
+        \u099c\u09cd\u09af\u09be\u0995\u09b8\u09a8","badges":[]},"bowiki":{"site":"bowiki","title":"\u0f58\u0f60\u0f7a\u0f0b\u0f41\u0f7c\u0f60\u0f7c\u0f0b\u0f45\u0f66\u0f0b\u0f41\u0f0b\u0f64\u0f74\u0f53\u0f0d","badges":[]},"brwiki":{"site":"brwiki","title":"Michael
+        Jackson","badges":[]},"bswiki":{"site":"bswiki","title":"Michael Jackson","badges":[]},"cawiki":{"site":"cawiki","title":"Michael
+        Jackson","badges":[]},"cbk_zamwiki":{"site":"cbk_zamwiki","title":"Michael
+        Jackson","badges":[]},"cebwiki":{"site":"cebwiki","title":"Michael Jackson","badges":[]},"ckbwiki":{"site":"ckbwiki","title":"\u0645\u0627\u06cc\u06a9\u06b5
+        \u062c\u0627\u06a9\u0633\u0646","badges":[]},"commonswiki":{"site":"commonswiki","title":"Michael
+        Jackson","badges":[]},"cowiki":{"site":"cowiki","title":"Michael Jackson","badges":[]},"cswiki":{"site":"cswiki","title":"Michael
+        Jackson","badges":[]},"cswikiquote":{"site":"cswikiquote","title":"Michael
+        Jackson","badges":[]},"cywiki":{"site":"cywiki","title":"Michael Jackson","badges":[]},"dawiki":{"site":"dawiki","title":"Michael
+        Jackson","badges":[]},"dawikiquote":{"site":"dawikiquote","title":"Michael
+        Jackson","badges":[]},"dewiki":{"site":"dewiki","title":"Michael Jackson","badges":[]},"diqwiki":{"site":"diqwiki","title":"Michael
+        Jackson","badges":[]},"dsbwiki":{"site":"dsbwiki","title":"Michael Jackson","badges":[]},"elwiki":{"site":"elwiki","title":"\u039c\u03ac\u03b9\u03ba\u03bb
+        \u03a4\u03b6\u03ac\u03ba\u03c3\u03bf\u03bd","badges":[]},"emlwiki":{"site":"emlwiki","title":"Michael
+        Jackson","badges":[]},"enwiki":{"site":"enwiki","title":"Michael Jackson","badges":["Q17437796"]},"enwikiquote":{"site":"enwikiquote","title":"Michael
+        Jackson","badges":[]},"eowiki":{"site":"eowiki","title":"Michael Jackson","badges":[]},"eswiki":{"site":"eswiki","title":"Michael
+        Jackson","badges":[]},"eswikiquote":{"site":"eswikiquote","title":"Michael
+        Jackson","badges":[]},"etwiki":{"site":"etwiki","title":"Michael Jackson","badges":[]},"euwiki":{"site":"euwiki","title":"Michael
+        Jackson","badges":[]},"fawiki":{"site":"fawiki","title":"\u0645\u0627\u06cc\u06a9\u0644
+        \u062c\u06a9\u0633\u0648\u0646","badges":["Q17437796"]},"fawikiquote":{"site":"fawikiquote","title":"\u0645\u0627\u06cc\u06a9\u0644
+        \u062c\u06a9\u0633\u0648\u0646","badges":[]},"fiwiki":{"site":"fiwiki","title":"Michael
+        Jackson","badges":[]},"fowiki":{"site":"fowiki","title":"Michael Jackson","badges":[]},"frwiki":{"site":"frwiki","title":"Michael
+        Jackson","badges":[]},"frwikiquote":{"site":"frwikiquote","title":"Michael
+        Jackson","badges":[]},"fywiki":{"site":"fywiki","title":"Michael Jackson","badges":[]},"ganwiki":{"site":"ganwiki","title":"\u9ea5\u53ef\u00b7\u5091\u514b\u905c","badges":[]},"gawiki":{"site":"gawiki","title":"Michael
+        Jackson","badges":[]},"glkwiki":{"site":"glkwiki","title":"\u0645\u0627\u06cc\u06a9\u0644
+        \u062c\u06a9\u0633\u0648\u0646","badges":[]},"glwiki":{"site":"glwiki","title":"Michael
+        Jackson","badges":[]},"guwiki":{"site":"guwiki","title":"\u0aae\u0abe\u0a87\u0a95\u0ab2
+        \u0a9c\u0ac7\u0a95\u0ab8\u0aa8","badges":[]},"gvwiki":{"site":"gvwiki","title":"Michael
+        Jackson","badges":[]},"hakwiki":{"site":"hakwiki","title":"Michael Jackson","badges":[]},"hewiki":{"site":"hewiki","title":"\u05de\u05d9\u05d9\u05e7\u05dc
+        \u05d2''\u05e7\u05e1\u05d5\u05df","badges":[]},"hewikiquote":{"site":"hewikiquote","title":"\u05de\u05d9\u05d9\u05e7\u05dc
+        \u05d2''\u05e7\u05e1\u05d5\u05df","badges":[]},"hiwiki":{"site":"hiwiki","title":"\u092e\u093e\u0907\u0915\u0932
+        \u091c\u0948\u0915\u094d\u0938\u0928","badges":[]},"hrwiki":{"site":"hrwiki","title":"Michael
+        Jackson","badges":["Q17437796"]},"hsbwiki":{"site":"hsbwiki","title":"Michael
+        Jackson","badges":[]},"htwiki":{"site":"htwiki","title":"Michael Jackson","badges":[]},"huwiki":{"site":"huwiki","title":"Michael
+        Jackson","badges":[]},"huwikiquote":{"site":"huwikiquote","title":"Michael
+        Jackson","badges":[]},"hywiki":{"site":"hywiki","title":"\u0544\u0561\u0575\u0584\u056c
+        \u054b\u0565\u0584\u057d\u0578\u0576","badges":["Q17437796"]},"iawiki":{"site":"iawiki","title":"Michael
+        Jackson","badges":[]},"idwiki":{"site":"idwiki","title":"Michael Jackson","badges":[]},"iewiki":{"site":"iewiki","title":"Michael
+        Jackson","badges":[]},"igwiki":{"site":"igwiki","title":"Michael Jackson","badges":[]},"ilowiki":{"site":"ilowiki","title":"Michael
+        Jackson","badges":[]},"iowiki":{"site":"iowiki","title":"Michael Jackson","badges":[]},"iswiki":{"site":"iswiki","title":"Michael
+        Jackson","badges":[]},"itwiki":{"site":"itwiki","title":"Michael Jackson","badges":[]},"itwikiquote":{"site":"itwikiquote","title":"Michael
+        Jackson","badges":[]},"jawiki":{"site":"jawiki","title":"\u30de\u30a4\u30b1\u30eb\u30fb\u30b8\u30e3\u30af\u30bd\u30f3","badges":[]},"jvwiki":{"site":"jvwiki","title":"Michael
+        Jackson","badges":[]},"kaawiki":{"site":"kaawiki","title":"Michael Jackson","badges":[]},"kabwiki":{"site":"kabwiki","title":"Michael
+        Jackson","badges":[]},"kawiki":{"site":"kawiki","title":"\u10db\u10d0\u10d8\u10d9\u10da
+        \u10ef\u10d4\u10e5\u10e1\u10dd\u10dc\u10d8","badges":[]},"kkwiki":{"site":"kkwiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d","badges":[]},"knwiki":{"site":"knwiki","title":"\u0cae\u0cc8\u0c96\u0cc7\u0cb2\u0ccd
+        \u0c9c\u0ccd\u0caf\u0cbe\u0c95\u0ccd\u0cb8\u0ca8\u0ccd","badges":[]},"kowiki":{"site":"kowiki","title":"\ub9c8\uc774\ud074
+        \uc7ad\uc2a8","badges":[]},"kuwiki":{"site":"kuwiki","title":"Michael Jackson","badges":[]},"kvwiki":{"site":"kvwiki","title":"\u0414\u0436\u0435\u043a\u0441\u043e\u043d
+        \u041c\u0430\u0439\u043a\u043b \u0414\u0436\u043e\u0437\u0435\u0444","badges":[]},"kwwiki":{"site":"kwwiki","title":"Michael
+        Jackson","badges":[]},"ladwiki":{"site":"ladwiki","title":"Michael Jackson","badges":[]},"lawiki":{"site":"lawiki","title":"Michael
+        Jackson","badges":[]},"lbwiki":{"site":"lbwiki","title":"Michael Jackson","badges":[]},"liwiki":{"site":"liwiki","title":"Michael
+        Jackson","badges":[]},"lmowiki":{"site":"lmowiki","title":"Michael Jackson","badges":[]},"lnwiki":{"site":"lnwiki","title":"Michael
+        Jackson","badges":[]},"lowiki":{"site":"lowiki","title":"\u0ec4\u0ea1\u0ec0\u0e84\u0eb4\u0ec9\u0e99
+        \u0ec1\u0e88\u0eb1\u0e81\u0e8a\u0eb1\u0ec9\u0e99","badges":[]},"ltwiki":{"site":"ltwiki","title":"Michael
+        Jackson","badges":[]},"ltwikiquote":{"site":"ltwikiquote","title":"Maiklas
+        D\u017eeksonas","badges":[]},"lvwiki":{"site":"lvwiki","title":"Maikls D\u017eeksons","badges":[]},"mgwiki":{"site":"mgwiki","title":"Michael
+        Jackson","badges":[]},"mhrwiki":{"site":"mhrwiki","title":"\u0414\u0436\u0435\u043a\u0441\u043e\u043d,
+        \u041c\u0430\u0439\u043a\u043b","badges":[]},"mkwiki":{"site":"mkwiki","title":"\u041c\u0430\u0458\u043a\u043b
+        \u040f\u0435\u043a\u0441\u043e\u043d","badges":[]},"mlwiki":{"site":"mlwiki","title":"\u0d2e\u0d48\u0d15\u0d4d\u0d15\u0d4d\u200c\u0d7e
+        \u0d1c\u0d3e\u0d15\u0d4d\u0d38\u0d7a","badges":[]},"mnwiki":{"site":"mnwiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0416\u044d\u043a\u0441\u043e\u043d","badges":[]},"mrwiki":{"site":"mrwiki","title":"\u092e\u093e\u092f\u0915\u0947\u0932
+        \u091c\u0945\u0915\u094d\u0938\u0928","badges":[]},"mswiki":{"site":"mswiki","title":"Michael
+        Jackson","badges":[]},"mtwiki":{"site":"mtwiki","title":"Michael Jackson","badges":[]},"mywiki":{"site":"mywiki","title":"\u1019\u102d\u102f\u1000\u103a\u1000\u101a\u103a\u101c\u103a
+        \u1002\u103b\u1000\u103a\u1006\u1004\u103a","badges":[]},"mznwiki":{"site":"mznwiki","title":"\u0645\u0627\u06cc\u06a9\u0644
+        \u062c\u06a9\u0633\u0648\u0646","badges":[]},"nahwiki":{"site":"nahwiki","title":"Michael
+        Jackson","badges":[]},"napwiki":{"site":"napwiki","title":"Michael Jackson","badges":[]},"nawiki":{"site":"nawiki","title":"Michael
+        Jackson","badges":[]},"nds_nlwiki":{"site":"nds_nlwiki","title":"Michael Jackson","badges":[]},"ndswiki":{"site":"ndswiki","title":"Michael
+        Jackson (Singer)","badges":[]},"newiki":{"site":"newiki","title":"\u092e\u093e\u0907\u0915\u0932
+        \u091c\u094d\u092f\u093e\u0915\u094d\u0938\u0928","badges":[]},"newwiki":{"site":"newwiki","title":"\u092e\u093e\u0907\u0915\u0932
+        \u091c\u094d\u092f\u093e\u0915\u094d\u0938\u0928","badges":[]},"nlwiki":{"site":"nlwiki","title":"Michael
+        Jackson","badges":[]},"nlwikiquote":{"site":"nlwikiquote","title":"Michael
+        Jackson","badges":[]},"nnwiki":{"site":"nnwiki","title":"Michael Jackson","badges":[]},"nowiki":{"site":"nowiki","title":"Michael
+        Jackson","badges":[]},"ocwiki":{"site":"ocwiki","title":"Michael Jackson","badges":[]},"papwiki":{"site":"papwiki","title":"Michael
+        Jackson","badges":[]},"pawiki":{"site":"pawiki","title":"\u0a2e\u0a3e\u0a08\u0a15\u0a32
+        \u0a1c\u0a48\u0a15\u0a38\u0a28","badges":[]},"pcdwiki":{"site":"pcdwiki","title":"Michael
+        Jackson","badges":[]},"plwiki":{"site":"plwiki","title":"Michael Jackson","badges":["Q17437798"]},"plwikiquote":{"site":"plwikiquote","title":"Michael
+        Jackson","badges":[]},"pmswiki":{"site":"pmswiki","title":"Michael Jackson","badges":[]},"pnbwiki":{"site":"pnbwiki","title":"\u0645\u0627\u0626\u06cc\u06a9\u0644
+        \u062c\u06cc\u06a9\u0633\u0646","badges":[]},"pswiki":{"site":"pswiki","title":"\u0645\u0627\u064a\u06a9\u0644
+        \u062c\u06d0\u06a9\u0633\u0646","badges":[]},"ptwiki":{"site":"ptwiki","title":"Michael
+        Jackson","badges":[]},"ptwikiquote":{"site":"ptwikiquote","title":"Michael
+        Jackson","badges":[]},"quwiki":{"site":"quwiki","title":"Michael Jackson","badges":[]},"roa_rupwiki":{"site":"roa_rupwiki","title":"Michael
+        Jackson","badges":[]},"rowiki":{"site":"rowiki","title":"Michael Jackson","badges":[]},"ruwiki":{"site":"ruwiki","title":"\u0414\u0436\u0435\u043a\u0441\u043e\u043d,
+        \u041c\u0430\u0439\u043a\u043b","badges":[]},"ruwikiquote":{"site":"ruwikiquote","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d","badges":[]},"rwwiki":{"site":"rwwiki","title":"Michael
+        Jackson","badges":[]},"sahwiki":{"site":"sahwiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d","badges":[]},"scnwiki":{"site":"scnwiki","title":"Michael
+        Jackson","badges":[]},"scowiki":{"site":"scowiki","title":"Michael Jackson","badges":[]},"sewiki":{"site":"sewiki","title":"Michael
+        Jackson","badges":[]},"shwiki":{"site":"shwiki","title":"Michael Jackson","badges":[]},"simplewiki":{"site":"simplewiki","title":"Michael
+        Jackson","badges":[]},"simplewikiquote":{"site":"simplewikiquote","title":"Michael
+        Jackson","badges":[]},"siwiki":{"site":"siwiki","title":"\u0db8\u0dba\u0dd2\u0d9a\u0dbd\u0dca
+        \u0da2\u0dd0\u0d9a\u0dca\u0dc3\u0db1\u0dca","badges":[]},"skwiki":{"site":"skwiki","title":"Michael
+        Jackson","badges":[]},"slwiki":{"site":"slwiki","title":"Michael Jackson","badges":[]},"sowiki":{"site":"sowiki","title":"Michael
+        Jackson","badges":[]},"sqwiki":{"site":"sqwiki","title":"Michael Jackson","badges":[]},"srwiki":{"site":"srwiki","title":"\u041c\u0430\u0458\u043a\u043b
+        \u040f\u0435\u043a\u0441\u043e\u043d","badges":["Q17437796"]},"srwikiquote":{"site":"srwikiquote","title":"\u041c\u0430\u0458\u043a\u043b
+        \u040f\u0435\u043a\u0441\u043e\u043d","badges":[]},"suwiki":{"site":"suwiki","title":"Michael
+        Jackson","badges":[]},"svwiki":{"site":"svwiki","title":"Michael Jackson","badges":[]},"svwikiquote":{"site":"svwikiquote","title":"Michael
+        Jackson","badges":[]},"swwiki":{"site":"swwiki","title":"Michael Jackson","badges":[]},"szlwiki":{"site":"szlwiki","title":"Michael
+        Jackson","badges":[]},"tawiki":{"site":"tawiki","title":"\u0bae\u0bc8\u0b95\u0bcd\u0b95\u0bb2\u0bcd
+        \u0b9c\u0bbe\u0b95\u0bcd\u0b9a\u0ba9\u0bcd","badges":[]},"tewiki":{"site":"tewiki","title":"\u0c2e\u0c48\u0c15\u0c32\u0c4d
+        \u0c1c\u0c3e\u0c15\u0c4d\u0c38\u0c28\u0c4d","badges":[]},"tgwiki":{"site":"tgwiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u04b6\u0435\u043a\u0441\u043e\u043d","badges":[]},"thwiki":{"site":"thwiki","title":"\u0e44\u0e21\u0e40\u0e04\u0e34\u0e25
+        \u0e41\u0e08\u0e47\u0e01\u0e2a\u0e31\u0e19","badges":["Q17437796"]},"tlwiki":{"site":"tlwiki","title":"Michael
+        Jackson","badges":[]},"tpiwiki":{"site":"tpiwiki","title":"Michael Jackson","badges":[]},"trwiki":{"site":"trwiki","title":"Michael
+        Jackson","badges":[]},"trwikiquote":{"site":"trwikiquote","title":"Michael
+        Jackson","badges":[]},"ttwiki":{"site":"ttwiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d","badges":[]},"ugwiki":{"site":"ugwiki","title":"\u0645\u0627\u064a\u0643\u06d0\u0644
+        \u062c\u06d0\u0643\u0633\u06c7\u0646","badges":[]},"ukwiki":{"site":"ukwiki","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d","badges":[]},"ukwikiquote":{"site":"ukwikiquote","title":"\u041c\u0430\u0439\u043a\u043b
+        \u0414\u0436\u0435\u043a\u0441\u043e\u043d","badges":[]},"urwiki":{"site":"urwiki","title":"\u0645\u0627\u0626\u06cc\u06a9\u0644
+        \u062c\u06cc\u06a9\u0633\u0646","badges":[]},"uzwiki":{"site":"uzwiki","title":"Michael
+        Jackson","badges":[]},"vecwiki":{"site":"vecwiki","title":"Michael Jackson","badges":[]},"viwiki":{"site":"viwiki","title":"Michael
+        Jackson","badges":["Q17437796"]},"vlswiki":{"site":"vlswiki","title":"Michael
+        Jackson (zanger)","badges":[]},"vowiki":{"site":"vowiki","title":"Michael
+        Jackson","badges":[]},"warwiki":{"site":"warwiki","title":"Michael Jackson","badges":[]},"wawiki":{"site":"wawiki","title":"Michael
+        Jackson","badges":[]},"wuuwiki":{"site":"wuuwiki","title":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a","badges":[]},"xhwiki":{"site":"xhwiki","title":"UMichael
+        Jackson","badges":[]},"xmfwiki":{"site":"xmfwiki","title":"\u10db\u10d0\u10d8\u10d9\u10da
+        \u10ef\u10d4\u10e5\u10e1\u10dd\u10dc\u10d8","badges":[]},"yiwiki":{"site":"yiwiki","title":"\u05de\u05d9\u05d9\u05e7\u05dc
+        \u05d6\u05e9\u05e2\u05e7\u05e1\u05d0\u05df","badges":[]},"yowiki":{"site":"yowiki","title":"Michael
+        Jackson","badges":[]},"zeawiki":{"site":"zeawiki","title":"Michael Jackson","badges":[]},"zh_min_nanwiki":{"site":"zh_min_nanwiki","title":"Michael
+        Jackson","badges":[]},"zh_yuewiki":{"site":"zh_yuewiki","title":"\u7c73\u9ad8\u7a4d\u81e3","badges":[]},"zhwiki":{"site":"zhwiki","title":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a","badges":["Q17437798"]},"zuwiki":{"site":"zuwiki","title":"Michael
+        Jackson","badges":[]}}}},"success":1}'
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 08:12:45 GMT
+recorded_with: VCR 2.9.3

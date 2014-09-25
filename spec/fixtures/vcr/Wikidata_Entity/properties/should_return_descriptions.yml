@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.wikidata.org/w/api.php?action=wbgetentities&format=json&sites=enwiki&titles=Sid%20Vicious
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,X-Use-HHVM
+      X-Varnish:
+      - 2984792658, 1946721872, 1352755666
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 26 Sep 2014 08:12:37 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Cache:
+      - cp1053 miss (0), amssq34 miss (0), amssq48 frontend miss (0)
+      X-Analytics:
+      - php=zend
+      Set-Cookie:
+      - GeoIP=FR:Sainte-luce-sur-loire:47.2500:-1.5000:v4; Path=/; Domain=.wikidata.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entities":{"Q47878":{"pageid":49930,"ns":0,"title":"Q47878","lastrevid":151549910,"modified":"2014-08-18T23:09:46Z","id":"Q47878","type":"item","aliases":{"zh":[{"language":"zh","value":"Sid
+        Vicious"},{"language":"zh","value":"\u5e2d\u5fb7\u00b7\u7dad\u745f\u65af"}],"es":[{"language":"es","value":"John
+        Simon Ritchie-Beverly"},{"language":"es","value":"John Simon Ritchie"},{"language":"es","value":"John
+        Simon Ritchie Beverly"}],"hu":[{"language":"hu","value":"John Ritchie"}],"el":[{"language":"el","value":"Sid
+        Vicious"}],"nl":[{"language":"nl","value":"John Ritchie"}],"sv":[{"language":"sv","value":"Vicious"},{"language":"sv","value":"John
+        Beverly"}],"pt":[{"language":"pt","value":"Sid Vicius"},{"language":"pt","value":"John
+        simon ritchie-beverly"}],"ru":[{"language":"ru","value":"\u0412\u0438\u0448\u0435\u0441,
+        \u0421\u0438\u0434"},{"language":"ru","value":"\u0420\u0438\u0447\u0447\u0438,
+        \u0414\u0436\u043e\u043d \u0421\u0430\u0439\u043c\u043e\u043d"},{"language":"ru","value":"\u0412\u0438\u0448\u0435\u0437,
+        \u0421\u0438\u0434"},{"language":"ru","value":"\u0414\u0436\u043e\u043d \u0421\u0430\u0439\u043c\u043e\u043d
+        \u0420\u0438\u0447\u0438"},{"language":"ru","value":"\u0414\u0436\u043e\u043d
+        \u0420\u0438\u0447\u0438"},{"language":"ru","value":"\u0421\u0438\u0434 \u0412\u0438\u0448\u0435\u0437"},{"language":"ru","value":"\u0414\u0436\u043e\u043d
+        \u0421\u0430\u0439\u043c\u043e\u043d \u0420\u0438\u0447\u0447\u0438-\u0411\u0435\u0432\u0435\u0440\u043b\u0438"},{"language":"ru","value":"Sid
+        Vicious"},{"language":"ru","value":"\u0412\u0438\u0448\u0435\u0441 \u0421\u0438\u0434"},{"language":"ru","value":"\u0420\u0438\u0447\u0438
+        \u0414\u0436\u043e\u043d \u0421\u0430\u0439\u043c\u043e\u043d"},{"language":"ru","value":"\u0412\u0438\u0448\u0435\u0437
+        \u0421\u0438\u0434"},{"language":"ru","value":"\u0420\u0438\u0447\u0447\u0438
+        \u0414\u0436\u043e\u043d \u0421\u0430\u0439\u043c\u043e\u043d"},{"language":"ru","value":"\u0414\u0436\u043e\u043d
+        \u0421\u0430\u0439\u043c\u043e\u043d \u0420\u0438\u0447\u0447\u0438"},{"language":"ru","value":"\u0420\u0438\u0447\u0438,
+        \u0414\u0436\u043e\u043d \u0421\u0430\u0439\u043c\u043e\u043d"},{"language":"ru","value":"\u0414\u0436\u043e\u043d
+        \u0420\u0438\u0447\u0447\u0438"}],"sr":[{"language":"sr","value":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u0438\u0441"},{"language":"sr","value":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u0435\u0437"},{"language":"sr","value":"Sid Vicious"},{"language":"sr","value":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u0438\u0437"}],"tr":[{"language":"tr","value":"John Simon
+        Ritchie"}],"fi":[{"language":"fi","value":"John Simon Ritchie-Beverly"},{"language":"fi","value":"Anne
+        Beverley"}],"uk":[{"language":"uk","value":"Sid Vicious"},{"language":"uk","value":"\u0421\u0456\u0434
+        \u0412\u0456\u0448\u0435\u0441"},{"language":"uk","value":"\u0412\u0456\u0448\u0435\u0437
+        \u0421\u0456\u0434"}],"be-tarask":[{"language":"be-tarask","value":"\u0421\u0456\u0434
+        \u0412\u0456\u0448\u044d\u0441"}],"az":[{"language":"az","value":"Sid Vicious"}],"fr":[{"language":"fr","value":"John
+        Simon Ritchie"}],"ko":[{"language":"ko","value":"\uc2dc\ub4dc \ubc14\uc774\uc154\uc2a4"}],"lv":[{"language":"lv","value":"Sid
+        Vicious"}],"it":[{"language":"it","value":"John Simon Ritchie"}],"de":[{"language":"de","value":"Vicious"}],"ja":[{"language":"ja","value":"\u30b7\u30c9\u30fb\u30d3\u30b7\u30e3\u30b9"}],"th":[{"language":"th","value":"Sid
+        Vicious"}],"ca":[{"language":"ca","value":"John Simon Ritchie-Beverely"}],"sl":[{"language":"sl","value":"John
+        Simon Ritchie"},{"language":"sl","value":"Punk-rock"}],"cs":[{"language":"cs","value":"John
+        Simon Ritchie-Beverly"}],"fa":[{"language":"fa","value":"\u0633\u064a\u062f
+        \u0648\u064a\u0634\u0633"}],"vro":[{"language":"vro","value":"Sid Vicious"},{"language":"vro","value":"Viciouse
+        Sid"}],"en":[{"language":"en","value":"John Simon Ritchie"},{"language":"en","value":"\u0417\u0434\u043e\u0445
+        \u0447\u0435\u0440\u0435\u0437 \u0448\u043b\u044e\u0445\u0443"}],"nb":[{"language":"nb","value":"John
+        Simon Ritchie Beverly"}]},"labels":{"zh":{"language":"zh","value":"\u5e2d\u5fb7\u00b7\u7ef4\u745f\u65af"},"eu":{"language":"eu","value":"Sid
+        Vicious"},"pl":{"language":"pl","value":"Sid Vicious"},"gd":{"language":"gd","value":"Sid
+        Vicious"},"bs":{"language":"bs","value":"Sid Vicious"},"es":{"language":"es","value":"Sid
+        Vicious"},"hu":{"language":"hu","value":"Sid Vicious"},"et":{"language":"et","value":"Sid
+        Vicious"},"br":{"language":"br","value":"Sid Vicious"},"el":{"language":"el","value":"\u03a3\u03b9\u03bd\u03c4
+        \u0392\u03af\u03c3\u03b9\u03bf\u03c5\u03c2"},"mt":{"language":"mt","value":"Sid
+        Vicious"},"ia":{"language":"ia","value":"Sid Vicious"},"ga":{"language":"ga","value":"Sid
+        Vicious"},"nl":{"language":"nl","value":"Sid Vicious"},"sv":{"language":"sv","value":"Sid
+        Vicious"},"pt":{"language":"pt","value":"Sid Vicious"},"is":{"language":"is","value":"Sid
+        Vicious"},"eo":{"language":"eo","value":"Sid Vicious"},"ru":{"language":"ru","value":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u0435\u0441"},"sr":{"language":"sr","value":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u043e\u0441"},"ast":{"language":"ast","value":"Sid Vicious"},"tr":{"language":"tr","value":"Sid
+        Vicious"},"fi":{"language":"fi","value":"Sid Vicious"},"uk":{"language":"uk","value":"\u0421\u0456\u0434
+        \u0412\u0456\u0448\u0435\u0437"},"be-tarask":{"language":"be-tarask","value":"\u0421\u044b\u0434
+        \u0412\u0456\u0448\u044d\u0441"},"nn":{"language":"nn","value":"Sid Vicious"},"io":{"language":"io","value":"Sid
+        Vicious"},"rm":{"language":"rm","value":"Sid Vicious"},"hr":{"language":"hr","value":"Sid
+        Vicious"},"az":{"language":"az","value":"Sid Vi\u015fes"},"lmo":{"language":"lmo","value":"Sid
+        Vicious"},"tl":{"language":"tl","value":"Sid Vicious"},"an":{"language":"an","value":"Sid
+        Vicious"},"da":{"language":"da","value":"Sid Vicious"},"nan":{"language":"nan","value":"Sid
+        Vicious"},"be":{"language":"be","value":"\u0421\u0456\u0434 \u0412\u0456\u0448\u044d\u0441"},"he":{"language":"he","value":"\u05e1\u05d9\u05d3
+        \u05d5\u05d9\u05e9\u05e1"},"fr":{"language":"fr","value":"Sid Vicious"},"ko":{"language":"ko","value":"\uc2dc\ub4dc
+        \ube44\uc154\uc2a4"},"lv":{"language":"lv","value":"Sids Vi\u0161ess"},"it":{"language":"it","value":"Sid
+        Vicious"},"li":{"language":"li","value":"Sid Vicious"},"gl":{"language":"gl","value":"Sid
+        Vicious"},"de":{"language":"de","value":"Sid Vicious"},"id":{"language":"id","value":"Sid
+        Vicious"},"ja":{"language":"ja","value":"\u30b7\u30c9\u30fb\u30f4\u30a3\u30b7\u30e3\u30b9"},"en":{"language":"en","value":"Sid
+        Vicious"},"sh":{"language":"sh","value":"Sid Vicious"},"scn":{"language":"scn","value":"Sid
+        Vicious"},"sk":{"language":"sk","value":"Sid Vicious"},"fy":{"language":"fy","value":"Sid
+        Vicious"},"ro":{"language":"ro","value":"Sid Vicious"},"th":{"language":"th","value":"\u0e0b\u0e34\u0e14
+        \u0e27\u0e34\u0e40\u0e0a\u0e35\u0e22\u0e2a"},"ca":{"language":"ca","value":"Sid
+        Vicious"},"la":{"language":"la","value":"Sid Vicious"},"cy":{"language":"cy","value":"Sid
+        Vicious"},"sl":{"language":"sl","value":"Sid Vicious"},"cs":{"language":"cs","value":"Sid
+        Vicious"},"bg":{"language":"bg","value":"\u0421\u0438\u0434 \u0412\u0438\u0448\u044a\u0441"},"fa":{"language":"fa","value":"\u0633\u06cc\u062f
+        \u0648\u06cc\u0634\u0633"},"nds":{"language":"nds","value":"Sid Vicious"},"vro":{"language":"vro","value":"Vicious\u00f5
+        Sid"},"oc":{"language":"oc","value":"Sid Vicious"},"nb":{"language":"nb","value":"Sid
+        Vicious"}},"descriptions":{"es":{"language":"es","value":"m\u00fasico brit\u00e1nico"},"it":{"language":"it","value":"bassista
+        e cantante britannico"},"en":{"language":"en","value":"Bassist, songwriter,
+        composer"},"pl":{"language":"pl","value":"brytyjski muzyk punkowy (Sex Pistols)"},"de":{"language":"de","value":"britischer
+        Punkrock-Musiker"},"uk":{"language":"uk","value":"\u0421\u0456\u0434 \u0412\u0456\u0448\u0435\u0441
+        (\u0417\u0434\u043e\u0445 \u0447\u0435\u0440\u0435\u0437 \u0448\u043b\u044e\u0445\u0443)"},"fa":{"language":"fa","value":"\u062e\u0648\u0627\u0646\u0646\u062f\u0647
+        \u0628\u0631\u06cc\u062a\u0627\u0646\u06cc\u0627\u06cc\u06cc"},"nb":{"language":"nb","value":"britisk
+        sanger"},"nn":{"language":"nn","value":"britisk songar"},"da":{"language":"da","value":"britisk
+        sanger"},"sv":{"language":"sv","value":"brittisk s\u00e5ngare"}},"claims":{"P21":[{"id":"q47878$4B3D5E43-21CF-4654-8A10-DD1B0B999230","mainsnak":{"snaktype":"value","property":"P21","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":6581097},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"39f3ce979f9d84a0ebf09abe1702bf22326695e9","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":169514},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"a51d6594fee36c7452eaed2db35a4833613a7078","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":54919},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"f991bf419530b161a136a5c4e55c49909074ce49","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":36578},"type":"wikibase-entityid"}}],"P813":[{"snaktype":"value","property":"P813","datatype":"time","datavalue":{"value":{"time":"+00000002014-04-09T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P813"]}]}],"P214":[{"id":"q47878$63288B71-5893-48B8-8DA1-BB5D3EC99A26","mainsnak":{"snaktype":"value","property":"P214","datatype":"string","datavalue":{"value":"197655","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"004ec6fbee857649acdbdbad4f97b2c8571df97b","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":48183},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P213":[{"id":"q47878$618A6CFB-F123-42BB-AEC9-01B4ADFE1345","mainsnak":{"snaktype":"value","property":"P213","datatype":"string","datavalue":{"value":"0000
+        0000 7363 6748","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"500bf0768a4645f1e00ad451f904d3a010fa43ae","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":423048},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]},{"id":"q47878$3B27D5B2-48F1-4BE9-8685-B0B0D7FCB0A0","mainsnak":{"snaktype":"value","property":"P213","datatype":"string","datavalue":{"value":"0000
+        0003 6845 2225","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"500bf0768a4645f1e00ad451f904d3a010fa43ae","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":423048},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P373":[{"id":"q47878$C741EA95-EA4E-4FD5-AD24-7648B77BB155","mainsnak":{"snaktype":"value","property":"P373","datatype":"string","datavalue":{"value":"Sid
+        Vicious","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"dbe2189e7b0d3953de6f69cc1cc88109a79605a4","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":8449},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P434":[{"id":"q47878$8BC8995C-1F04-4E6F-A20F-8D261E29E1A2","mainsnak":{"snaktype":"value","property":"P434","datatype":"string","datavalue":{"value":"637504e3-be95-4005-83ee-3ebb91f9fcf9","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"cc53937a15e6b6d1d36a4ea24bf2674d2fd4e2a5","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":14005},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P244":[{"id":"q47878$2E18BF44-B080-45FD-A77E-362F1D5993AD","mainsnak":{"snaktype":"value","property":"P244","datatype":"string","datavalue":{"value":"n86134225","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"004ec6fbee857649acdbdbad4f97b2c8571df97b","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":48183},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P227":[{"id":"q47878$861C7387-495A-41C8-8297-2BE427992B01","mainsnak":{"snaktype":"value","property":"P227","datatype":"string","datavalue":{"value":"130389161","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"004ec6fbee857649acdbdbad4f97b2c8571df97b","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":48183},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P509":[{"id":"q47878$7C8C7532-E559-4019-BCCB-8FF9186F942C","mainsnak":{"snaktype":"value","property":"P509","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":10737},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P535":[{"id":"q47878$9FB0BDA4-981C-416F-8A6F-801BD9EFFEBC","mainsnak":{"snaktype":"value","property":"P535","datatype":"string","datavalue":{"value":"3675","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P349":[{"id":"q47878$1EB74E6E-9028-463C-819C-9EE1A724F1F0","mainsnak":{"snaktype":"value","property":"P349","datatype":"string","datavalue":{"value":"00621600","type":"string"}},"type":"statement","rank":"normal"}],"P569":[{"id":"q47878$3e91412f-4699-9e0f-c222-68f5fb8510c0","mainsnak":{"snaktype":"value","property":"P569","datatype":"time","datavalue":{"value":{"time":"+00000001957-05-10T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"f991bf419530b161a136a5c4e55c49909074ce49","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":36578},"type":"wikibase-entityid"}}],"P813":[{"snaktype":"value","property":"P813","datatype":"time","datavalue":{"value":{"time":"+00000002014-04-09T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P813"]}]}],"P570":[{"id":"q47878$2c716e32-435c-26df-3770-69d6911a1bea","mainsnak":{"snaktype":"value","property":"P570","datatype":"time","datavalue":{"value":{"time":"+00000001979-02-02T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]},{"hash":"f991bf419530b161a136a5c4e55c49909074ce49","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":36578},"type":"wikibase-entityid"}}],"P813":[{"snaktype":"value","property":"P813","datatype":"time","datavalue":{"value":{"time":"+00000002014-04-09T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P813"]}]}],"P19":[{"id":"q47878$4d15e0ce-4bd9-3ae0-7460-0be18acafc2a","mainsnak":{"snaktype":"value","property":"P19","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":215030},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P20":[{"id":"q47878$2d8ccd99-490d-0c71-3c61-3c77b38c2589","mainsnak":{"snaktype":"value","property":"P20","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":60},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P136":[{"id":"Q47878$6ee534a2-4c9d-2110-3cb7-931421f070d8","mainsnak":{"snaktype":"value","property":"P136","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":3071},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P31":[{"id":"Q47878$9872D605-AD3E-465D-AB67-59587DC5EDBC","mainsnak":{"snaktype":"value","property":"P31","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":5},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"d6e3ab4045fb3f3feea77895bc6b27e663fc878a","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":206855},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P646":[{"id":"Q47878$AA6FC63E-EE1D-4FDC-B055-FA5BC42E0AB4","mainsnak":{"snaktype":"value","property":"P646","datatype":"string","datavalue":{"value":"/m/014w3g","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"b923b0d68beb300866b87ead39f61e63ec30d8af","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":15241312},"type":"wikibase-entityid"}}],"P577":[{"snaktype":"value","property":"P577","datatype":"time","datavalue":{"value":{"time":"+00000002013-10-28T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P577"]}]}],"P268":[{"id":"Q47878$851477FC-E993-4E2B-8A14-B40445AE770E","mainsnak":{"snaktype":"value","property":"P268","datatype":"string","datavalue":{"value":"13899763t","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"cf254b3baa605fb5071fb39a94366c6edb73c1be","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":193563},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P1273":[{"id":"Q47878$87E77317-A83E-47A1-96CE-EC346399E1F5","mainsnak":{"snaktype":"value","property":"P1273","datatype":"string","datavalue":{"value":"a10684499","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"73144cdafdbe9bf99012aedf133814d926234f71","snaks":{"P854":[{"snaktype":"value","property":"P854","datatype":"url","datavalue":{"value":"https://viaf.org/viaf/197655/","type":"string"}}]},"snaks-order":["P854"]}]}],"P27":[{"id":"Q47878$62B41BC4-5885-4C31-BDF1-234561BC4480","mainsnak":{"snaktype":"value","property":"P27","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":145},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P1415":[{"id":"Q47878$F46AE2C5-5511-4A63-A3E7-DB9EC7C80DA8","mainsnak":{"snaktype":"value","property":"P1415","datatype":"string","datavalue":{"value":"101040644","type":"string"}},"type":"statement","rank":"normal"}],"P106":[{"id":"Q47878$20082F3A-0348-4EA6-AFB8-43EC82D76411","mainsnak":{"snaktype":"value","property":"P106","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":177220},"type":"wikibase-entityid"}},"type":"statement","rank":"normal","references":[{"hash":"50f57a3dbac4708ce4ae4a827c0afac7fcdb4a5c","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":11920},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}]},"sitelinks":{"anwiki":{"site":"anwiki","title":"Sid
+        Vicious","badges":[]},"astwiki":{"site":"astwiki","title":"Sid Vicious","badges":[]},"azwiki":{"site":"azwiki","title":"Sid
+        Vi\u015fes","badges":[]},"be_x_oldwiki":{"site":"be_x_oldwiki","title":"\u0421\u044b\u0434
+        \u0412\u0456\u0448\u044d\u0441","badges":[]},"bewiki":{"site":"bewiki","title":"\u0421\u0456\u0434
+        \u0412\u0456\u0448\u044d\u0441","badges":[]},"bgwiki":{"site":"bgwiki","title":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u044a\u0441","badges":[]},"brwiki":{"site":"brwiki","title":"Sid
+        Vicious","badges":[]},"bswiki":{"site":"bswiki","title":"Sid Vicious","badges":[]},"cawiki":{"site":"cawiki","title":"Sid
+        Vicious","badges":[]},"commonswiki":{"site":"commonswiki","title":"Sid Vicious","badges":[]},"cswiki":{"site":"cswiki","title":"Sid
+        Vicious","badges":[]},"cywiki":{"site":"cywiki","title":"Sid Vicious","badges":[]},"dawiki":{"site":"dawiki","title":"Sid
+        Vicious","badges":[]},"dewiki":{"site":"dewiki","title":"Sid Vicious","badges":[]},"elwiki":{"site":"elwiki","title":"\u03a3\u03b9\u03bd\u03c4
+        \u0392\u03af\u03c3\u03b9\u03bf\u03c5\u03c2","badges":[]},"enwiki":{"site":"enwiki","title":"Sid
+        Vicious","badges":[]},"enwikiquote":{"site":"enwikiquote","title":"Sid Vicious","badges":[]},"eowiki":{"site":"eowiki","title":"Sid
+        Vicious","badges":[]},"eswiki":{"site":"eswiki","title":"Sid Vicious","badges":[]},"eswikiquote":{"site":"eswikiquote","title":"Sid
+        Vicious","badges":[]},"etwiki":{"site":"etwiki","title":"Sid Vicious","badges":[]},"euwiki":{"site":"euwiki","title":"Sid
+        Vicious","badges":[]},"fawiki":{"site":"fawiki","title":"\u0633\u06cc\u062f
+        \u0648\u06cc\u0634\u0633","badges":[]},"fiu_vrowiki":{"site":"fiu_vrowiki","title":"Vicious\u00f5
+        Sid","badges":[]},"fiwiki":{"site":"fiwiki","title":"Sid Vicious","badges":[]},"frwiki":{"site":"frwiki","title":"Sid
+        Vicious","badges":[]},"fywiki":{"site":"fywiki","title":"Sid Vicious","badges":[]},"gawiki":{"site":"gawiki","title":"Sid
+        Vicious","badges":[]},"gdwiki":{"site":"gdwiki","title":"Sid Vicious","badges":[]},"glwiki":{"site":"glwiki","title":"Sid
+        Vicious","badges":[]},"hewiki":{"site":"hewiki","title":"\u05e1\u05d9\u05d3
+        \u05d5\u05d9\u05e9\u05e1","badges":[]},"hrwiki":{"site":"hrwiki","title":"Sid
+        Vicious","badges":[]},"huwiki":{"site":"huwiki","title":"Sid Vicious","badges":[]},"iawiki":{"site":"iawiki","title":"Sid
+        Vicious","badges":[]},"idwiki":{"site":"idwiki","title":"Sid Vicious","badges":[]},"iowiki":{"site":"iowiki","title":"Sid
+        Vicious","badges":[]},"iswiki":{"site":"iswiki","title":"Sid Vicious","badges":[]},"itwiki":{"site":"itwiki","title":"Sid
+        Vicious","badges":[]},"jawiki":{"site":"jawiki","title":"\u30b7\u30c9\u30fb\u30f4\u30a3\u30b7\u30e3\u30b9","badges":[]},"kowiki":{"site":"kowiki","title":"\uc2dc\ub4dc
+        \ube44\uc154\uc2a4","badges":[]},"lawiki":{"site":"lawiki","title":"Sid Vicious","badges":[]},"liwiki":{"site":"liwiki","title":"Sid
+        Vicious","badges":[]},"lmowiki":{"site":"lmowiki","title":"Sid Vicious","badges":[]},"lvwiki":{"site":"lvwiki","title":"Sids
+        Vi\u0161ess","badges":[]},"mtwiki":{"site":"mtwiki","title":"Sid Vicious","badges":[]},"ndswiki":{"site":"ndswiki","title":"Sid
+        Vicious","badges":[]},"nlwiki":{"site":"nlwiki","title":"Sid Vicious","badges":[]},"nnwiki":{"site":"nnwiki","title":"Sid
+        Vicious","badges":[]},"nowiki":{"site":"nowiki","title":"Sid Vicious","badges":[]},"plwiki":{"site":"plwiki","title":"Sid
+        Vicious","badges":[]},"plwikiquote":{"site":"plwikiquote","title":"Sid Vicious","badges":[]},"ptwiki":{"site":"ptwiki","title":"Sid
+        Vicious","badges":[]},"rmwiki":{"site":"rmwiki","title":"Sid Vicious","badges":[]},"rowiki":{"site":"rowiki","title":"Sid
+        Vicious","badges":[]},"ruwiki":{"site":"ruwiki","title":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u0435\u0441","badges":[]},"scnwiki":{"site":"scnwiki","title":"Sid
+        Vicious","badges":[]},"shwiki":{"site":"shwiki","title":"Sid Vicious","badges":[]},"simplewiki":{"site":"simplewiki","title":"Sid
+        Vicious","badges":[]},"skwiki":{"site":"skwiki","title":"Sid Vicious","badges":[]},"slwiki":{"site":"slwiki","title":"Sid
+        Vicious","badges":[]},"srwiki":{"site":"srwiki","title":"\u0421\u0438\u0434
+        \u0412\u0438\u0448\u043e\u0441","badges":[]},"svwiki":{"site":"svwiki","title":"Sid
+        Vicious","badges":[]},"thwiki":{"site":"thwiki","title":"\u0e0b\u0e34\u0e14
+        \u0e27\u0e34\u0e40\u0e0a\u0e35\u0e22\u0e2a","badges":[]},"tlwiki":{"site":"tlwiki","title":"Sid
+        Vicious","badges":[]},"trwiki":{"site":"trwiki","title":"Sid Vicious","badges":[]},"ukwiki":{"site":"ukwiki","title":"\u0421\u0456\u0434
+        \u0412\u0456\u0448\u0435\u0437","badges":[]},"zh_min_nanwiki":{"site":"zh_min_nanwiki","title":"Sid
+        Vicious","badges":[]},"zhwiki":{"site":"zhwiki","title":"\u5e2d\u5fb7\u00b7\u7ef4\u745f\u65af","badges":[]}}}},"success":1}'
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 08:12:37 GMT
+recorded_with: VCR 2.9.3

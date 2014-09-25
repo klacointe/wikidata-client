@@ -1,0 +1,57 @@
+PATH
+  remote: .
+  specs:
+    wikidata-client (0.0.1)
+      faraday (~> 0.9)
+      faraday_middleware (~> 0.9)
+      hashie (~> 3.3)
+      patron (~> 0.4)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.6)
+    coderay (1.1.0)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
+    diff-lcs (1.2.5)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
+    hashie (3.3.1)
+    method_source (0.8.2)
+    multipart-post (2.0.0)
+    patron (0.4.18)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rspec (3.1.0)
+      rspec-core (~> 3.1.0)
+      rspec-expectations (~> 3.1.0)
+      rspec-mocks (~> 3.1.0)
+    rspec-core (3.1.4)
+      rspec-support (~> 3.1.0)
+    rspec-expectations (3.1.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.1.0)
+    rspec-mocks (3.1.1)
+      rspec-support (~> 3.1.0)
+    rspec-support (3.1.0)
+    safe_yaml (1.0.3)
+    slop (3.6.0)
+    vcr (2.9.3)
+    webmock (1.18.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pry (~> 0.10)
+  rspec (~> 3.1)
+  vcr (~> 2.9)
+  webmock (~> 1.18)
+  wikidata-client!

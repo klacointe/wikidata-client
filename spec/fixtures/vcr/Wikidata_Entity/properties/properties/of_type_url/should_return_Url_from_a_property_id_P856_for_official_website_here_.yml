@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.wikidata.org/w/api.php?action=wbgetentities&format=json&sites=enwiki&titles=GitHub
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,X-Use-HHVM
+      X-Varnish:
+      - 1790556546, 2075592355, 2420446867
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 26 Sep 2014 08:12:44 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Cache:
+      - cp1068 miss (0), amssq61 miss (0), amssq59 frontend miss (0)
+      X-Analytics:
+      - php=zend
+      Set-Cookie:
+      - GeoIP=FR:Sainte-luce-sur-loire:47.2500:-1.5000:v4; Path=/; Domain=.wikidata.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entities":{"Q364":{"pageid":561,"ns":0,"title":"Q364","lastrevid":150478147,"modified":"2014-08-11T21:33:37Z","id":"Q364","type":"item","aliases":{"en":[{"language":"en","value":"GitHub
+        Inc."},{"language":"en","value":"github.com"}]},"labels":{"en":{"language":"en","value":"GitHub"},"pl":{"language":"pl","value":"GitHub"},"fr":{"language":"fr","value":"GitHub"},"de":{"language":"de","value":"GitHub"},"zh":{"language":"zh","value":"GitHub"},"es":{"language":"es","value":"GitHub"},"fa":{"language":"fa","value":"\u06af\u06cc\u062a
+        \u0647\u0627\u0628"},"id":{"language":"id","value":"GitHub"},"ja":{"language":"ja","value":"GitHub"},"ko":{"language":"ko","value":"\uae30\ud2b8\ud5c8\ube0c"},"nl":{"language":"nl","value":"GitHub"},"pt":{"language":"pt","value":"GitHub"},"ru":{"language":"ru","value":"GitHub"},"sv":{"language":"sv","value":"Github"},"uk":{"language":"uk","value":"GitHub"},"it":{"language":"it","value":"GitHub"},"ar":{"language":"ar","value":"GitHub"},"hu":{"language":"hu","value":"GitHub"},"fi":{"language":"fi","value":"GitHub"},"nb":{"language":"nb","value":"GitHub"},"ca":{"language":"ca","value":"Github"},"ta":{"language":"ta","value":"\u0b9c\u0bbf\u0b9f\u0bcd\u0bb9\u0baa\u0bcd"},"oc":{"language":"oc","value":"GitHub"},"pt-br":{"language":"pt-br","value":"GitHub"},"bg":{"language":"bg","value":"GitHub"},"tr":{"language":"tr","value":"GitHub"},"hi":{"language":"hi","value":"\u0917\u093f\u091f\u0939\u092c"},"cs":{"language":"cs","value":"GitHub"},"ro":{"language":"ro","value":"GitHub"},"he":{"language":"he","value":"GitHub"},"vi":{"language":"vi","value":"GitHub"}},"descriptions":{"en":{"language":"en","value":"web-based
+        hosting service for software development projects using Git"},"pl":{"language":"pl","value":"hostingowy
+        serwis internetowy przeznaczony dla projekt\u00f3w programistycznych wykorzystuj\u0105cych
+        system kontroli wersji Git"},"fr":{"language":"fr","value":"plateforme web
+        collaborative"},"de":{"language":"de","value":"webbasierter Hosting-Dienst
+        f\u00fcr Software-Entwicklungsprojekte"},"es":{"language":"es","value":"plataforma
+        de software para alojar proyectos usando el sistema Git"},"it":{"language":"it","value":"servizio
+        di hosting basato sul web"},"ru":{"language":"ru","value":"\u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0438\u0441
+        \u0434\u043b\u044f \u0445\u043e\u0441\u0442\u0438\u043d\u0433\u0430 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432
+        \u0438 \u0438\u0445 \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e\u0439
+        \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438"},"fi":{"language":"fi","value":"Git-j\u00e4rjestelm\u00e4\u00e4
+        k\u00e4ytt\u00e4v\u00e4 verkkopalvelu ohjelmistokehitysprojektien s\u00e4ilytykseen"},"nb":{"language":"nb","value":"nettbasert
+        programvaretjeneste"},"ca":{"language":"ca","value":"espai web per compartir
+        fonts de programari"},"pt-br":{"language":"pt-br","value":"servi\u00e7o de
+        hospedagem baseado na web para projetos de desenvolvimento de software utilizando
+        Git"},"zh-hans":{"language":"zh-hans","value":"GitHub\u516c\u53f8\u7684\u5171\u4eab\u865a\u62df\u4e3b\u673a\u670d\u52a1"},"uk":{"language":"uk","value":"\u043e\u0434\u0438\u043d
+        \u0437 \u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448\u0438\u0445 \u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0456\u0441\u0456\u0432
+        \u0434\u043b\u044f \u0441\u043f\u0456\u043b\u044c\u043d\u043e\u0457 \u0440\u043e\u0437\u0440\u043e\u0431\u043a\u0438
+        \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043d\u043e\u0433\u043e \u0437\u0430\u0431\u0435\u0437\u043f\u0435\u0447\u0435\u043d\u043d\u044f"},"hu":{"language":"hu","value":"szoftver
+        fejleszt\u00e9si projekt t\u00e1rol\u00e1s\u00e1ra alkalmas internetes szolg\u00e1ltat\u00e1s"},"cs":{"language":"cs","value":"web-based
+        hosting service for software development projects using Git"}},"claims":{"P112":[{"id":"Q364$f0389704-4977-82d9-ed76-d831c3c6544d","mainsnak":{"snaktype":"value","property":"P112","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":16602077},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P154":[{"id":"q364$b35bab9e-4177-91ca-03e8-6c44cacc30ef","mainsnak":{"snaktype":"value","property":"P154","datatype":"commonsMedia","datavalue":{"value":"GitHub
+        logo 2013.svg","type":"string"}},"type":"statement","rank":"normal"}],"P854":[{"id":"Q364$70e04427-4316-6339-9868-6bd48c6e241e","mainsnak":{"snaktype":"value","property":"P854","datatype":"url","datavalue":{"value":"https://github.com/","type":"string"}},"type":"statement","rank":"normal"}],"P31":[{"id":"Q364$3fc07a87-4ab2-91dd-eb11-1b4d8442c9f3","mainsnak":{"snaktype":"value","property":"P31","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":588365},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P856":[{"id":"Q364$FEC870C9-C7FD-4841-ACC0-0B04561A34B5","mainsnak":{"snaktype":"value","property":"P856","datatype":"url","datavalue":{"value":"https://github.com","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P159":[{"id":"Q364$e834e2ab-4e89-db51-949f-df05f41d8b44","mainsnak":{"snaktype":"value","property":"P159","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":62},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P646":[{"id":"Q364$8A2C3FCF-9A1D-40AE-BC5B-E0CA0B886B10","mainsnak":{"snaktype":"value","property":"P646","datatype":"string","datavalue":{"value":"/m/04g0kcw","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"b923b0d68beb300866b87ead39f61e63ec30d8af","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":15241312},"type":"wikibase-entityid"}}],"P577":[{"snaktype":"value","property":"P577","datatype":"time","datavalue":{"value":{"time":"+00000002013-10-28T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P577"]}]}]},"sitelinks":{"arwiki":{"site":"arwiki","title":"\u063a\u064a\u062a
+        \u0647\u0627\u0628","badges":[]},"bgwiki":{"site":"bgwiki","title":"GitHub","badges":[]},"cswiki":{"site":"cswiki","title":"GitHub","badges":[]},"dewiki":{"site":"dewiki","title":"GitHub","badges":[]},"enwiki":{"site":"enwiki","title":"GitHub","badges":[]},"eswiki":{"site":"eswiki","title":"GitHub","badges":[]},"fawiki":{"site":"fawiki","title":"\u06af\u06cc\u062a\u200c\u0647\u0627\u0628","badges":[]},"frwiki":{"site":"frwiki","title":"GitHub","badges":[]},"hewiki":{"site":"hewiki","title":"GitHub","badges":[]},"hiwiki":{"site":"hiwiki","title":"\u0917\u093f\u091f\u0939\u092c","badges":[]},"idwiki":{"site":"idwiki","title":"GitHub","badges":[]},"itwiki":{"site":"itwiki","title":"GitHub","badges":[]},"jawiki":{"site":"jawiki","title":"GitHub","badges":[]},"kowiki":{"site":"kowiki","title":"\uae43\ud5c8\ube0c","badges":[]},"nlwiki":{"site":"nlwiki","title":"GitHub","badges":[]},"ocwiki":{"site":"ocwiki","title":"GitHub","badges":[]},"plwiki":{"site":"plwiki","title":"GitHub","badges":[]},"ptwiki":{"site":"ptwiki","title":"GitHub","badges":[]},"rowiki":{"site":"rowiki","title":"GitHub","badges":[]},"ruwiki":{"site":"ruwiki","title":"GitHub","badges":[]},"svwiki":{"site":"svwiki","title":"Github","badges":[]},"trwiki":{"site":"trwiki","title":"GitHub","badges":[]},"ukwiki":{"site":"ukwiki","title":"GitHub","badges":[]},"viwiki":{"site":"viwiki","title":"GitHub","badges":[]},"zhwiki":{"site":"zhwiki","title":"GitHub","badges":[]}}}},"success":1}'
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 08:12:44 GMT
+recorded_with: VCR 2.9.3
