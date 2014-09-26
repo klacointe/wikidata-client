@@ -1,5 +1,7 @@
 # Wikidata API Client
 
+[![Code Climate](https://codeclimate.com/github/klacointe/wikidata-client/badges/gpa.svg)](https://codeclimate.com/github/klacointe/wikidata-client)
+
 
 [Wikidata](http://www.wikidata.org/) client library for Ruby.
 
