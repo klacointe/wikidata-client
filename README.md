@@ -1,5 +1,6 @@
 # Wikidata API Client
 
+[![Build Status](https://travis-ci.org/klacointe/wikidata-client.svg?branch=master)](https://travis-ci.org/klacointe/wikidata-client)
 [![Code Climate](https://codeclimate.com/github/klacointe/wikidata-client/badges/gpa.svg)](https://codeclimate.com/github/klacointe/wikidata-client)
 
 
