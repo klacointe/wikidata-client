@@ -14,6 +14,12 @@ describe Wikidata::Item, :vcr do
       }.should raise_error Wikidata::ItemNotFound
     end
 
+    it 'should raise an error of missing search' do
+      lambda {
+        Wikidata::Item.search ''
+      }.should raise_error Wikidata::SearchMissing
+    end
+
     it 'should find by id' do
       entity_by_id.should be_kind_of Wikidata::Item
     end

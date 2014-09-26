@@ -48,6 +48,8 @@ module Wikidata
         case error['code']
           when 'no-such-entity'
             raise ItemNotFound.new error
+          when 'srnosearch'
+            raise SearchMissing.new error
           else
             raise UnknownError.new error
         end
@@ -74,5 +76,6 @@ module Wikidata
     end
   end
   class UnknownError < ClientException; end
+  class SearchMissing < ClientException; end
   class ItemNotFound < ClientException; end
 end
