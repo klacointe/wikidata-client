@@ -58,11 +58,20 @@ module Wikidata
       property_ids(code).first
     end
 
+    def inspect
+      "<#{self.class} id: #{id}, title: \"#{title}\">"
+    end
+
     private
 
     def raw_property code
       return unless hash.claims
       hash.claims[code]
+    end
+
+    def title
+      return labels['en'].value if labels && labels['en']
+      sitelinks['en'].value if sitelinks && sitelinks['en']
     end
   end
 end

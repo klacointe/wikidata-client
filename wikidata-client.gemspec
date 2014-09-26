@@ -9,7 +9,6 @@ Gem::Specification.new do |s|
   s.summary     = "Wikidata API client"
   s.email       = "kevinlacointe@gmail.com"
   s.homepage    = "https://github.com/klacointe/wikidata-client"
-  s.description = "Wikidata API client"
   s.authors     = ['Kévin Lacointe']
 
   s.files         = `git ls-files`.split("\n")
