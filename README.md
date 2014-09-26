@@ -25,7 +25,7 @@ Wikidata.configure do |c|
       timeout: 9
     }
   }
-end 
+end
 ```
 
 ## Usage
