@@ -32,10 +32,12 @@ module Wikidata
     end
 
     def entities_results
+      return [] unless @response.body['entities']
       @response.body['entities'].values
     end
 
     def search_results
+      return [] unless @response.body['query']
       @response.body['query']['search']
     end
 
