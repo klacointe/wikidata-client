@@ -13,7 +13,7 @@ It provide an easy way to search for wikidata pages and read their contents.
 
 ## Installation
 
-In bunler: `gem 'wikidata-client', '~> 0.0.1'`
+In bunler: `gem 'wikidata-client', '~> 0.0.1', require: 'wikidata'`
 
 Otherwise: `gem install wikidata-client`
 
@@ -39,8 +39,6 @@ end
 ### Search
 
 ```irb
-> require 'wikidata'
-
 > search = Wikidata::Item.search 'Homer Simpson'
 => <Wikidata::SearchResponse results: [
      <Wikidata::Item id: Q7810, title: "Homer Simpson">,
@@ -71,8 +69,6 @@ end
 ### Find by ids or titles
 
 ```irb
-> require 'wikidata'
-
 > homer = Wikidata::Item.find_by_title 'Homer Simpson' # Same as homer = Wikidata::Item.find 'Q7810'
 => <Wikidata::Item id: Q7810, title: "Homer Simpson">
 
@@ -102,7 +98,70 @@ If you want several pages at the same time, just give an array to `find` or `fin
 
 ## Properties
 
-FIXME
+To access an item property, use the Wikidata property code and one of these
+methods:
+
+- `properties`:  to get all properties
+- `property`:  to get the first property
+
+```irb
+> homer = Wikidata::Item.find_by_title 'Homer Simpson'
+
+=> <Wikidata::Item id: Q7810, title: "Homer Simpson">
+
+> homer.properties('P40')
+=> [
+     <Wikidata::Item id: Q5480, title: "Bart Simpson">,
+     <Wikidata::Item id: Q5846, title: "Lisa Simpson">,
+     <Wikidata::Item id: Q7834, title: "Maggie Simpson">
+   ]
+
+> homer.property('P22')
+=> <Wikidata::Item id: Q842104, title: "Grampa Simpson">
+```
+
+Alternatively, you can map wikidata property codes to method names, see
+https://github.com/klacointe/wikidata-client/blob/master/config/wikidata.yml to
+get the list of mapped properties.
+
+If you define the mapping under the `resources` section, accessor will be on the
+first property only. If under the `collections` sections, all properties will be
+returned:
+
+```irb
+> homer = Wikidata::Item.find_by_title 'Homer Simpson'
+
+=> <Wikidata::Item id: Q7810, title: "Homer Simpson">
+
+> homer.children
+=> [
+     <Wikidata::Item id: Q5480, title: "Bart Simpson">,
+     <Wikidata::Item id: Q5846, title: "Lisa Simpson">,
+     <Wikidata::Item id: Q7834, title: "Maggie Simpson">
+   ]
+
+> homer.father
+=> <Wikidata::Item id: Q842104, title: "Grampa Simpson">
+```
+
+
+Feel free to add yours in a topic branch and seed me a pull request.
+
+
+Finally of you want to get only ids of properties to avoid making several
+unecessary requests, you can use these methods: `property_id` and `property_ids`:
+
+```irb
+> homer = Wikidata::Item.find_by_title 'Homer Simpson'
+
+=> <Wikidata::Item id: Q7810, title: "Homer Simpson">
+
+> homer.property_ids('P40')
+=> ["Q5480", "Q5846", "Q7834"]
+
+> homer.property_id('P22')
+=> "Q842104"
+```
 
 ## Note on Patches/Pull Requests
 
