@@ -38,7 +38,7 @@ end
 
 ### Search
 
-```ruby
+```irb
 > require 'wikidata'
 
 > search = Wikidata::Item.search 'Homer Simpson'
@@ -70,7 +70,7 @@ end
 
 ### Find by ids or titles
 
-``` ruby
+```irb
 > require 'wikidata'
 
 > homer = Wikidata::Item.find_by_title 'Homer Simpson' # Same as homer = Wikidata::Item.find 'Q7810'
@@ -86,7 +86,7 @@ end
 
 If you want several pages at the same time, just give an array to `find` or `find_by_title` methods:
 
-``` ruby
+```irb
 > Wikidata::Item.find_by_title ['Sid Vicious', 'John Lydon']
 => <Wikidata::Response results: [
      <Wikidata::Item id: Q47878, title: "Sid Vicious">,
