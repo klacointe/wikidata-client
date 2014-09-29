@@ -62,7 +62,7 @@ PLATFORMS
 DEPENDENCIES
   codeclimate-test-reporter
   pry (~> 0.10)
-  rake
+  rake (~> 10.3)
   rspec (~> 3.1)
   vcr (~> 2.9)
   webmock (~> 1.18)

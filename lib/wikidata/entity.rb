@@ -16,9 +16,9 @@ module Wikidata
     end
 
     def title
-      return hash['title'] if hash['title']
       return labels['en'].value if labels && labels['en']
-      sitelinks['en'].value if sitelinks && sitelinks['en']
+      return sitelinks['en'].value if sitelinks && sitelinks['en']
+      hash['title'] if hash['title']
     end
 
     def url

@@ -17,6 +17,10 @@ module Wikidata
       @_empty ||= @raw.body['entities'].nil?
     end
 
+    def inspect
+      "<#{self.class} results: #{results.inspect}>"
+    end
+
     protected
 
     def raw_results
