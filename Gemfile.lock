@@ -44,7 +44,7 @@ GEM
     rspec-mocks (3.1.1)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.0)
-    safe_yaml (1.0.3)
+    safe_yaml (1.0.4)
     simplecov (0.9.1)
       docile (~> 1.1.0)
       multi_json (~> 1.0)
@@ -52,7 +52,7 @@ GEM
     simplecov-html (0.8.0)
     slop (3.6.0)
     vcr (2.9.3)
-    webmock (1.18.0)
+    webmock (1.19.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
 
