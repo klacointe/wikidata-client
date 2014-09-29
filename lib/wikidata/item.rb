@@ -15,20 +15,19 @@ module Wikidata
 
     class << self
       def find ids, query = {}
-        q = DEFAULT_QUERIES[:find]
-              .merge( query )
-              .merge( ids: Array(ids).join('|') )
-        Wikidata::Client.new( q ).response.tap do |resp|
-          return resp.results.first unless ids.is_a?(Array)
-        end
+        _find :ids, ids, query
       end
 
       def find_by_title titles, query = {}
+        _find :titles, titles, query
+      end
+
+      def _find finder = :ids, list = '', query = {}
         q = DEFAULT_QUERIES[:find]
               .merge( query )
-              .merge( titles: Array(titles).join('|') )
+              .merge( finder => Array(list).join('|') )
         Wikidata::Client.new( q ).response.tap do |resp|
-          return resp.results.first unless titles.is_a?(Array)
+          return resp.results.first unless list.is_a?(Array)
         end
       end
 

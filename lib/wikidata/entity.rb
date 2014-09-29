@@ -25,21 +25,15 @@ module Wikidata
       Wikidata.settings.item.url.gsub(':id', id)
     end
 
-    Wikidata.mapping.resources.each do |k, code|
-      define_method k do
-        property code
-      end
-      define_method "#{k}_id" do
-        property_id code
-      end
-    end
-
-    Wikidata.mapping.collections.each do |k, code|
-      define_method k do
-        properties code
-      end
-      define_method "#{k}_ids" do
-        property_ids code
+    Wikidata.mapping.each do |type, mappings|
+      resource = (type.to_sym == :resources)
+      mappings.each do |k, code|
+        define_method k do
+          resource ? property(code) : properties(code)
+        end
+        define_method (resource ? "#{k}_id" : "#{k}_ids") do
+          resource ? property_id(code) : property_ids(code)
+        end
       end
     end
 
@@ -49,15 +43,7 @@ module Wikidata
 
     def property_ids code
       Array(raw_property(code)).map do |attribute|
-        # TODO Handle other types
-        # http://www.wikidata.org/wiki/Wikidata:Glossary#Entities.2C_items.2C_properties_and_queries
-        case attribute.mainsnak.datavalue.value['entity-type']
-          when 'item'
-            prefix = 'Q'
-          else
-            raise "Unkown wikibase-item entity-type #{attribute.mainsnak.datatype.value['entity-type']}"
-        end
-        "#{prefix}#{attribute.mainsnak.datavalue.value['numeric-id']}"
+        self.class.entity_id attribute
       end
     end
 
@@ -71,6 +57,23 @@ module Wikidata
 
     def inspect
       "<#{self.class} id: #{id}, title: \"#{title}\">"
+    end
+
+    class << self
+
+      # TODO Handle other types
+      # http://www.wikidata.org/wiki/Wikidata:Glossary#Entities.2C_items.2C_properties_and_queries
+      def entity_id attribute
+        attribute.mainsnak.datavalue.value.tap do |h|
+          prefix = case h['entity-type']
+            when 'item'
+              'Q'
+            else
+              raise "Unkown wikibase-item entity-type #{h['entity_type']}"
+          end
+          return "#{prefix}#{h['numeric-id']}"
+        end
+      end
     end
 
     private

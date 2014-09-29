@@ -12,15 +12,7 @@ module Wikidata
       when 'url'
         Wikidata::Property::Url.new attribute
       when 'wikibase-item'
-        # TODO Handle other types
-        # http://www.wikidata.org/wiki/Wikidata:Glossary#Entities.2C_items.2C_properties_and_queries
-        case attribute.mainsnak.datavalue.value['entity-type']
-          when 'item'
-            prefix = 'Q'
-          else
-            raise "Unkown wikibase-item entity-type #{attribute.mainsnak.datatype.value['entity-type']}"
-        end
-        Wikidata::Item.find "#{prefix}#{attribute.mainsnak.datavalue.value['numeric-id']}"
+        Wikidata::Item.find Wikidata::Entity.entity_id(attribute)
       else
         raise "Unkown property type #{attribute.mainsnak.datatype}"
       end
