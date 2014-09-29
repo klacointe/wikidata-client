@@ -1,0 +1,19 @@
+resources:
+  creator: P170
+  place_of_birth: P19
+  place_of_death: P20
+  country_of_citizenship: P27
+  date_of_birth: P569
+  date_of_death: P570
+  date_of_foundation_or_creation: P571
+  official_website: P856
+  gender: P21
+  is_in_the_administrative_territorial_entity: P131
+  coordinate_location: P625
+  freebase_identifier: P646
+  father: P22
+collections:
+  official_websites: P856
+  instance_of: P31
+  subclass_of: P279
+  children: P40

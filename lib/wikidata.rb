@@ -19,6 +19,10 @@ module Wikidata
     def settings
       Config.settings
     end
+
+    def mapping
+      Config.mapping
+    end
   end
 end
 

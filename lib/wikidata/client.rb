@@ -25,21 +25,6 @@ module Wikidata
       end
     end
 
-    #def handle_error response
-      #raise RequestError unless response.success?
-      #return unless response.body['error']
-      #response.body['error'].tap do |error|
-        #case error['code']
-          #when 'no-such-entity'
-            #raise ItemNotFound.new error
-          #when 'srnosearch'
-            #raise SearchMissing.new error
-          #else
-            #raise UnknownError.new error
-        #end
-      #end
-    #end
-
     def api
       Faraday.new({url: Wikidata.settings.api.url}.merge(Wikidata.client_options)) do |faraday|
         faraday.request  :url_encoded
@@ -48,18 +33,4 @@ module Wikidata
       end
     end
   end
-
-  #class ClientException < Exception; end
-  #class RequestError < ClientException;
-    #def initialize error
-      #@error = error
-    #end
-
-    #def message
-      #super unless @error
-    #end
-  #end
-  #class UnknownError < ClientException; end
-  #class SearchMissing < ClientException; end
-  #class ItemNotFound < ClientException; end
 end

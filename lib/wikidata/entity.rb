@@ -22,10 +22,10 @@ module Wikidata
     end
 
     def url
-      Wikidata.settings.item_url.gsub(':id', id)
+      Wikidata.settings.item.url.gsub(':id', id)
     end
 
-    Wikidata.settings.mapping.resources.each do |k, code|
+    Wikidata.mapping.resources.each do |k, code|
       define_method k do
         property code
       end
@@ -34,7 +34,7 @@ module Wikidata
       end
     end
 
-    Wikidata.settings.mapping.collections.each do |k, code|
+    Wikidata.mapping.collections.each do |k, code|
       define_method k do
         properties code
       end
