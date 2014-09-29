@@ -11,7 +11,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.6)
-    codeclimate-test-reporter (0.4.0)
+    codeclimate-test-reporter (0.4.1)
       simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.0)
     crack (0.4.2)
