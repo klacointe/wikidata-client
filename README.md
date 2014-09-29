@@ -121,7 +121,7 @@ methods:
 ```
 
 Alternatively, you can map wikidata property codes to method names, see
-https://github.com/klacointe/wikidata-client/blob/master/config/wikidata.yml to
+https://github.com/klacointe/wikidata-client/blob/master/config/mapping.yml to
 get the list of mapped properties.
 
 If you define the mapping under the `resources` section, accessor will be on the
