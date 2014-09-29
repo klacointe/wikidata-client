@@ -10,51 +10,35 @@ module Wikidata
       @query = DEFAULT_QUERY.merge(query)
     end
 
-    def results
-      return @_results if @_results
-      call
-      @_results = case @query[:action]
-      when 'query'
-        search_results
-      when 'wbgetentities'
-        entities_results
-      else
-        raise "Unhandle query: #{@query['action']}"
-      end
+    def response
+      response_class.new api.get('', query)
     end
 
     private
 
-    def call
-      response = api.get '', query
-      handle_error response
-      @response = response
-    end
-
-    def entities_results
-      return [] unless @response.body['entities']
-      @response.body['entities'].values
-    end
-
-    def search_results
-      return [] unless @response.body['query']
-      @response.body['query']['search']
-    end
-
-    def handle_error response
-      raise RequestError unless response.success?
-      return unless response.body['error']
-      response.body['error'].tap do |error|
-        case error['code']
-          when 'no-such-entity'
-            raise ItemNotFound.new error
-          when 'srnosearch'
-            raise SearchMissing.new error
-          else
-            raise UnknownError.new error
-        end
+    def response_class
+      case @query[:action]
+      when 'query'
+        Wikidata::SearchResponse
+      else
+        Wikidata::Response
       end
     end
+
+    #def handle_error response
+      #raise RequestError unless response.success?
+      #return unless response.body['error']
+      #response.body['error'].tap do |error|
+        #case error['code']
+          #when 'no-such-entity'
+            #raise ItemNotFound.new error
+          #when 'srnosearch'
+            #raise SearchMissing.new error
+          #else
+            #raise UnknownError.new error
+        #end
+      #end
+    #end
 
     def api
       Faraday.new({url: Wikidata.settings.api.url}.merge(Wikidata.client_options)) do |faraday|
@@ -65,17 +49,17 @@ module Wikidata
     end
   end
 
-  class ClientException < Exception; end
-  class RequestError < ClientException;
-    def initialize error
-      @error = error
-    end
+  #class ClientException < Exception; end
+  #class RequestError < ClientException;
+    #def initialize error
+      #@error = error
+    #end
 
-    def message
-      super unless @error
-    end
-  end
-  class UnknownError < ClientException; end
-  class SearchMissing < ClientException; end
-  class ItemNotFound < ClientException; end
+    #def message
+      #super unless @error
+    #end
+  #end
+  #class UnknownError < ClientException; end
+  #class SearchMissing < ClientException; end
+  #class ItemNotFound < ClientException; end
 end

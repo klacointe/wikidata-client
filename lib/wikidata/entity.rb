@@ -10,6 +10,17 @@ module Wikidata
       @_properties = {}
     end
 
+    def id
+      return hash['id'] if hash['id']
+      return hash['title'] if hash['title']
+    end
+
+    def title
+      return hash['title'] if hash['title']
+      return labels['en'].value if labels && labels['en']
+      sitelinks['en'].value if sitelinks && sitelinks['en']
+    end
+
     def url
       Wikidata.settings.item_url.gsub(':id', id)
     end
@@ -67,11 +78,6 @@ module Wikidata
     def raw_property code
       return unless hash.claims
       hash.claims[code]
-    end
-
-    def title
-      return labels['en'].value if labels && labels['en']
-      sitelinks['en'].value if sitelinks && sitelinks['en']
     end
   end
 end
