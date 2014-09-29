@@ -29,19 +29,19 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Use-HHVM
       X-Varnish:
-      - 1790556858, 2075592423, 1853603205
+      - 2061999460, 2184238161, 3203618909
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
       Transfer-Encoding:
       - chunked
       Date:
-      - Fri, 26 Sep 2014 08:12:44 GMT
+      - Mon, 29 Sep 2014 09:07:23 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Cache:
-      - cp1068 miss (0), amssq61 miss (0), amssq37 frontend miss (0)
+      - cp1068 miss (0), amssq61 miss (0), amssq42 frontend miss (0)
       X-Analytics:
       - php=zend
       Set-Cookie:
@@ -74,5 +74,5 @@ http_interactions:
         logo 2013.svg","type":"string"}},"type":"statement","rank":"normal"}],"P854":[{"id":"Q364$70e04427-4316-6339-9868-6bd48c6e241e","mainsnak":{"snaktype":"value","property":"P854","datatype":"url","datavalue":{"value":"https://github.com/","type":"string"}},"type":"statement","rank":"normal"}],"P31":[{"id":"Q364$3fc07a87-4ab2-91dd-eb11-1b4d8442c9f3","mainsnak":{"snaktype":"value","property":"P31","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":588365},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P856":[{"id":"Q364$FEC870C9-C7FD-4841-ACC0-0B04561A34B5","mainsnak":{"snaktype":"value","property":"P856","datatype":"url","datavalue":{"value":"https://github.com","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P159":[{"id":"Q364$e834e2ab-4e89-db51-949f-df05f41d8b44","mainsnak":{"snaktype":"value","property":"P159","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":62},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P646":[{"id":"Q364$8A2C3FCF-9A1D-40AE-BC5B-E0CA0B886B10","mainsnak":{"snaktype":"value","property":"P646","datatype":"string","datavalue":{"value":"/m/04g0kcw","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"b923b0d68beb300866b87ead39f61e63ec30d8af","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":15241312},"type":"wikibase-entityid"}}],"P577":[{"snaktype":"value","property":"P577","datatype":"time","datavalue":{"value":{"time":"+00000002013-10-28T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P577"]}]}]},"sitelinks":{"arwiki":{"site":"arwiki","title":"\u063a\u064a\u062a
         \u0647\u0627\u0628","badges":[]},"bgwiki":{"site":"bgwiki","title":"GitHub","badges":[]},"cswiki":{"site":"cswiki","title":"GitHub","badges":[]},"dewiki":{"site":"dewiki","title":"GitHub","badges":[]},"enwiki":{"site":"enwiki","title":"GitHub","badges":[]},"eswiki":{"site":"eswiki","title":"GitHub","badges":[]},"fawiki":{"site":"fawiki","title":"\u06af\u06cc\u062a\u200c\u0647\u0627\u0628","badges":[]},"frwiki":{"site":"frwiki","title":"GitHub","badges":[]},"hewiki":{"site":"hewiki","title":"GitHub","badges":[]},"hiwiki":{"site":"hiwiki","title":"\u0917\u093f\u091f\u0939\u092c","badges":[]},"idwiki":{"site":"idwiki","title":"GitHub","badges":[]},"itwiki":{"site":"itwiki","title":"GitHub","badges":[]},"jawiki":{"site":"jawiki","title":"GitHub","badges":[]},"kowiki":{"site":"kowiki","title":"\uae43\ud5c8\ube0c","badges":[]},"nlwiki":{"site":"nlwiki","title":"GitHub","badges":[]},"ocwiki":{"site":"ocwiki","title":"GitHub","badges":[]},"plwiki":{"site":"plwiki","title":"GitHub","badges":[]},"ptwiki":{"site":"ptwiki","title":"GitHub","badges":[]},"rowiki":{"site":"rowiki","title":"GitHub","badges":[]},"ruwiki":{"site":"ruwiki","title":"GitHub","badges":[]},"svwiki":{"site":"svwiki","title":"Github","badges":[]},"trwiki":{"site":"trwiki","title":"GitHub","badges":[]},"ukwiki":{"site":"ukwiki","title":"GitHub","badges":[]},"viwiki":{"site":"viwiki","title":"GitHub","badges":[]},"zhwiki":{"site":"zhwiki","title":"GitHub","badges":[]}}}},"success":1}'
     http_version: 
-  recorded_at: Fri, 26 Sep 2014 08:12:44 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:23 GMT
 recorded_with: VCR 2.9.3

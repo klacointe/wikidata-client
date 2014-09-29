@@ -29,13 +29,13 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Use-HHVM
       X-Varnish:
-      - 1966840978, 1946724221, 2793539057
+      - 2238972844, 2039150916, 2954804792
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
       Transfer-Encoding:
       - chunked
       Date:
-      - Fri, 26 Sep 2014 08:12:46 GMT
+      - Mon, 29 Sep 2014 09:07:25 GMT
       Age:
       - '0'
       Connection:
@@ -315,5 +315,5 @@ http_interactions:
         Jackson","badges":[]},"zh_yuewiki":{"site":"zh_yuewiki","title":"\u7c73\u9ad8\u7a4d\u81e3","badges":[]},"zhwiki":{"site":"zhwiki","title":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a","badges":["Q17437798"]},"zuwiki":{"site":"zuwiki","title":"Michael
         Jackson","badges":[]}}}},"success":1}'
     http_version: 
-  recorded_at: Fri, 26 Sep 2014 08:12:46 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:25 GMT
 recorded_with: VCR 2.9.3

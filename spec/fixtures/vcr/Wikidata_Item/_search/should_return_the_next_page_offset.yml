@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.wikidata.org/w/api.php?action=query&format=json&list=search&srlimit=10&sroffset=0&srsearch=Michael%20Jackson
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,X-Forwarded-Proto,X-Use-HHVM
+      X-Varnish:
+      - 1526867630, 3175927500, 2581305905
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Mon, 29 Sep 2014 09:07:30 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Cache:
+      - cp1065 miss (0), amssq52 miss (0), amssq59 frontend miss (0)
+      X-Analytics:
+      - php=zend
+      Set-Cookie:
+      - GeoIP=FR:Sainte-luce-sur-loire:47.2500:-1.5000:v4; Path=/; Domain=.wikidata.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"query-continue":{"search":{"sroffset":10}},"query":{"searchinfo":{"totalhits":416},"search":[{"ns":0,"title":"Q2831","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        \u121b\u12ed\u12ad\u120d \u1303\u12ad\u1230\u1295 <span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span> \u0645\u0627\u064a\u0643\u0644
+        \u062c\u0627\u0643\u0633\u0648\u0646","size":8234,"wordcount":890,"timestamp":"2014-09-18T07:35:04Z"},{"ns":0,"title":"Q167877","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        \u041c\u0430\u0439\u043a\u044a\u043b \u0414\u0436\u0430\u043a\u0441\u044a\u043d
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        Michael","size":1216,"wordcount":132,"timestamp":"2014-09-14T15:28:24Z"},{"ns":0,"title":"Q507175","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        The Best of <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        The Best of <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        The Best of <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        The Best of <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        The Best of <span class=\"searchmatch\">Michael</span> Jackson","size":1503,"wordcount":233,"timestamp":"2014-06-04T10:27:12Z"},{"ns":0,"title":"Q956149","snippet":"\u0e2a\u0e1b\u0e35\u0e0a\u0e40\u0e25\u0e2a\u0e2a\u0e4c
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        Single von <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        song chanson de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        Speechless (chanson de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>)
+        Speechless","size":720,"wordcount":73,"timestamp":"2014-08-20T02:07:57Z"},{"ns":0,"title":"Q25158","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        del 2002 Album von <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        Love Songs Love Songs (<span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        album) Love Songs (album, <span class=\"searchmatch\">Michael</span> <span
+        class=\"searchmatch\">Jackson</span>)","size":368,"wordcount":55,"timestamp":"2014-05-09T22:51:53Z"},{"ns":0,"title":"Q1308224","snippet":"Experience
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The","size":1131,"wordcount":124,"timestamp":"2014-05-05T08:15:06Z"},{"ns":0,"title":"Q7244161","snippet":"Prince
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I Prince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I Prince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I Prince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I Prince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I Prince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I \u067e\u0631\u0646\u0633","size":447,"wordcount":60,"timestamp":"2014-08-22T21:39:22Z"},{"ns":0,"title":"Q756785","snippet":"Cry
+        Cry Cry (b\u00e0i h\u00e1t c\u1ee7a <span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>) \u0e04\u0e23\u0e32\u0e22 chanson
+        de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        singolo di <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        del 2001 <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        song recorded by American","size":835,"wordcount":117,"timestamp":"2014-08-20T02:40:03Z"},{"ns":0,"title":"Q1638445","snippet":"di
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        del 2012 <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        album Kompilationsalbum von <span class=\"searchmatch\">Michael</span> <span
+        class=\"searchmatch\">Jackson</span> Icon (<span class=\"searchmatch\">Michael</span>-<span
+        class=\"searchmatch\">Jackson</span>-Album) Icon (album c\u1ee7a <span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>) Icon","size":287,"wordcount":43,"timestamp":"2014-05-07T03:24:35Z"},{"ns":0,"title":"Q44376","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        album album di <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        del 2001 album by <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        Album von <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        \u00e1lbum de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        \u00e1lbum de <span class=\"searchmatch\">Michael</span> Jackson","size":2167,"wordcount":217,"timestamp":"2014-08-27T21:11:08Z"}]}}'
+    http_version: 
+  recorded_at: Mon, 29 Sep 2014 09:07:30 GMT
+recorded_with: VCR 2.9.3

@@ -29,19 +29,19 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Use-HHVM
       X-Varnish:
-      - 1790556171, 3057398216, 1698045880
+      - 2061998509, 3152395689, 2389025610
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
       Transfer-Encoding:
       - chunked
       Date:
-      - Fri, 26 Sep 2014 08:12:44 GMT
+      - Mon, 29 Sep 2014 09:07:23 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Cache:
-      - cp1068 miss (0), amssq48 miss (0), amssq47 frontend miss (0)
+      - cp1068 miss (0), amssq48 miss (0), amssq31 frontend miss (0)
       X-Analytics:
       - php=zend
       Set-Cookie:
@@ -156,5 +156,5 @@ http_interactions:
         \u0421\u0456\u043c\u043f\u0441\u043e\u043d","badges":[]},"viwiki":{"site":"viwiki","title":"Homer
         Simpson","badges":[]},"warwiki":{"site":"warwiki","title":"Homer Simpson","badges":[]},"zhwiki":{"site":"zhwiki","title":"\u970d\u9ed8\u00b7\u8f9b\u666e\u68ee","badges":["Q17437798"]}}}},"success":1}'
     http_version: 
-  recorded_at: Fri, 26 Sep 2014 08:12:44 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:23 GMT
 recorded_with: VCR 2.9.3

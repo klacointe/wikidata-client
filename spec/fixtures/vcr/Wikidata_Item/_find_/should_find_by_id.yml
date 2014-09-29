@@ -29,19 +29,19 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Use-HHVM
       X-Varnish:
-      - 2084892529, 3134476651, 2416303147
+      - 2375909661, 3229370178, 2581301733
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
       Transfer-Encoding:
       - chunked
       Date:
-      - Fri, 26 Sep 2014 08:12:45 GMT
+      - Mon, 29 Sep 2014 09:07:24 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Cache:
-      - cp1067 miss (0), amssq49 miss (0), amssq35 frontend miss (0)
+      - cp1067 miss (0), amssq49 miss (0), amssq59 frontend miss (0)
       X-Analytics:
       - php=zend
       Set-Cookie:
@@ -315,5 +315,5 @@ http_interactions:
         Jackson","badges":[]},"zh_yuewiki":{"site":"zh_yuewiki","title":"\u7c73\u9ad8\u7a4d\u81e3","badges":[]},"zhwiki":{"site":"zhwiki","title":"\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a","badges":["Q17437798"]},"zuwiki":{"site":"zuwiki","title":"Michael
         Jackson","badges":[]}}}},"success":1}'
     http_version: 
-  recorded_at: Fri, 26 Sep 2014 08:12:45 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:25 GMT
 recorded_with: VCR 2.9.3

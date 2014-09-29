@@ -29,19 +29,21 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-Use-HHVM
       X-Varnish:
-      - 1526864783, 3175926661, 893494469
+      - 1526868053, 3175927632, 2469777491
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '6911'
+      Accept-Ranges:
+      - bytes
       Date:
-      - Mon, 29 Sep 2014 09:07:28 GMT
+      - Mon, 29 Sep 2014 09:07:31 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Cache:
-      - cp1065 miss (0), amssq52 miss (0), amssq54 frontend miss (0)
+      - cp1065 miss (0), amssq52 miss (0), amssq38 frontend miss (0)
       X-Analytics:
       - php=zend
       Set-Cookie:
@@ -119,7 +121,7 @@ http_interactions:
         \u00e1lbum de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
         \u00e1lbum de <span class=\"searchmatch\">Michael</span> Jackson","size":2167,"wordcount":217,"timestamp":"2014-08-27T21:11:08Z"}]}}'
     http_version: 
-  recorded_at: Mon, 29 Sep 2014 09:07:28 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:31 GMT
 - request:
     method: get
     uri: http://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q2831%7CQ167877%7CQ507175%7CQ956149%7CQ25158%7CQ1308224%7CQ7244161%7CQ756785%7CQ1638445%7CQ44376&sites=enwiki
@@ -149,19 +151,19 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Use-HHVM
       X-Varnish:
-      - 2251460365, 1914821899, 2014723642
+      - 2251463164, 1914822730, 3363234576
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
       Transfer-Encoding:
       - chunked
       Date:
-      - Mon, 29 Sep 2014 09:07:29 GMT
+      - Mon, 29 Sep 2014 09:07:31 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Cache:
-      - cp1055 miss (0), amssq56 miss (0), amssq37 frontend miss (0)
+      - cp1055 miss (0), amssq56 miss (0), amssq46 frontend miss (0)
       X-Analytics:
       - php=zend
       Set-Cookie:
@@ -650,5 +652,5 @@ http_interactions:
         (album c\u1ee7a Michael Jackson)","badges":[]},"zhwiki":{"site":"zhwiki","title":"Invincible
         (\u8fc8\u514b\u5c14\u00b7\u6770\u514b\u900a\u4e13\u8f91)","badges":[]}}}},"success":1}'
     http_version: 
-  recorded_at: Mon, 29 Sep 2014 09:07:29 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:32 GMT
 recorded_with: VCR 2.9.3

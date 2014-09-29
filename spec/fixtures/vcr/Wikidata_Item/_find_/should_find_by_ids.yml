@@ -29,19 +29,19 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Use-HHVM
       X-Varnish:
-      - 2984801498, 1788290718, 3150336987
+      - 3278093360, 1878844064, 2581302723
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
       Transfer-Encoding:
       - chunked
       Date:
-      - Fri, 26 Sep 2014 08:12:46 GMT
+      - Mon, 29 Sep 2014 09:07:26 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Cache:
-      - cp1053 miss (0), amssq59 miss (0), amssq43 frontend miss (0)
+      - cp1053 miss (0), amssq59 miss (0), amssq59 frontend miss (0)
       X-Analytics:
       - php=zend
       Set-Cookie:
@@ -437,5 +437,5 @@ http_interactions:
         \u0412\u0456\u0448\u0435\u0437","badges":[]},"zh_min_nanwiki":{"site":"zh_min_nanwiki","title":"Sid
         Vicious","badges":[]},"zhwiki":{"site":"zhwiki","title":"\u5e2d\u5fb7\u00b7\u7ef4\u745f\u65af","badges":[]}}}},"success":1}'
     http_version: 
-  recorded_at: Fri, 26 Sep 2014 08:12:46 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:26 GMT
 recorded_with: VCR 2.9.3

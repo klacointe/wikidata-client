@@ -29,19 +29,19 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Use-HHVM
       X-Varnish:
-      - 248673831, 4022589486, 4153807074
+      - 504339186, 4131686858, 2577684592
       Via:
       - 1.1 varnish, 1.1 varnish, 1.1 varnish
       Transfer-Encoding:
       - chunked
       Date:
-      - Fri, 26 Sep 2014 08:12:42 GMT
+      - Mon, 29 Sep 2014 09:07:21 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Cache:
-      - cp1052 miss (0), amssq37 miss (0), amssq52 frontend miss (0)
+      - cp1052 miss (0), amssq37 miss (0), amssq35 frontend miss (0)
       X-Analytics:
       - php=zend
       Set-Cookie:
@@ -54,5 +54,5 @@ http_interactions:
         - Paris.JPG","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"}}]},"snaks-order":["P143"]}]}],"P1004":[{"id":"Q2365441$D934EDD2-4B57-494E-BCC4-779238CC59BE","mainsnak":{"snaktype":"value","property":"P1004","datatype":"string","datavalue":{"value":"01d0982a-6c6e-4fff-98a8-55207c29d6fb","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"73057782312f850e2ed69c4c28ad162f57f6d390","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":14005},"type":"wikibase-entityid"}}]},"snaks-order":["P248"]}]}]},"sitelinks":{"enwiki":{"site":"enwiki","title":"Le
         Batofar","badges":[]},"fawiki":{"site":"fawiki","title":"\u0644\u0648 \u0628\u062a\u0641\u0627\u0631","badges":[]},"frwiki":{"site":"frwiki","title":"Batofar","badges":[]}}}},"success":1}'
     http_version: 
-  recorded_at: Fri, 26 Sep 2014 08:12:42 GMT
+  recorded_at: Mon, 29 Sep 2014 09:07:21 GMT
 recorded_with: VCR 2.9.3
