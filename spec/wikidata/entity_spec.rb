@@ -117,6 +117,10 @@ describe Wikidata::Entity, :vcr do
             c.value.should eq '/m/0h545'
           end
         end
+
+        it 'should return a nil property_id if not an item' do
+          homer.property_id('P646').should be_nil
+        end
       end
 
       context 'of type url' do

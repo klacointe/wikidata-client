@@ -65,13 +65,12 @@ module Wikidata
       # http://www.wikidata.org/wiki/Wikidata:Glossary#Entities.2C_items.2C_properties_and_queries
       def entity_id attribute
         attribute.mainsnak.datavalue.value.tap do |h|
-          prefix = case h['entity-type']
+          case h['entity-type']
             when 'item'
-              'Q'
+              return "Q#{h['numeric-id']}"
             else
-              raise "Unkown wikibase-item entity-type #{h['entity_type']}"
+              return nil
           end
-          return "#{prefix}#{h['numeric-id']}"
         end
       end
     end

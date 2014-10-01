@@ -1,0 +1,160 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.wikidata.org/w/api.php?action=wbgetentities&format=json&sites=enwiki&titles=Homer%20Simpson
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,X-Use-HHVM
+      X-Varnish:
+      - 2282365090, 3231348047, 2153710035
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 01 Oct 2014 15:12:16 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Cache:
+      - cp1068 miss (0), amssq48 miss (0), amssq37 frontend miss (0)
+      X-Analytics:
+      - php=zend
+      Set-Cookie:
+      - GeoIP=FR:Sainte-luce-sur-loire:47.2500:-1.5000:v4; Path=/; Domain=.wikidata.org
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entities":{"Q7810":{"pageid":9056,"ns":0,"title":"Q7810","lastrevid":159661784,"modified":"2014-09-25T12:26:51Z","id":"Q7810","type":"item","aliases":{"de":[{"language":"de","value":"Homer
+        J. Simpsons"},{"language":"de","value":"Homer Jay Simpson"},{"language":"de","value":"Captain
+        Albern"},{"language":"de","value":"Max Power"},{"language":"de","value":"Dancin\u2019
+        Homer"},{"language":"de","value":"Andreas T. aus Happyhill"},{"language":"de","value":"Colonel
+        Homer"},{"language":"de","value":"Mr. Schneepflug"},{"language":"de","value":"Brian
+        McGee"},{"language":"de","value":"Mr. Thompson"},{"language":"de","value":"der
+        Bierbaron"},{"language":"de","value":"Arthur N. aus Rosenburg"},{"language":"de","value":"Mr.
+        X"},{"language":"de","value":"El Homo"},{"language":"de","value":"Elvis Jagger
+        Abdul-Jabbar"},{"language":"de","value":"Tortenmann"},{"language":"de","value":"Homer
+        Sanchez"},{"language":"de","value":"Homie"},{"language":"de","value":"Admiral
+        Adonis"},{"language":"de","value":"Commander Cool"}],"en":[{"language":"en","value":"Homer
+        Jay Simpson"}],"it":[{"language":"it","value":"Homer J. Simpson"}]},"labels":{"it":{"language":"it","value":"Homer
+        Simpson"},"fr":{"language":"fr","value":"Homer Simpson"},"en":{"language":"en","value":"Homer
+        Simpson"},"de":{"language":"de","value":"Homer Simpson"},"af":{"language":"af","value":"Homer
+        Simpson"},"ast":{"language":"ast","value":"Homer Simpson"},"az":{"language":"az","value":"Homer
+        Simpson"},"bar":{"language":"bar","value":"Homer Simpson"},"be":{"language":"be","value":"\u0413\u0430\u043c\u0435\u0440
+        \u0421\u0456\u043c\u043f\u0441\u0430\u043d"},"bg":{"language":"bg","value":"\u0425\u043e\u0443\u043c\u044a\u0440
+        \u0421\u0438\u043c\u043f\u0441\u044a\u043d"},"bo":{"language":"bo","value":"\u0f67\u0f7c\u0f60\u0f7c\u0f0b\u0f58\u0f62\u0f0b\u0f66\u0f72\u0f58\u0f0b\u0f56\u0f74\u0f0b\u0f66\u0f53\u0f0d"},"bs":{"language":"bs","value":"Homer
+        Simpson"},"ca":{"language":"ca","value":"Homer Simpson"},"cs":{"language":"cs","value":"Homer
+        Simpson"},"cy":{"language":"cy","value":"Homer Simpson"},"da":{"language":"da","value":"Homer
+        Simpson"},"en-ca":{"language":"en-ca","value":"Homer Simpson"},"en-gb":{"language":"en-gb","value":"Homer
+        Simpson"},"es":{"language":"es","value":"Homer Simpson"},"et":{"language":"et","value":"Homer
+        Simpson"},"eu":{"language":"eu","value":"Homer Simpson"},"fa":{"language":"fa","value":"\u0647\u0648\u0645\u0631
+        \u0633\u06cc\u0645\u067e\u0633\u0648\u0646"},"fi":{"language":"fi","value":"Homer
+        Simpson"},"ga":{"language":"ga","value":"Homer Simpson"},"gl":{"language":"gl","value":"Homer
+        Simpson"},"he":{"language":"he","value":"\u05d4\u05d5\u05de\u05e8 \u05e1\u05d9\u05de\u05e4\u05e1\u05d5\u05df"},"hr":{"language":"hr","value":"Homer
+        Simpson"},"hu":{"language":"hu","value":"Homer Simpson"},"hy":{"language":"hy","value":"\u0540\u0578\u0574\u0565\u0580
+        \u054d\u056b\u0574\u057a\u057d\u0578\u0576"},"id":{"language":"id","value":"Homer
+        Simpson"},"is":{"language":"is","value":"H\u00f3mer Simpson"},"ja":{"language":"ja","value":"\u30db\u30fc\u30de\u30fc\u30fb\u30b7\u30f3\u30d7\u30bd\u30f3"},"ka":{"language":"ka","value":"\u10f0\u10dd\u10db\u10d4\u10e0
+        \u10e1\u10d8\u10db\u10de\u10e1\u10dd\u10dc\u10d8"},"ko":{"language":"ko","value":"\ud638\uba38
+        \uc2ec\uc2a8"},"lb":{"language":"lb","value":"Homer Simpson"},"lv":{"language":"lv","value":"Hom\u0113rs
+        Simpsons"},"mr":{"language":"mr","value":"\u0939\u094b\u092e\u0930 \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928"},"nah":{"language":"nah","value":"Homer
+        Simpson"},"ne":{"language":"ne","value":"\u0939\u094b\u092e\u0930 \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928"},"nl":{"language":"nl","value":"Homer
+        Simpson"},"oc":{"language":"oc","value":"Homer Simpson"},"pi":{"language":"pi","value":"\u0939\u094b\u092e\u0930
+        \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928"},"pl":{"language":"pl","value":"Homer
+        Simpson"},"pt":{"language":"pt","value":"Homer Simpson"},"pt-br":{"language":"pt-br","value":"Homer
+        Simpson"},"ro":{"language":"ro","value":"Homer Simpson"},"ru":{"language":"ru","value":"\u0413\u043e\u043c\u0435\u0440
+        \u0421\u0438\u043c\u043f\u0441\u043e\u043d"},"sa":{"language":"sa","value":"\u0939\u094b\u092e\u0930
+        \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928"},"scn":{"language":"scn","value":"Homer
+        Simpson"},"sh":{"language":"sh","value":"Homer Simpson"},"sk":{"language":"sk","value":"Homer
+        Simpson"},"sq":{"language":"sq","value":"Homer Simpson"},"sr":{"language":"sr","value":"\u0425\u043e\u043c\u0435\u0440
+        \u040f\u0435\u0458 \u0421\u0438\u043c\u043f\u0441\u043e\u043d"},"sv":{"language":"sv","value":"Homer
+        Simpson"},"th":{"language":"th","value":"\u0e42\u0e2e\u0e40\u0e21\u0e2d\u0e23\u0e4c
+        \u0e0b\u0e34\u0e21\u0e1b\u0e4c\u0e2a\u0e31\u0e19"},"tr":{"language":"tr","value":"Homer
+        Simpson"},"uk":{"language":"uk","value":"\u0413\u043e\u043c\u0435\u0440 \u0421\u0456\u043c\u043f\u0441\u043e\u043d"},"vi":{"language":"vi","value":"Homer
+        Simpson"},"war":{"language":"war","value":"Homer Simpson"},"zh":{"language":"zh","value":"\u970d\u9ed8\u00b7\u8f9b\u666e\u68ee"},"gn":{"language":"gn","value":"Homer
+        Simpson"},"lt":{"language":"lt","value":"Homer Simpson"},"nb":{"language":"nb","value":"Homer
+        Simpson"},"ar":{"language":"ar","value":"\u0647\u0648\u0645\u0631 \u0633\u064a\u0645\u0628\u0633\u0648\u0646"},"ckb":{"language":"ckb","value":"\u06be\u06c6\u0645\u06d5\u0631
+        \u0633\u06cc\u0645\u067e\u0633\u06c6\u0646"},"nn":{"language":"nn","value":"Homer
+        Simpson"},"eo":{"language":"eo","value":"Homer Simpson"}},"descriptions":{"it":{"language":"it","value":"protagonista
+        della serie I Simpson"},"de":{"language":"de","value":"Figur der Simpsons"},"ru":{"language":"ru","value":"\u0433\u043b\u0430\u0432\u043d\u044b\u0439
+        \u0433\u0435\u0440\u043e\u0439 \u043c\u0443\u043b\u044c\u0442\u0441\u0435\u0440\u0438\u0430\u043b\u0430
+        \u00ab\u0421\u0438\u043c\u043f\u0441\u043e\u043d\u044b\u00bb"},"es":{"language":"es","value":"personaje
+        de dibujos animados"},"en":{"language":"en","value":"fictional character from
+        The Simpsons franchise"},"fr":{"language":"fr","value":"personnage de la s\u00e9rie
+        t\u00e9l\u00e9vis\u00e9e Les Simpson"},"nl":{"language":"nl","value":"personage
+        uit The Simpsons"}},"claims":{"P7":[{"id":"Q7810$2eb0aa51-40cb-3312-5b5d-777a34b3be23","mainsnak":{"snaktype":"value","property":"P7","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":2340973},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P345":[{"id":"q7810$D52517F8-64C0-498F-BD1F-2665DADE3A34","mainsnak":{"snaktype":"value","property":"P345","datatype":"string","datavalue":{"value":"ch0003002","type":"string"}},"type":"statement","rank":"preferred"}],"P26":[{"id":"q7810$7A080AE2-BE0B-4D9E-8B8C-6C1D5FD5C838","mainsnak":{"snaktype":"value","property":"P26","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":7828},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P21":[{"id":"q7810$EBCB4B01-C592-44E7-9DB8-F090E62074E2","mainsnak":{"snaktype":"value","property":"P21","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":6581097},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P40":[{"id":"q7810$2B9F1E2C-7583-4DD8-8CEB-F367FC0641E1","mainsnak":{"snaktype":"value","property":"P40","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":5480},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q7810$A6DC727E-3642-470C-BD93-6707640CD90C","mainsnak":{"snaktype":"value","property":"P40","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":5846},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"},{"id":"q7810$E580F297-F30A-4680-BA5C-3559041E3B0F","mainsnak":{"snaktype":"value","property":"P40","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":7834},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P22":[{"id":"q7810$571A84C2-93C0-48E3-8DD3-A92A7D57BEA9","mainsnak":{"snaktype":"value","property":"P22","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":842104},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P25":[{"id":"q7810$46038435-4D85-46AB-90CE-5555ACD71760","mainsnak":{"snaktype":"value","property":"P25","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":1641818},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P19":[{"id":"q7810$F3E8C187-B8F2-4096-B15E-C4168F90CE42","mainsnak":{"snaktype":"value","property":"P19","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":151076},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P434":[{"id":"q7810$7604e6cb-443a-65f9-2ab3-70db024360af","mainsnak":{"snaktype":"value","property":"P434","datatype":"string","datavalue":{"value":"109a53ec-73e7-44e8-81cd-484114849a02","type":"string"}},"type":"statement","rank":"normal"}],"P373":[{"id":"q7810$1511B4E7-E94C-45FA-8DF5-07616B0B2A86","mainsnak":{"snaktype":"novalue","property":"P373"},"type":"statement","rank":"normal"}],"P27":[{"id":"Q7810$3C8AEBB8-9F14-4E4C-B386-FFAFBDBC9F46","mainsnak":{"snaktype":"value","property":"P27","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":30},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P646":[{"id":"Q7810$8F38CA22-CBE7-45D0-A02D-B2D5950B6648","mainsnak":{"snaktype":"value","property":"P646","datatype":"string","datavalue":{"value":"/m/0h545","type":"string"}},"type":"statement","rank":"normal","references":[{"hash":"b923b0d68beb300866b87ead39f61e63ec30d8af","snaks":{"P248":[{"snaktype":"value","property":"P248","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":15241312},"type":"wikibase-entityid"}}],"P577":[{"snaktype":"value","property":"P577","datatype":"time","datavalue":{"value":{"time":"+00000002013-10-28T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}}]},"snaks-order":["P248","P577"]}]}],"P569":[{"id":"Q7810$B87E9E15-38ED-4A83-B7A5-0EA872EC98EE","mainsnak":{"snaktype":"value","property":"P569","datatype":"time","datavalue":{"value":{"time":"+00000001956-06-18T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}},"type":"statement","rank":"normal"}],"P31":[{"id":"Q7810$ae77588c-491b-63c1-7bc0-3f902811f72a","mainsnak":{"snaktype":"value","property":"P31","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":15632617},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}],"P1441":[{"id":"Q7810$0B70914E-EA32-4B54-AF9F-08CA8716557C","mainsnak":{"snaktype":"value","property":"P1441","datatype":"wikibase-item","datavalue":{"value":{"entity-type":"item","numeric-id":886},"type":"wikibase-entityid"}},"type":"statement","rank":"normal"}]},"sitelinks":{"afwiki":{"site":"afwiki","title":"Homer
+        Simpson","badges":[]},"arwiki":{"site":"arwiki","title":"\u0647\u0648\u0645\u0631
+        \u0633\u064a\u0645\u0628\u0633\u0648\u0646","badges":[]},"astwiki":{"site":"astwiki","title":"Homer
+        Simpson","badges":[]},"azwiki":{"site":"azwiki","title":"Homer Simpson","badges":[]},"azwikiquote":{"site":"azwikiquote","title":"Homer
+        Simpson","badges":[]},"barwiki":{"site":"barwiki","title":"Homer Simpson","badges":[]},"bewiki":{"site":"bewiki","title":"\u0413\u0430\u043c\u0435\u0440
+        \u0421\u0456\u043c\u043f\u0441\u0430\u043d","badges":[]},"bgwiki":{"site":"bgwiki","title":"\u0425\u043e\u0443\u043c\u044a\u0440
+        \u0421\u0438\u043c\u043f\u0441\u044a\u043d","badges":[]},"bowiki":{"site":"bowiki","title":"\u0f67\u0f7c\u0f60\u0f7c\u0f0b\u0f58\u0f62\u0f0b\u0f66\u0f72\u0f58\u0f0b\u0f56\u0f74\u0f0b\u0f66\u0f53\u0f0d","badges":[]},"bswiki":{"site":"bswiki","title":"Homer
+        Simpson","badges":[]},"bswikiquote":{"site":"bswikiquote","title":"Homer Simpson","badges":[]},"cawiki":{"site":"cawiki","title":"Homer
+        Simpson","badges":[]},"ckbwiki":{"site":"ckbwiki","title":"\u06be\u06c6\u0645\u06d5\u0631
+        \u0633\u06cc\u0645\u067e\u0633\u06c6\u0646","badges":[]},"cswiki":{"site":"cswiki","title":"Homer
+        Simpson","badges":[]},"cywiki":{"site":"cywiki","title":"Homer Simpson","badges":[]},"dawiki":{"site":"dawiki","title":"Homer
+        Simpson","badges":[]},"dawikiquote":{"site":"dawikiquote","title":"Homer Simpson","badges":[]},"dewiki":{"site":"dewiki","title":"Homer
+        Simpson","badges":[]},"enwiki":{"site":"enwiki","title":"Homer Simpson","badges":["Q17437796"]},"eowikiquote":{"site":"eowikiquote","title":"Homer
+        Simpson","badges":[]},"eswiki":{"site":"eswiki","title":"Homer Simpson","badges":["Q17437796"]},"eswikiquote":{"site":"eswikiquote","title":"Homer
+        J. Simpson","badges":[]},"etwiki":{"site":"etwiki","title":"Homer Simpson","badges":[]},"euwiki":{"site":"euwiki","title":"Homer
+        Simpson","badges":[]},"fawiki":{"site":"fawiki","title":"\u0647\u0648\u0645\u0631
+        \u0633\u06cc\u0645\u067e\u0633\u0648\u0646","badges":[]},"fiwiki":{"site":"fiwiki","title":"Homer
+        Simpson","badges":[]},"fiwikiquote":{"site":"fiwikiquote","title":"Homer Simpson","badges":[]},"frwiki":{"site":"frwiki","title":"Homer
+        Simpson","badges":["Q17437798"]},"gawiki":{"site":"gawiki","title":"Homer
+        Simpson","badges":[]},"glwiki":{"site":"glwiki","title":"Homer Simpson","badges":[]},"gnwiki":{"site":"gnwiki","title":"Homer
+        Simpson","badges":[]},"hewiki":{"site":"hewiki","title":"\u05d4\u05d5\u05de\u05e8
+        \u05e1\u05d9\u05de\u05e4\u05e1\u05d5\u05df","badges":[]},"hewikiquote":{"site":"hewikiquote","title":"\u05d4\u05d5\u05de\u05e8
+        \u05e1\u05d9\u05de\u05e4\u05e1\u05d5\u05df","badges":[]},"hrwiki":{"site":"hrwiki","title":"Homer
+        Simpson","badges":[]},"huwiki":{"site":"huwiki","title":"Homer Simpson","badges":[]},"hywiki":{"site":"hywiki","title":"\u0540\u0578\u0574\u0565\u0580
+        \u054d\u056b\u0574\u057a\u057d\u0578\u0576","badges":[]},"idwiki":{"site":"idwiki","title":"Homer
+        Simpson","badges":[]},"iswiki":{"site":"iswiki","title":"H\u00f3mer Simpson","badges":[]},"itwiki":{"site":"itwiki","title":"Homer
+        Simpson","badges":["Q17437796"]},"itwikiquote":{"site":"itwikiquote","title":"Homer
+        Simpson","badges":[]},"jawiki":{"site":"jawiki","title":"\u30db\u30fc\u30de\u30fc\u30fb\u30b7\u30f3\u30d7\u30bd\u30f3","badges":[]},"kawiki":{"site":"kawiki","title":"\u10f0\u10dd\u10db\u10d4\u10e0
+        \u10e1\u10d8\u10db\u10de\u10e1\u10dd\u10dc\u10d8","badges":[]},"kowiki":{"site":"kowiki","title":"\ud638\uba38
+        \uc2ec\uc2a8","badges":[]},"lbwiki":{"site":"lbwiki","title":"Homer Simpson","badges":[]},"ltwiki":{"site":"ltwiki","title":"Homer
+        Simpson","badges":[]},"lvwiki":{"site":"lvwiki","title":"Hom\u0113rs Simpsons","badges":[]},"mrwiki":{"site":"mrwiki","title":"\u0939\u094b\u092e\u0930
+        \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928","badges":[]},"nahwiki":{"site":"nahwiki","title":"Homer
+        Simpson","badges":[]},"newiki":{"site":"newiki","title":"\u0939\u094b\u092e\u0930
+        \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928","badges":[]},"nlwiki":{"site":"nlwiki","title":"Homer
+        Simpson","badges":[]},"nowiki":{"site":"nowiki","title":"Homer Simpson","badges":[]},"nowikiquote":{"site":"nowikiquote","title":"Homer
+        Simpson","badges":[]},"ocwiki":{"site":"ocwiki","title":"Homer Simpson","badges":[]},"piwiki":{"site":"piwiki","title":"\u0939\u094b\u092e\u0930
+        \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928","badges":[]},"plwiki":{"site":"plwiki","title":"Homer
+        Simpson","badges":[]},"plwikiquote":{"site":"plwikiquote","title":"Homer Simpson","badges":[]},"ptwiki":{"site":"ptwiki","title":"Homer
+        Simpson","badges":[]},"rowiki":{"site":"rowiki","title":"Homer Simpson","badges":[]},"ruwiki":{"site":"ruwiki","title":"\u0413\u043e\u043c\u0435\u0440
+        \u0421\u0438\u043c\u043f\u0441\u043e\u043d","badges":[]},"ruwikiquote":{"site":"ruwikiquote","title":"\u0413\u043e\u043c\u0435\u0440
+        \u0421\u0438\u043c\u043f\u0441\u043e\u043d","badges":[]},"sawiki":{"site":"sawiki","title":"\u0939\u094b\u092e\u0930
+        \u0938\u093f\u092e\u094d\u092a\u094d\u0938\u0928","badges":[]},"scnwiki":{"site":"scnwiki","title":"Homer
+        Simpson","badges":[]},"shwiki":{"site":"shwiki","title":"Homer Simpson","badges":[]},"simplewiki":{"site":"simplewiki","title":"Homer
+        Simpson","badges":[]},"skwiki":{"site":"skwiki","title":"Homer Simpson","badges":[]},"sqwiki":{"site":"sqwiki","title":"Homer
+        Simpson","badges":[]},"srwiki":{"site":"srwiki","title":"\u0425\u043e\u043c\u0435\u0440
+        \u040f\u0435\u0458 \u0421\u0438\u043c\u043f\u0441\u043e\u043d","badges":["Q17437798"]},"svwiki":{"site":"svwiki","title":"Homer
+        Simpson","badges":[]},"svwikiquote":{"site":"svwikiquote","title":"Homer Simpson","badges":[]},"thwiki":{"site":"thwiki","title":"\u0e42\u0e2e\u0e40\u0e21\u0e2d\u0e23\u0e4c
+        \u0e0b\u0e34\u0e21\u0e1b\u0e4c\u0e2a\u0e31\u0e19","badges":[]},"trwiki":{"site":"trwiki","title":"Homer
+        Simpson","badges":[]},"trwikiquote":{"site":"trwikiquote","title":"Homer Simpson","badges":[]},"ukwiki":{"site":"ukwiki","title":"\u0413\u043e\u043c\u0435\u0440
+        \u0421\u0456\u043c\u043f\u0441\u043e\u043d","badges":[]},"viwiki":{"site":"viwiki","title":"Homer
+        Simpson","badges":[]},"warwiki":{"site":"warwiki","title":"Homer Simpson","badges":[]},"zhwiki":{"site":"zhwiki","title":"\u970d\u9ed8\u00b7\u8f9b\u666e\u68ee","badges":["Q17437798"]}}}},"success":1}'
+    http_version: 
+  recorded_at: Wed, 01 Oct 2014 15:12:16 GMT
+recorded_with: VCR 2.9.3
