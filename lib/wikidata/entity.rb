@@ -44,7 +44,7 @@ module Wikidata
     def property_ids code
       Array(raw_property(code)).map do |attribute|
         self.class.entity_id attribute
-      end
+      end.compact
     end
 
     def property code
