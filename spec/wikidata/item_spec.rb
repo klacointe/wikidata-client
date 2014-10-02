@@ -12,6 +12,10 @@ describe Wikidata::Item, :vcr do
       Wikidata::Item.find('THISISNOTAVALIDID').should be_nil
     end
 
+    it 'should return nil if item title not found' do
+      Wikidata::Item.find_by_title('THISISNOTAVALIDID', sites: 'enwiki').should be_nil
+    end
+
     it 'should find by id' do
       entity_by_id.should be_kind_of Wikidata::Item
     end
