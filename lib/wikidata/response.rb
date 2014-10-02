@@ -25,7 +25,7 @@ module Wikidata
 
     def raw_results
       return [] if empty?
-      @raw.body['entities'].values
+      @raw.body['entities'].values.reject{|r| r['missing'] }
     end
   end
 end
