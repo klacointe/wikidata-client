@@ -24,5 +24,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency("vcr", "~> 2.9")
   s.add_development_dependency("pry", "~> 0.10")
   s.add_development_dependency("rake", "~> 10.3")
-  s.add_development_dependency("rb-readline", "~> 0.5")
 end
