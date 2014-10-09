@@ -1,20 +1,19 @@
 require 'spec_helper'
 
 describe Wikidata do
+  let(:builder) {
+    -> (builder) {
+      builder.options[:request] = {
+        timeout: 10,
+        open_timeout: 2
+      }
+      builder.use :excon
+    }
+  }
   it 'should be configurable' do
     Wikidata.configure do |c|
-      c.client_options = {
-        request: {
-          open_timeout: 10,
-          timeout: 10
-        }
-      }
+      c.faraday = builder
     end
-    Wikidata.client_options.should eq({
-      request: {
-        open_timeout: 10,
-        timeout: 10
-      }
-    })
+    Wikidata.faraday.should be builder
   end
 end

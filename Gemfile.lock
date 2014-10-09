@@ -2,10 +2,10 @@ PATH
   remote: .
   specs:
     wikidata-client (0.0.2)
+      excon (~> 0.40)
       faraday (~> 0.9)
       faraday_middleware (~> 0.9)
       hashie (~> 3.3)
-      patron (~> 0.4)
 
 GEM
   remote: https://rubygems.org/
@@ -18,19 +18,25 @@ GEM
       safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
+    excon (0.40.0)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
+    ffi (1.9.5-java)
     hashie (3.3.1)
     method_source (0.8.2)
     multi_json (1.10.1)
     multipart-post (2.0.0)
-    patron (0.4.18)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry (0.10.1-java)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+      spoon (~> 0.0)
     rake (10.3.2)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
@@ -51,12 +57,15 @@ GEM
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
     slop (3.6.0)
+    spoon (0.0.4)
+      ffi
     vcr (2.9.3)
     webmock (1.19.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
