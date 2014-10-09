@@ -59,7 +59,13 @@ module Wikidata
           to = DateTime.new(min_to_date.year, min_to_date.month, min_to_date.day, 23, 59, 59).to_time.utc.to_i
         end
 
-        @_range ||= (::Time.at(from).utc.to_datetime..::Time::at(to).utc.to_datetime)
+        @_range ||= (to_datetime ::Time.at(from).utc)..(to_datetime ::Time::at(to).utc)
+      end
+
+      protected
+
+      def to_datetime(t)
+        DateTime.new t.year, t.month, t.day, t.hour, t.min, t.sec
       end
     end
   end

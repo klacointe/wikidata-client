@@ -21,15 +21,17 @@ Otherwise: `gem install wikidata-client`
 
 ## Configuration
 
-Only one thing is configurable for now, the HTTP client [patron](https://github.com/toland/patron)
+Only one thing is configurable for now, the HTTP client and its options, via
+[faraday](https://github.com/lostisland/faraday):
 
 ```ruby
-Wikidata.configure do |c|
-  c.client_options = {
-    request: {
-      open_timeout: 2,
-      timeout: 9
+Wikidata.configure do |config|
+  config.faraday = -> (builder) {
+    builder.options[:request] = {
+      timeout: 10,
+      open_timeout: 2
     }
+    builder.adapter :patron
   }
 end
 ```

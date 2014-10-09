@@ -1,8 +1,8 @@
 require 'faraday'
 require 'faraday_middleware'
-require 'patron'
 require 'hashie'
 require 'yaml'
+require 'excon'
 
 require 'wikidata/config'
 
@@ -12,8 +12,8 @@ module Wikidata
       Config.configure &block
     end
 
-    def client_options
-      Config.client_options
+    def faraday
+      Config.faraday
     end
 
     def settings

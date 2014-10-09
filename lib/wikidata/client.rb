@@ -26,10 +26,10 @@ module Wikidata
     end
 
     def api
-      Faraday.new({url: Wikidata.settings.api.url}.merge(Wikidata.client_options)) do |faraday|
+      Faraday.new(url: Wikidata.settings.api.url) do |faraday|
         faraday.request  :url_encoded
         faraday.response :json, content_type: /\bjson$/
-        faraday.adapter  :patron
+        Wikidata.faraday.call faraday
       end
     end
   end
