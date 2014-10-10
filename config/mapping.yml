@@ -12,6 +12,9 @@ resources:
   coordinate_location: P625
   freebase_identifier: P646
   father: P22
+  start_date: P580
+  end_date: P582
+  point_in_time: P585
 collections:
   official_websites: P856
   instance_of: P31
