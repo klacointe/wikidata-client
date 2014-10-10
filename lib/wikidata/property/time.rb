@@ -22,7 +22,7 @@ module Wikidata
       def date
         return @_date if @_date
         d = Hash[[:year, :month, :day, :hour, :min, :sec].zip(
-          value.time.scan(/\d*/).reject!{|e| e == ""}.map(&:to_i)
+          value.time.scan(/(-?\d+)-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/).first.map(&:to_i)
         )]
         [:month, :day].each do |k|
           d[k] = (d[k] == 0 ? 1 : d[k])
