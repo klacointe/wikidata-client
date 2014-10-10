@@ -1,13 +1,14 @@
 module Wikidata
   class Config
     class << self
-      attr_accessor :faraday, :settings, :mapping
+      attr_accessor :options, :faraday, :settings, :mapping
 
       def configure &block
         yield self
       end
     end
 
+    @options = {}
     @faraday = -> (builder) { builder.adapter :excon }
     @settings = Hashie::Mash.new(
       YAML.load_file(
