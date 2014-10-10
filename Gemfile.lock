@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     wikidata-client (0.0.3)
-      excon (~> 0.40)
       faraday (~> 0.9)
       faraday_middleware (~> 0.9)
       hashie (~> 3.3)
@@ -70,6 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   codeclimate-test-reporter
+  excon (~> 0.40)
   pry (~> 0.10)
   rake (~> 10.3)
   rspec (~> 3.1)
