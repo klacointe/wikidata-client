@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wikidata-client (0.0.2)
+    wikidata-client (0.0.3)
       excon (~> 0.40)
       faraday (~> 0.9)
       faraday_middleware (~> 0.9)
