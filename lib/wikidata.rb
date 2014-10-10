@@ -2,7 +2,6 @@ require 'faraday'
 require 'faraday_middleware'
 require 'hashie'
 require 'yaml'
-require 'excon'
 
 require 'wikidata/config'
 
