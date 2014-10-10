@@ -26,13 +26,13 @@ Only one thing is configurable for now, the HTTP client and its options, via
 
 ```ruby
 Wikidata.configure do |config|
-  config.faraday = -> (builder) {
-    builder.options[:request] = {
+  config.options = {
+    request: {
       timeout: 10,
       open_timeout: 2
     }
-    builder.adapter :patron
   }
+  config.faraday = -> (builder) { builder.adapter :patron }
 end
 ```
 

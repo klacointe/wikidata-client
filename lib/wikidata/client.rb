@@ -26,7 +26,8 @@ module Wikidata
     end
 
     def api
-      Faraday.new(url: Wikidata.settings.api.url) do |faraday|
+      opts = Wikidata.options.merge url: Wikidata.settings.api.url
+      Faraday.new(opts) do |faraday|
         faraday.request  :url_encoded
         faraday.response :json, content_type: /\bjson$/
         Wikidata.faraday.call faraday

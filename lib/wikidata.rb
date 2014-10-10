@@ -16,6 +16,10 @@ module Wikidata
       Config.faraday
     end
 
+    def options
+      Config.options
+    end
+
     def settings
       Config.settings
     end
