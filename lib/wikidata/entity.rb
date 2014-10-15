@@ -64,6 +64,7 @@ module Wikidata
       # TODO Handle other types
       # http://www.wikidata.org/wiki/Wikidata:Glossary#Entities.2C_items.2C_properties_and_queries
       def entity_id attribute
+        return unless attribute.mainsnak.datavalue
         attribute.mainsnak.datavalue.value.tap do |h|
           case h['entity-type']
             when 'item'
