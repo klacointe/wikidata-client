@@ -68,9 +68,6 @@ describe Wikidata::Entity, :vcr do
           homer.property('P569').tap do |date|
             date.should be_kind_of Wikidata::Property::Time
             date.date.should eq DateTime.new(1956, 6, 18)
-            date.range.should eq(
-              (DateTime.new(1956, 6, 18, 0, 0, 0)..DateTime.new(1956, 6, 19, 23, 59, 59))
-            )
           end
         end
 
@@ -78,9 +75,6 @@ describe Wikidata::Entity, :vcr do
           homer.date_of_birth.tap do |date|
             date.should be_kind_of Wikidata::Property::Time
             date.date.should eq DateTime.new(1956, 6, 18)
-            date.range.should eq(
-              (DateTime.new(1956, 6, 18, 0, 0, 0)..DateTime.new(1956, 6, 19, 23, 59, 59))
-            )
           end
         end
       end

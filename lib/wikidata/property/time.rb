@@ -48,21 +48,47 @@ module Wikidata
 
       def range
         return @_range if @_range
+
+        if before.to_i == 0 && after.to_i == 0
+          case value.precision.to_i
+          when 7
+            extract_century
+          when 11
+            extract_day
+          else
+            extract_generic_range
+          end
+        end
+        extract_generic_range
+      end
+
+      protected
+
+      def extract_generic_range
         from = before > 0 ?
            timestamp - (before.to_i * precision) : timestamp
         to = after > 0 ?
           timestamp + (after.to_i * precision) : timestamp
 
-        # Make sure we respect wikidata precision in case we have after/before to 0
-        if (min_to = timestamp + precision) > to
-          min_to_date = ::Time.at(min_to)
-          to = DateTime.new(min_to_date.year, min_to_date.month, min_to_date.day, 23, 59, 59).to_time.utc.to_i
-        end
-
         @_range ||= (to_datetime ::Time.at(from).utc)..(to_datetime ::Time::at(to).utc)
       end
 
-      protected
+      def extract_century
+        if date.year > 0
+          from = DateTime.new(date.year - 99, 1, 1, 0, 0, 0)
+          to = DateTime.new(date.year, 12, 31, 23, 59, 59)
+        else
+          from = DateTime.new(date.year, 1, 1, 0, 0, 0)
+          to = DateTime.new(date.year + 99, 12, 31, 23, 59, 59)
+        end
+        @_range ||= (from..to)
+      end
+
+      def extract_day
+        from = DateTime.new(date.year, date.month, date.day, 0, 0, 0)
+        to = DateTime.new(date.year, date.month, date.day, 23, 59, 59)
+        @_range ||= (from..to)
+      end
 
       def to_datetime(t)
         DateTime.new t.year, t.month, t.day, t.hour, t.min, t.sec
