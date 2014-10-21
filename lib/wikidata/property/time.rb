@@ -2,22 +2,37 @@ module Wikidata
   module Property
     class Time < Wikidata::Property::Base
       DATE_PRECISION = {
-        0  => 1_000_000_000 * 365 * 24 * 3600,
-        1  => 100_000_000 * 365 * 24 * 3600,
-        2  => 10_000_000 * 365 * 24 * 3600,
-        3  => 1_000_000 * 365 * 24 * 3600,
-        4  => 100_000 * 365 * 24 * 3600,
-        5  => 10_000 * 365 * 24 * 3600,
-        6  => 1000 * 365 * 24 * 3600,
-        7  => 100 * 365 * 24 * 3600,
-        8  => 10 * 365 * 24 * 3600,
-        9  => 365 * 24 * 3600,
-        10 => 30 * 24 * 3600,
-        11 => 24 * 3600,
-        12 => 3600,
-        13 => 60,
-        14 => 1
+        0  => { key: nil, value: 1_000_000_000 * 365 * 24 * 3600 },
+        1  => { key: nil, value: 100_000_000 * 365 * 24 * 3600 },
+        2  => { key: nil, value: 10_000_000 * 365 * 24 * 3600 },
+        3  => { key: nil, value: 1_000_000 * 365 * 24 * 3600 },
+        4  => { key: nil, value: 100_000 * 365 * 24 * 3600 },
+        5  => { key: nil, value: 10_000 * 365 * 24 * 3600 },
+        6  => { key: nil, value: 1000 * 365 * 24 * 3600 },
+        7  => { key: :century, value: 100 * 365 * 24 * 3600 },
+        8  => { key: :decade, value: 10 * 365 * 24 * 3600 },
+        9  => { key: :year, value: 365 * 24 * 3600 },
+        10 => { key: :month, value: 30 * 24 * 3600 },
+        11 => { key: :day, value: 24 * 3600 },
+        12 => { key: nil, value: 3600 },
+        13 => { key: nil, value: 60 },
+        14 => { key: nil, value: 1 }
       }.freeze
+
+      DAYS_IN_MONTH = {
+        1 => 31,
+        2 => 28,
+        3 => 31,
+        4 => 30,
+        5 => 31,
+        6 => 30,
+        7 => 31,
+        8 => 31,
+        9 => 30,
+        10 => 31,
+        11 => 30,
+        12 => 31
+      }
 
       def date
         return @_date if @_date
@@ -35,7 +50,11 @@ module Wikidata
       end
 
       def precision
-        DATE_PRECISION[value.precision.to_i]
+        DATE_PRECISION[value.precision.to_i][:value]
+      end
+
+      def precision_key
+        DATE_PRECISION[value.precision.to_i][:key]
       end
 
       def after
@@ -49,22 +68,16 @@ module Wikidata
       def range
         return @_range if @_range
 
-        if before.to_i == 0 && after.to_i == 0
-          case value.precision.to_i
-          when 7
-            extract_century
-          when 11
-            extract_day
-          else
-            extract_generic_range
-          end
+        if before.to_i == 0 && after.to_i == 0 && precision_key
+          send(:"#{precision_key}_range")
+        else
+          generic_range
         end
-        extract_generic_range
       end
 
       protected
 
-      def extract_generic_range
+      def generic_range
         from = before > 0 ?
            timestamp - (before.to_i * precision) : timestamp
         to = after > 0 ?
@@ -73,18 +86,48 @@ module Wikidata
         @_range ||= (to_datetime ::Time.at(from).utc)..(to_datetime ::Time::at(to).utc)
       end
 
-      def extract_century
+      def century_range
+        century = date.year / 100
         if date.year > 0
-          from = DateTime.new(date.year - 99, 1, 1, 0, 0, 0)
-          to = DateTime.new(date.year, 12, 31, 23, 59, 59)
+          from = DateTime.new((century - 1) * 100 + 1, 1, 1, 0, 0, 0)
+          to = DateTime.new(century * 100, 12, 31, 23, 59, 59)
         else
-          from = DateTime.new(date.year, 1, 1, 0, 0, 0)
-          to = DateTime.new(date.year + 99, 12, 31, 23, 59, 59)
+          from = DateTime.new(century * 100, 1, 1, 0, 0, 0)
+          to = DateTime.new((century + 1) * 100 - 1, 12, 31, 23, 59, 59)
         end
         @_range ||= (from..to)
       end
 
-      def extract_day
+      def year_range
+        from = DateTime.new(date.year, 1, 1, 0, 0, 0)
+        to = DateTime.new(date.year, 12, 31, 23, 59, 59)
+        @_range ||= (from..to)
+      end
+
+      def decade_range
+        decade = date.year.round(-1)
+        if decade > 0
+          from = DateTime.new(decade, 1, 1, 0, 0, 0)
+          to = DateTime.new(decade + 9, 12, 31, 23, 59, 59)
+        else
+          from = DateTime.new(decade - 9, 1, 1, 0, 0, 0)
+          to = DateTime.new(decade, 12, 31, 23, 59, 59)
+        end
+        @_range ||= (from..to)
+      end
+
+      def month_range
+        if date.month == 2 && self.class.leap_year?(date.year)
+          last_day = 29
+        else
+          last_day = DAYS_IN_MONTH[date.month]
+        end
+        from = DateTime.new(date.year, date.month, 1, 0, 0, 0)
+        to = DateTime.new(date.year, date.month, last_day, 23, 59, 59)
+        @_range ||= (from..to)
+      end
+
+      def day_range
         from = DateTime.new(date.year, date.month, date.day, 0, 0, 0)
         to = DateTime.new(date.year, date.month, date.day, 23, 59, 59)
         @_range ||= (from..to)
@@ -92,6 +135,10 @@ module Wikidata
 
       def to_datetime(t)
         DateTime.new t.year, t.month, t.day, t.hour, t.min, t.sec
+      end
+
+      def self.leap_year? year
+        (year % 4 == 0) && !(year % 100 == 0) || (year % 400 == 0)
       end
     end
   end

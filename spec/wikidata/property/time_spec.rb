@@ -145,6 +145,165 @@ describe Wikidata::Property::Time do
     )
   }
 
+  let(:year) {
+    # http://www.wikidata.org/wiki/Q1118295
+    described_class.new(
+      {
+        "id" => "Q1118295$DD125010-18CF-4280-9FB4-74735B5B8050",
+        "mainsnak" => {
+          "snaktype"=>"value",
+          "property"=>"P571",
+          "datatype"=>"time",
+          "datavalue"=>{
+            "value"=>{
+              "time"=>"+00000001888-01-01T00:00:00Z",
+              "timezone"=>0,
+              "before"=>0,
+              "after"=>0,
+              "precision"=>9,
+              "calendarmodel"=>"http://www.wikidata.org/entity/Q1985727"
+            },
+            "type"=>"time"
+          }
+        },
+       "type"=>"statement",
+       "rank"=>"normal"
+      }
+    )
+  }
+
+  let(:decade) {
+    # http://www.wikidata.org/wiki/Q35014
+    described_class.new(
+      {
+        "id"=>"Q35014$1B2CDE81-418E-4B0A-A775-408523C085B8",
+        "mainsnak"=> {
+          "snaktype"=>"value",
+          "property"=>"P585",
+          "datatype"=>"time",
+          "datavalue"=> {
+            "value"=>{
+              "time"=>"+00000001970-01-01T00:00:00Z",
+              "timezone"=>0,
+              "before"=>0,
+              "after"=>0,
+              "precision"=>8,
+              "calendarmodel"=>"http://www.wikidata.org/entity/Q1985727"
+            },
+            "type"=>"time"
+          }
+        },
+       "type"=>"statement",
+       "rank"=>"normal"
+      }
+    )
+  }
+
+  let(:decade_bc) {
+    # http://www.wikidata.org/wiki/Q35014
+    described_class.new(
+      {
+        "id"=>"Q35014$1B2CDE81-418E-4B0A-A775-408523C085B8",
+        "mainsnak"=> {
+          "snaktype"=>"value",
+          "property"=>"P585",
+          "datatype"=>"time",
+          "datavalue"=> {
+            "value"=>{
+              "time"=>"-00000001970-01-01T00:00:00Z",
+              "timezone"=>0,
+              "before"=>0,
+              "after"=>0,
+              "precision"=>8,
+              "calendarmodel"=>"http://www.wikidata.org/entity/Q1985727"
+            },
+            "type"=>"time"
+          }
+        },
+       "type"=>"statement",
+       "rank"=>"normal"
+      }
+    )
+  }
+
+  let(:month_leap) {
+    described_class.new(
+      {
+        "id"=>"Q35014$1B2CDE81-418E-4B0A-A775-408523C085B8",
+        "mainsnak"=> {
+          "snaktype"=>"value",
+          "property"=>"P585",
+          "datatype"=>"time",
+          "datavalue"=> {
+            "value"=>{
+              "time"=>"+00000002000-02-01T00:00:00Z",
+              "timezone"=>0,
+              "before"=>0,
+              "after"=>0,
+              "precision"=>10,
+              "calendarmodel"=>"http://www.wikidata.org/entity/Q1985727"
+            },
+            "type"=>"time"
+          }
+        },
+       "type"=>"statement",
+       "rank"=>"normal"
+      }
+    )
+  }
+
+  let(:month_31) {
+    described_class.new(
+      {
+        "id"=>"Q35014$1B2CDE81-418E-4B0A-A775-408523C085B8",
+        "mainsnak"=> {
+          "snaktype"=>"value",
+          "property"=>"P585",
+          "datatype"=>"time",
+          "datavalue"=> {
+            "value"=>{
+              "time"=>"+00000001968-05-15T00:00:00Z",
+              "timezone"=>0,
+              "before"=>0,
+              "after"=>0,
+              "precision"=>10,
+              "calendarmodel"=>"http://www.wikidata.org/entity/Q1985727"
+            },
+            "type"=>"time"
+          }
+        },
+       "type"=>"statement",
+       "rank"=>"normal"
+      }
+    )
+  }
+
+  let(:month_30) {
+    described_class.new(
+      {
+        "id"=>"Q35014$1B2CDE81-418E-4B0A-A775-408523C085B8",
+        "mainsnak"=> {
+          "snaktype"=>"value",
+          "property"=>"P585",
+          "datatype"=>"time",
+          "datavalue"=> {
+            "value"=>{
+              "time"=>"+00000001968-06-15T00:00:00Z",
+              "timezone"=>0,
+              "before"=>0,
+              "after"=>0,
+              "precision"=>10,
+              "calendarmodel"=>"http://www.wikidata.org/entity/Q1985727"
+            },
+            "type"=>"time"
+          }
+        },
+       "type"=>"statement",
+       "rank"=>"normal"
+      }
+    )
+  }
+
   let(:day) {
     described_class.new(
       {
@@ -170,6 +329,20 @@ describe Wikidata::Property::Time do
     )
   }
 
+
+  describe 'leap year' do
+    [1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016].each do |y|
+      it "should be true for #{y}" do
+        described_class.leap_year?(y).should eq true
+      end
+    end
+    [1974, 1978, 2014].each do |y|
+      it "should be false for #{y}" do
+        described_class.leap_year?(y).should eq false
+      end
+    end
+  end
+
   it 'should return a range of DateTime' do
     range_of_year.tap do |date|
       date.should be_kind_of Wikidata::Property::Time
@@ -193,6 +366,36 @@ describe Wikidata::Property::Time do
   it 'should handle centuries BC' do
     century_bc.range.min.should eq DateTime.new(-1200, 1, 1, 0, 0, 0)
     century_bc.range.max.should eq DateTime.new(-1101, 12, 31, 23, 59, 59)
+  end
+
+  it 'should handle year' do
+    year.range.min.should eq DateTime.new(1888, 1, 1, 0, 0, 0)
+    year.range.max.should eq DateTime.new(1888, 12, 31, 23, 59, 59)
+  end
+
+  it 'should handle decade' do
+    decade.range.min.should eq DateTime.new(1970, 1, 1, 0, 0, 0)
+    decade.range.max.should eq DateTime.new(1979, 12, 31, 23, 59, 59)
+  end
+
+  it 'should handle decade BC' do
+    decade_bc.range.min.should eq DateTime.new(-1979, 1, 1, 0, 0, 0)
+    decade_bc.range.max.should eq DateTime.new(-1970, 12, 31, 23, 59, 59)
+  end
+
+  it 'should handle month (31 days)' do
+    month_31.range.min.should eq DateTime.new(1968, 5, 1, 0, 0, 0)
+    month_31.range.max.should eq DateTime.new(1968, 5, 31, 23, 59, 59)
+  end
+
+  it 'should handle month (30 days)' do
+    month_30.range.min.should eq DateTime.new(1968, 6, 1, 0, 0, 0)
+    month_30.range.max.should eq DateTime.new(1968, 6, 30, 23, 59, 59)
+  end
+
+  it 'should handle month (february and leap year)' do
+    month_leap.range.min.should eq DateTime.new(2000, 2, 1, 0, 0, 0)
+    month_leap.range.max.should eq DateTime.new(2000, 2, 29, 23, 59, 59)
   end
 
   it 'should handle day' do
