@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.4
+
+- HTTP client options more easily configurable
+- Improve date range parser
+
 ## 0.0.3
 
 - Jruby support
