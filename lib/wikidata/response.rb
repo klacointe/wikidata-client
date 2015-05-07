@@ -14,7 +14,8 @@ module Wikidata
     end
 
     def empty?
-      @_empty ||= @raw.body['entities'].nil?
+      @_empty ||= (@raw.body['entities'].nil? ||
+                   @raw.body['entities'].is_a?(Array) && @raw.body['entities'].empty?)
     end
 
     def inspect
