@@ -14,7 +14,7 @@ It provide an easy way to search for wikidata pages and read their contents.
 
 ## Installation
 
-In bunler: `gem 'wikidata-client', '~> 0.0.4', require: 'wikidata'`
+In bunler: `gem 'wikidata-client', '~> 0.0.6', require: 'wikidata'`
 
 Otherwise: `gem install wikidata-client`
 
