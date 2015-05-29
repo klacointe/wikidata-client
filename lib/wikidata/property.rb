@@ -13,6 +13,8 @@ module Wikidata
         Wikidata::Property::Url.new attribute
       when 'wikibase-item'
         Wikidata::Item.find Wikidata::Entity.entity_id(attribute)
+      when 'commonsMedia'
+        Wikidata::Property::CommonsMedia.new attribute
       else
         puts "Unkown property type #{attribute.mainsnak.datatype}"
       end
