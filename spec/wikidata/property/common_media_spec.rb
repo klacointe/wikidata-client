@@ -4,38 +4,38 @@ describe Wikidata::Property::CommonsMedia do
   let(:image) {
     described_class.new(
       {
-        'id': 'Q6882$8CB12994-045E-4EB3-98F8-3975EA1BF9A7',
-        'mainsnak': {
-          'snaktype': 'value',
-          'property': 'P18',
-          'datatype': 'commonsMedia',
-          'datavalue': {
-            'value': 'Revolutionary Joyce Better Contrast.jpg',
-            'type': 'string'
+        'id' =>  'Q6882$8CB12994-045E-4EB3-98F8-3975EA1BF9A7',
+        'mainsnak' =>  {
+          'snaktype' =>  'value',
+          'property' =>  'P18',
+          'datatype' =>  'commonsMedia',
+          'datavalue' =>  {
+            'value' =>  'Revolutionary Joyce Better Contrast.jpg',
+            'type' =>  'string'
           }
         },
-        'type': 'statement',
-        'rank': 'normal',
-        'references': [
+        'type' =>  'statement',
+        'rank' =>  'normal',
+        'references' =>  [
           {
-            'hash': 'd6e3ab4045fb3f3feea77895bc6b27e663fc878a',
-            'snaks': {
-              'P143': [
+            'hash' =>  'd6e3ab4045fb3f3feea77895bc6b27e663fc878a',
+            'snaks' =>  {
+              'P143' =>  [
                 {
-                  'snaktype': 'value',
-                  'property': 'P143',
-                  'datatype': 'wikibase-item',
-                  'datavalue': {
-                    'value': {
-                      'entity-type': 'item',
-                      'numeric-id': 206855
+                  'snaktype' =>  'value',
+                  'property' =>  'P143',
+                  'datatype' =>  'wikibase-item',
+                  'datavalue' =>  {
+                    'value' =>  {
+                      'entity-type' =>  'item',
+                      'numeric-id' =>  206855
                     },
-                    'type': 'wikibase-entityid'
+                    'type' =>  'wikibase-entityid'
                   }
                 }
               ]
             },
-            'snaks-order': ['P143']
+            'snaks-order' =>  ['P143']
           }
         ]
       }
