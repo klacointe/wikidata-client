@@ -15,7 +15,7 @@ their contents.
 
 ## Installation
 
-In bunler: `gem 'wikidata-client', '~> 0.0.7', require: 'wikidata'`
+In bundler: `gem 'wikidata-client', '~> 0.0.7', require: 'wikidata'`
 
 Otherwise: `gem install wikidata-client`
 
