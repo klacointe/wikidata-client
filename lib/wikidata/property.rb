@@ -15,6 +15,8 @@ module Wikidata
         Wikidata::Item.find Wikidata::Entity.entity_id(attribute)
       when 'commonsMedia'
         Wikidata::Property::CommonsMedia.new attribute
+      when 'monolingualtext'
+        Wikidata::Property::MonolingualText.new attribute
       else
         puts "Unkown property type #{attribute.mainsnak.datatype}"
       end
