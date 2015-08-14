@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.8
+
+* Added support for monolingualtext
+
 ## 0.0.7
 
 * Added support for commonsMedia images
