@@ -10,11 +10,21 @@ resources:
   gender: P21
   is_in_the_administrative_territorial_entity: P131
   coordinate_location: P625
+  located_at_street_address: P969
+  postal_code: P281
+  geonames_id: P1566
+  continent: P30
+  country: P17
   freebase_identifier: P646
   father: P22
   start_date: P580
   end_date: P582
   point_in_time: P585
+  image: P18
+  logo_image: P154
+  flag_image: P41
+  coat_of_arms_image: P94
+  seal_image: P158
 collections:
   official_websites: P856
   instance_of: P31
