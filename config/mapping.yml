@@ -25,6 +25,8 @@ resources:
   flag_image: P41
   coat_of_arms_image: P94
   seal_image: P158
+  official_language: P37
+  wikimedia_language_code: P424
 collections:
   official_websites: P856
   instance_of: P31
