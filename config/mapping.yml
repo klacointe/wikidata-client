@@ -32,3 +32,4 @@ collections:
   instance_of: P31
   subclass_of: P279
   children: P40
+  postal_codes: P281
