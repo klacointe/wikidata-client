@@ -132,6 +132,22 @@ describe Wikidata::Entity, :vcr do
           end
         end
       end
+
+      context 'of type commons media' do
+        it 'should return CommonsMedia from a property id (P154 for logo image here)' do
+          github.property('P154').tap do |c|
+            c.should be_kind_of Wikidata::Property::CommonsMedia
+            c.value.should eq 'GitHub logo 2013.svg'
+          end
+        end
+
+        it 'should return CommonsMedia from a key (logo_image here)' do
+          github.logo_image.tap do |c|
+            c.should be_kind_of Wikidata::Property::CommonsMedia
+            c.value.should eq 'GitHub logo 2013.svg'
+          end
+        end
+      end
     end
   end
 end
