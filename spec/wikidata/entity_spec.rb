@@ -13,7 +13,7 @@ describe Wikidata::Entity, :vcr do
     end
 
     it 'should return url' do
-      sid.url.should eq 'http://www.wikidata.org/wiki/Q47878'
+      sid.url.should eq 'https://www.wikidata.org/wiki/Q47878'
     end
 
     it 'should return labels' do
@@ -22,8 +22,8 @@ describe Wikidata::Entity, :vcr do
     end
 
     it 'should return aliases' do
-      sid.aliases.en.map(&:value).should eq ['John Simon Ritchie', 'Здох через шлюху'] # ?!?
-      sid.aliases.ja.map(&:value).should eq ['シド・ビシャス']
+      expect(sid.aliases.en.map(&:value)).to include('John Simon Ritchie', 'Здох через шлюху') # silly to hardcode closed list of aliases...
+      expect(sid.aliases.ja.map(&:value)).to include('シド・ビシャス')
     end
 
     it 'should return descriptions' do

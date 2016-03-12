@@ -1,4 +1,4 @@
 :api:
-  :url: http://www.wikidata.org/w/api.php
+  :url: https://www.wikidata.org/w/api.php
 :item:
-  :url: http://www.wikidata.org/wiki/:id
+  :url: https://www.wikidata.org/wiki/:id
