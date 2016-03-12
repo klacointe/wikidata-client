@@ -17,7 +17,7 @@ module Wikidata
 
     def next_page_offset
       return if empty?
-      @raw.body['query-continue']['search']['sroffset']
+      @raw.body['continue']['sroffset']
     end
 
     protected

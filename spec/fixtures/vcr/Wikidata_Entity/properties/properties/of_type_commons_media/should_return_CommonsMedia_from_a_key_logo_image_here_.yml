@@ -83,4 +83,97 @@ http_interactions:
         \u06c1\u0628","badges":[]},"viwiki":{"site":"viwiki","title":"GitHub","badges":[]},"zhwiki":{"site":"zhwiki","title":"GitHub","badges":[]}}}},"success":1}'
     http_version: 
   recorded_at: Tue, 13 Oct 2015 09:39:35 GMT
+- request:
+    method: get
+    uri: https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&sites=enwiki&titles=GitHub
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.9.4
+      Date:
+      - Sat, 12 Mar 2016 14:03:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - HHVM/3.12.1
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      P3p:
+      - CP="This is not a P3P policy! See https://www.wikidata.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - Accept-Encoding
+      Backend-Timing:
+      - D=54966 t=1457791383447544
+      X-Varnish:
+      - 3720969261, 176425703, 730023612
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Age:
+      - '0'
+      X-Cache:
+      - cp1067 miss+chfp(0), cp3010 pass+chfp(0), cp3003 frontend pass+chfp(0)
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Set-Cookie:
+      - WMF-Last-Access=12-Mar-2016;Path=/;HttpOnly;Expires=Wed, 13 Apr 2016 12:00:00
+        GMT, GeoIP=:::::v6; Path=/; Domain=.wikidata.org
+      X-Analytics:
+      - https=1;nocookies=1
+      X-Client-Ip:
+      - 2a01:e35:8a88:3e50:786:71f9:a797:9048
+    body:
+      encoding: UTF-8
+      string: '{"entities":{"Q364":{"pageid":561,"ns":0,"title":"Q364","lastrevid":284667374,"modified":"2015-12-20T20:01:48Z","type":"item","id":"Q364","labels":{"en":{"language":"en","value":"GitHub"},"pl":{"language":"pl","value":"GitHub"},"fr":{"language":"fr","value":"GitHub"},"de":{"language":"de","value":"GitHub"},"zh":{"language":"zh","value":"GitHub"},"es":{"language":"es","value":"GitHub"},"fa":{"language":"fa","value":"\u06af\u06cc\u062a\u200c\u0647\u0627\u0628"},"id":{"language":"id","value":"GitHub"},"ja":{"language":"ja","value":"GitHub"},"ko":{"language":"ko","value":"\uae43\ud5c8\ube0c"},"nl":{"language":"nl","value":"GitHub"},"pt":{"language":"pt","value":"GitHub"},"ru":{"language":"ru","value":"GitHub"},"sv":{"language":"sv","value":"Github"},"uk":{"language":"uk","value":"GitHub"},"it":{"language":"it","value":"GitHub"},"ar":{"language":"ar","value":"\u063a\u064a\u062a
+        \u0647\u0628"},"hu":{"language":"hu","value":"GitHub"},"fi":{"language":"fi","value":"GitHub"},"nb":{"language":"nb","value":"GitHub"},"ca":{"language":"ca","value":"Github"},"ta":{"language":"ta","value":"\u0b9c\u0bbf\u0b9f\u0bcd\u0bb9\u0baa\u0bcd"},"oc":{"language":"oc","value":"GitHub"},"pt-br":{"language":"pt-br","value":"GitHub"},"bg":{"language":"bg","value":"GitHub"},"tr":{"language":"tr","value":"GitHub"},"hi":{"language":"hi","value":"\u0917\u093f\u091f\u0939\u092c"},"cs":{"language":"cs","value":"GitHub"},"ro":{"language":"ro","value":"GitHub"},"he":{"language":"he","value":"GitHub"},"vi":{"language":"vi","value":"GitHub"},"ka":{"language":"ka","value":"GitHub"},"sco":{"language":"sco","value":"GitHub"},"ne":{"language":"ne","value":"\u0917\u093f\u091f\u0939\u092c"},"da":{"language":"da","value":"GitHub"},"fo":{"language":"fo","value":"GitHub"},"is":{"language":"is","value":"GitHub"},"kl":{"language":"kl","value":"GitHub"},"nn":{"language":"nn","value":"GitHub"},"bs":{"language":"bs","value":"GitHub"},"ur":{"language":"ur","value":"\u06af\u0679
+        \u06c1\u0628"},"en-ca":{"language":"en-ca","value":"GitHub"},"en-gb":{"language":"en-gb","value":"GitHub"},"eo":{"language":"eo","value":"GitHub"},"tt":{"language":"tt","value":"Github"}},"descriptions":{"en":{"language":"en","value":"web-based
+        hosting service for software development projects using Git"},"pl":{"language":"pl","value":"hostingowy
+        serwis internetowy przeznaczony dla projekt\u00f3w programistycznych wykorzystuj\u0105cych
+        system kontroli wersji Git"},"fr":{"language":"fr","value":"plateforme web
+        collaborative"},"de":{"language":"de","value":"webbasierter Hosting-Dienst
+        f\u00fcr Software-Entwicklungsprojekte"},"es":{"language":"es","value":"plataforma
+        de software para alojar proyectos usando el sistema Git"},"it":{"language":"it","value":"servizio
+        di hosting basato sul web"},"ru":{"language":"ru","value":"\u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0438\u0441
+        \u0434\u043b\u044f \u0445\u043e\u0441\u0442\u0438\u043d\u0433\u0430 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432
+        \u0438 \u0438\u0445 \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e\u0439
+        \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438"},"fi":{"language":"fi","value":"Git-j\u00e4rjestelm\u00e4\u00e4
+        k\u00e4ytt\u00e4v\u00e4 verkkopalvelu ohjelmistokehitysprojektien s\u00e4ilytykseen"},"nb":{"language":"nb","value":"nettbasert
+        programvaretjeneste"},"ca":{"language":"ca","value":"Servei hosting per projectes
+        de desenvolupament de programari usant Git"},"pt-br":{"language":"pt-br","value":"servi\u00e7o
+        de hospedagem baseado na web para projetos de desenvolvimento de software
+        utilizando Git"},"zh-hans":{"language":"zh-hans","value":"GitHub\u516c\u53f8\u7684\u5171\u4eab\u865a\u62df\u4e3b\u673a\u670d\u52a1"},"uk":{"language":"uk","value":"\u043e\u0434\u0438\u043d
+        \u0437 \u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448\u0438\u0445 \u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0456\u0441\u0456\u0432
+        \u0434\u043b\u044f \u0441\u043f\u0456\u043b\u044c\u043d\u043e\u0457 \u0440\u043e\u0437\u0440\u043e\u0431\u043a\u0438
+        \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043d\u043e\u0433\u043e \u0437\u0430\u0431\u0435\u0437\u043f\u0435\u0447\u0435\u043d\u043d\u044f"},"hu":{"language":"hu","value":"szoftver
+        fejleszt\u00e9si projekt t\u00e1rol\u00e1s\u00e1ra alkalmas internetes szolg\u00e1ltat\u00e1s"},"cs":{"language":"cs","value":"web-based
+        hosting service for software development projects using Git"},"ne":{"language":"ne","value":"Git
+        \u0938\u092b\u094d\u091f\u0935\u0947\u092f\u0930 \u092a\u094d\u0930\u092f\u094b\u0917
+        \u0917\u0930\u094d\u0928\u0947 \u0935\u093f\u0915\u093e\u0938 \u092a\u0930\u093f\u092f\u094b\u091c\u0928\u093e\u0915\u093e
+        \u0932\u093e\u0917\u093f \u0935\u0947\u092c\u092e\u093e \u0906\u0927\u093e\u0930\u093f\u0924
+        \u0939\u094b\u0938\u094d\u091f\u093f\u0919 \u0938\u0947\u0935\u093e"},"ko":{"language":"ko","value":"Git\uc744
+        \uc0ac\uc6a9\ud558\ub294 \uc18c\ud504\ud2b8\uc6e8\uc5b4 \uac1c\ubc1c \ud504\ub85c\uc81d\ud2b8\ub97c
+        \uc704\ud55c \uc6f9 \uae30\ubc18 \ud638\uc2a4\ud305 \uc11c\ube44\uc2a4"}},"aliases":{"en":[{"language":"en","value":"GitHub
+        Inc."},{"language":"en","value":"github.com"}],"de":[{"language":"de","value":"GitHub
+        Inc."},{"language":"de","value":"github.com"}],"fr":[{"language":"fr","value":"github"},{"language":"fr","value":"Github"},{"language":"fr","value":"github.com"}],"eo":[{"language":"eo","value":"GitHub
+        Inc."}],"ko":[{"language":"ko","value":"\uae43\ud5d9"},{"language":"ko","value":"\uae30\ud2b8\ud5c8\ube0c"},{"language":"ko","value":"GitHub"}]},"claims":{"P373":[{"mainsnak":{"snaktype":"value","property":"P373","datavalue":{"value":"GitHub","type":"string"},"datatype":"string"},"type":"statement","id":"Q364$538b1205-4615-c5d6-76b0-b2020b415325","rank":"normal"}],"P112":[{"mainsnak":{"snaktype":"value","property":"P112","datavalue":{"value":{"entity-type":"item","numeric-id":16602077},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$f0389704-4977-82d9-ed76-d831c3c6544d","rank":"normal"}],"P154":[{"mainsnak":{"snaktype":"value","property":"P154","datavalue":{"value":"GitHub
+        logo 2013.svg","type":"string"},"datatype":"commonsMedia"},"type":"statement","id":"q364$b35bab9e-4177-91ca-03e8-6c44cacc30ef","rank":"normal"}],"P31":[{"mainsnak":{"snaktype":"value","property":"P31","datavalue":{"value":{"entity-type":"item","numeric-id":588365},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$3fc07a87-4ab2-91dd-eb11-1b4d8442c9f3","rank":"normal"}],"P856":[{"mainsnak":{"snaktype":"value","property":"P856","datavalue":{"value":"https://github.com","type":"string"},"datatype":"url"},"type":"statement","id":"Q364$FEC870C9-C7FD-4841-ACC0-0B04561A34B5","rank":"normal","references":[{"hash":"7eb64cf9621d34c54fd4bd040ed4b61a88c4a1a0","snaks":{"P143":[{"snaktype":"value","property":"P143","datavalue":{"value":{"entity-type":"item","numeric-id":328},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"snaks-order":["P143"]}]}],"P159":[{"mainsnak":{"snaktype":"value","property":"P159","datavalue":{"value":{"entity-type":"item","numeric-id":62},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$e834e2ab-4e89-db51-949f-df05f41d8b44","rank":"normal"}],"P646":[{"mainsnak":{"snaktype":"value","property":"P646","datavalue":{"value":"/m/04g0kcw","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$8A2C3FCF-9A1D-40AE-BC5B-E0CA0B886B10","rank":"normal","references":[{"hash":"af38848ab5d9d9325cffd93a5ec656cc6ca889ed","snaks":{"P248":[{"snaktype":"value","property":"P248","datavalue":{"value":{"entity-type":"item","numeric-id":15241312},"type":"wikibase-entityid"},"datatype":"wikibase-item"}],"P577":[{"snaktype":"value","property":"P577","datavalue":{"value":{"time":"+2013-10-28T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"},"datatype":"time"}]},"snaks-order":["P248","P577"]}]}],"P1482":[{"mainsnak":{"snaktype":"value","property":"P1482","datavalue":{"value":"http://stackoverflow.com/tags/github","type":"string"},"datatype":"url"},"type":"statement","id":"Q364$3827AA10-1FBC-4EC8-8EAD-9A0FDFAAD690","rank":"normal"}],"P1687":[{"mainsnak":{"snaktype":"value","property":"P1687","datavalue":{"value":{"entity-type":"property","numeric-id":2037},"type":"wikibase-entityid"},"datatype":"wikibase-property"},"type":"statement","id":"Q364$46314eca-407c-d3de-fb71-c3233285fb32","rank":"normal"}],"P1581":[{"mainsnak":{"snaktype":"value","property":"P1581","datavalue":{"value":"https://github.com/blog","type":"string"},"datatype":"url"},"type":"statement","id":"Q364$dff698bd-4462-106c-1db4-51f914192f7c","rank":"normal"}],"P822":[{"mainsnak":{"snaktype":"value","property":"P822","datavalue":{"value":{"entity-type":"item","numeric-id":21590234},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$c4283932-4757-f926-92a3-d895f65d858b","rank":"normal","references":[{"hash":"a1bbaff3a75b03e3e8b75a0aff0b817526d2d950","snaks":{"P854":[{"snaktype":"value","property":"P854","datavalue":{"value":"https://octodex.github.com/faq.html","type":"string"},"datatype":"url"}],"P813":[{"snaktype":"value","property":"P813","datavalue":{"value":{"time":"+2015-11-29T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"},"datatype":"time"}]},"snaks-order":["P854","P813"]}]}],"P910":[{"mainsnak":{"snaktype":"value","property":"P910","datavalue":{"value":{"entity-type":"item","numeric-id":17233246},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$6F90B328-9C4C-4634-B1C7-03F624C28B69","rank":"normal"}]},"sitelinks":{"arwiki":{"site":"arwiki","title":"\u063a\u064a\u062a
+        \u0647\u0627\u0628","badges":[]},"bgwiki":{"site":"bgwiki","title":"GitHub","badges":[]},"cawiki":{"site":"cawiki","title":"GitHub","badges":[]},"cswiki":{"site":"cswiki","title":"GitHub","badges":[]},"dewiki":{"site":"dewiki","title":"GitHub","badges":[]},"enwiki":{"site":"enwiki","title":"GitHub","badges":[]},"eswiki":{"site":"eswiki","title":"GitHub","badges":[]},"fawiki":{"site":"fawiki","title":"\u06af\u06cc\u062a\u200c\u0647\u0627\u0628","badges":[]},"fiwiki":{"site":"fiwiki","title":"GitHub","badges":[]},"frwiki":{"site":"frwiki","title":"GitHub","badges":[]},"hewiki":{"site":"hewiki","title":"GitHub","badges":[]},"hiwiki":{"site":"hiwiki","title":"\u0917\u093f\u091f\u0939\u092c","badges":[]},"idwiki":{"site":"idwiki","title":"GitHub","badges":[]},"itwiki":{"site":"itwiki","title":"GitHub","badges":[]},"jawiki":{"site":"jawiki","title":"GitHub","badges":[]},"kawiki":{"site":"kawiki","title":"GitHub","badges":[]},"kowiki":{"site":"kowiki","title":"\uae43\ud5c8\ube0c","badges":[]},"nlwiki":{"site":"nlwiki","title":"GitHub","badges":[]},"ocwiki":{"site":"ocwiki","title":"GitHub","badges":[]},"plwiki":{"site":"plwiki","title":"GitHub","badges":[]},"ptwiki":{"site":"ptwiki","title":"GitHub","badges":[]},"rowiki":{"site":"rowiki","title":"GitHub","badges":[]},"ruwiki":{"site":"ruwiki","title":"GitHub","badges":[]},"ruwikinews":{"site":"ruwikinews","title":"\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f:GitHub","badges":[]},"svwiki":{"site":"svwiki","title":"Github","badges":[]},"trwiki":{"site":"trwiki","title":"GitHub","badges":[]},"ttwiki":{"site":"ttwiki","title":"Github","badges":[]},"ukwiki":{"site":"ukwiki","title":"GitHub","badges":[]},"urwiki":{"site":"urwiki","title":"\u06af\u0679
+        \u06c1\u0628","badges":[]},"viwiki":{"site":"viwiki","title":"GitHub","badges":[]},"zhwiki":{"site":"zhwiki","title":"GitHub","badges":[]}}}},"success":1}'
+    http_version: 
+  recorded_at: Sat, 12 Mar 2016 14:03:03 GMT
 recorded_with: VCR 2.9.3

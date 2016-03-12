@@ -120,4 +120,131 @@ http_interactions:
         \u00e1lbum de <span class=\"searchmatch\">Michael</span> Jackson","size":2167,"wordcount":217,"timestamp":"2014-08-27T21:11:08Z"}]}}'
     http_version: 
   recorded_at: Mon, 29 Sep 2014 09:07:30 GMT
+- request:
+    method: get
+    uri: https://www.wikidata.org/w/api.php?action=query&format=json&list=search&srlimit=10&sroffset=0&srsearch=Michael%20Jackson
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.9.4
+      Date:
+      - Sat, 12 Mar 2016 14:03:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - HHVM/3.12.1
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      P3p:
+      - CP="This is not a P3P policy! See https://www.wikidata.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - Accept-Encoding,X-Forwarded-Proto,Cookie,Authorization
+      Backend-Timing:
+      - D=103841 t=1457791390566069
+      X-Varnish:
+      - 1111244199, 3118286800, 730053995
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Age:
+      - '0'
+      X-Cache:
+      - cp1068 pass+chfp(0), cp3030 miss+chfp(0), cp3003 frontend pass+chfp(0)
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Set-Cookie:
+      - WMF-Last-Access=12-Mar-2016;Path=/;HttpOnly;Expires=Wed, 13 Apr 2016 12:00:00
+        GMT, GeoIP=:::::v6; Path=/; Domain=.wikidata.org
+      X-Analytics:
+      - https=1;nocookies=1
+      X-Client-Ip:
+      - 2a01:e35:8a88:3e50:786:71f9:a797:9048
+    body:
+      encoding: UTF-8
+      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":455},"search":[{"ns":0,"title":"Q2831","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n\u121b\u12ed\u12ad\u120d
+        \u1303\u12ad\u1230\u1295\n<span class=\"searchmatch\">Michael</span> <span
+        class=\"searchmatch\">Jackson</span>\n\u0645\u0627\u064a\u0643\u0644 \u062c\u0627\u0643\u0633\u0648\u0646","size":117544,"wordcount":1025,"timestamp":"2016-02-18T16:21:44Z"},{"ns":0,"title":"Q167877","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n\u041c\u0430\u0439\u043a\u044a\u043b
+        \u0414\u0436\u0430\u043a\u0441\u044a\u043d\n<span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>\n<span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>\n<span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>\n<span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>\n<span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>\nMichael","size":35724,"wordcount":158,"timestamp":"2016-03-01T09:44:57Z"},{"ns":0,"title":"Q956149","snippet":"Speechless\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\nSingle
+        von <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        song\nchanson de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n\u062a\u06a9\u200c\u0622\u0647\u0646\u06af\u06cc
+        \u0627\u0632 \u0645\u0627\u06cc\u06a9\u0644 \u062c\u06a9\u0633\u0648\u0646\nCanci\u00f3n
+        de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\nSpeechless","size":9464,"wordcount":87,"timestamp":"2014-11-25T01:29:37Z"},{"ns":0,"title":"Q1308224","snippet":"Experience\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience\n<span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience\n<span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience\n<span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The Experience\n<span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        The","size":21159,"wordcount":136,"timestamp":"2015-12-12T20:32:33Z"},{"ns":0,"title":"Q7244161","snippet":"Prince
+        <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I\nPrince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I\nPrince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I\nPrince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I\nPrince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I\nPrince <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        I\n\u067e\u0631\u0646\u0633","size":12982,"wordcount":102,"timestamp":"2016-02-01T15:03:07Z"},{"ns":0,"title":"Q92948","snippet":"<span
+        class=\"searchmatch\">Michael</span> Anthony <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> A. <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> Anthony <span class=\"searchmatch\">Jackson</span>\n<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n\u0645\u0627\u06cc\u06a9\u0644
+        \u0627\u06cc. \u062c\u06a9\u0633\u0648\u0646\n<span class=\"searchmatch\">Michael</span>
+        Anthony Jackson","size":16907,"wordcount":92,"timestamp":"2016-01-30T03:31:15Z"},{"ns":0,"title":"Q25158","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        Love Songs\n<span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>:
+        Love Songs\nLove Songs\nLove Songs\nLove Songs (musikalbum av <span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>)\nLove Songs\n<span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>: Love","size":4525,"wordcount":67,"timestamp":"2016-03-04T14:52:14Z"},{"ns":0,"title":"Q44376","snippet":"<span
+        class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\nalbum\nalbum
+        di <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        del 2001\nalbum by <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\nAlbum
+        von <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n\u00e1lbum
+        de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\n\u00e1lbum
+        de <span class=\"searchmatch\">Michael</span> Jackson","size":22496,"wordcount":229,"timestamp":"2016-03-02T18:08:28Z"},{"ns":0,"title":"Q756785","snippet":"Cry\nCry
+        (b\u00e0i h\u00e1t c\u1ee7a <span class=\"searchmatch\">Michael</span> <span
+        class=\"searchmatch\">Jackson</span>)\n\u0e04\u0e23\u0e32\u0e22\nCry\nCry\nchanson
+        de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\nsingolo
+        di <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        del 2001\n<span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\nsong
+        recorded by American","size":15569,"wordcount":137,"timestamp":"2015-11-15T07:44:23Z"},{"ns":0,"title":"Q732826","snippet":"Nature\nchanson
+        de <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>\nsingolo
+        di <span class=\"searchmatch\">Michael</span> <span class=\"searchmatch\">Jackson</span>
+        del 1983\ndoorverwijspagina\nsong by <span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>\nSingle von <span class=\"searchmatch\">Michael</span>
+        <span class=\"searchmatch\">Jackson</span>\n\u062a\u06a9\u200c\u0622\u0647\u0646\u06af\u06cc
+        \u0627\u0632 \u0645\u0627\u06cc\u06a9\u0644","size":14696,"wordcount":188,"timestamp":"2016-01-05T09:20:23Z"}]}}'
+    http_version: 
+  recorded_at: Sat, 12 Mar 2016 14:03:11 GMT
 recorded_with: VCR 2.9.3

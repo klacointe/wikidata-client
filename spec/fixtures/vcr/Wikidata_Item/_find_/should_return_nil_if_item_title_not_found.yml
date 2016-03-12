@@ -51,4 +51,63 @@ http_interactions:
       string: '{"entities":{"-1":{"site":"enwiki","title":"THISISNOTAVALIDID","missing":""}},"success":1}'
     http_version: 
   recorded_at: Thu, 02 Oct 2014 16:22:46 GMT
+- request:
+    method: get
+    uri: https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&sites=enwiki&titles=THISISNOTAVALIDID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.9.4
+      Date:
+      - Sat, 12 Mar 2016 14:03:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - HHVM/3.12.1
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      P3p:
+      - CP="This is not a P3P policy! See https://www.wikidata.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - Accept-Encoding
+      Backend-Timing:
+      - D=74447 t=1457791384479643
+      X-Varnish:
+      - 445370122, 3111615472, 730026816
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Age:
+      - '0'
+      X-Cache:
+      - cp1055 miss+chfp(0), cp3041 miss+chfp(0), cp3003 frontend miss+chfp(0)
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Set-Cookie:
+      - WMF-Last-Access=12-Mar-2016;Path=/;HttpOnly;Expires=Wed, 13 Apr 2016 12:00:00
+        GMT, GeoIP=:::::v6; Path=/; Domain=.wikidata.org
+      X-Analytics:
+      - https=1;nocookies=1
+      X-Client-Ip:
+      - 2a01:e35:8a88:3e50:786:71f9:a797:9048
+    body:
+      encoding: UTF-8
+      string: '{"entities":{"-1":{"site":"enwiki","title":"THISISNOTAVALIDID","missing":""}},"success":1}'
+    http_version: 
+  recorded_at: Sat, 12 Mar 2016 14:03:04 GMT
 recorded_with: VCR 2.9.3

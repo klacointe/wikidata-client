@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.10
+
+* Wikidata now uses https scheme
+* Continuing queries fix: https://www.mediawiki.org/wiki/API:Query#Backwards_compatibility_of_continue
+* Handle external-id property
+
+## O.O.9
+
+* More mappings for organizations and locations
+
 ## 0.0.8
 
 * Added support for monolingualtext

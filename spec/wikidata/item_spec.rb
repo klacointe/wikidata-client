@@ -54,7 +54,7 @@ describe Wikidata::Item, :vcr do
     end
 
     it 'should return the total number of hits' do
-      search.total_hits.should eq 416
+      search.total_hits.should be > 10
     end
 
     it 'should return the next page offset' do

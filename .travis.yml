@@ -5,8 +5,6 @@ rvm:
   - 2.2.4
   - 2.3.0
   - ruby-head
-  - jruby-18mode
-  - jruby-19mode
   - jruby-head
 addons:
   code_climate:
