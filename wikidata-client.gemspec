@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/klacointe/wikidata-client"
   s.authors     = ['Kévin Lacointe']
 
-  s.files         = `git ls-files`.split("\n")
+  s.files         = `git ls-files -- lib config *.md LICENCE`.split("\n")
   s.test_files    = `git ls-files -- spec/*`.split("\n")
   s.require_paths = ["lib"]
 
