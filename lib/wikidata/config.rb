@@ -9,7 +9,7 @@ module Wikidata
     end
 
     @options = {}
-    @faraday = -> (builder) { builder.adapter :excon }
+    @faraday = ->(builder) { builder.adapter :excon }
     @settings = Hashie::Mash.new(
       YAML.load_file(
         File.expand_path('../../../config/settings.yml', __FILE__)
