@@ -37,6 +37,14 @@ module Wikidata
       end
     end
 
+    def property_keys
+      hash.claims.keys
+    end
+
+    def property_name code
+      Wikidata::Item.find(code).title
+    end
+
     def properties code
       @_properties[code] ||= Array(raw_property(code)).map {|a| Wikidata::Property.build a }
     end
