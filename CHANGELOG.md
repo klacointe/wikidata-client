@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.11
+
+* Add `property_name` and `property_keys` to `Entity`
+
 ## 0.0.10
 
 * Wikidata now uses https scheme
