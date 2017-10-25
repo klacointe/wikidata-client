@@ -1,0 +1,495 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&sites=enwiki&titles=GitHub
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 25 Oct 2017 07:01:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Server:
+      - mw1317.eqiad.wmnet
+      X-Powered-By:
+      - HHVM/3.18.6-dev
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      P3p:
+      - CP="This is not a P3P policy! See https://www.wikidata.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      X-Frame-Options:
+      - DENY
+      Content-Disposition:
+      - inline; filename="api-result.json"
+      Vary:
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      Backend-Timing:
+      - D=51736 t=1508914872269965
+      X-Varnish:
+      - 962792540, 657591358, 96636943
+      Via:
+      - 1.1 varnish-v4, 1.1 varnish-v4, 1.1 varnish-v4
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      X-Cache:
+      - cp1052 pass, cp3041 pass, cp3030 pass
+      X-Cache-Status:
+      - pass
+      Strict-Transport-Security:
+      - max-age=106384710; includeSubDomains; preload
+      Set-Cookie:
+      - WMF-Last-Access=25-Oct-2017;Path=/;HttpOnly;secure;Expires=Sun, 26 Nov 2017
+        00:00:00 GMT, WMF-Last-Access-Global=25-Oct-2017;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun,
+        26 Nov 2017 00:00:00 GMT, GeoIP=FR:PDL:Sainte-Luce-sur-Loire:47.25:-1.48:v4;
+        Path=/; secure; Domain=.wikidata.org
+      X-Analytics:
+      - ns=-1;special=Badtitle;https=1;nocookies=1
+      X-Client-Ip:
+      - 88.168.131.229
+    body:
+      encoding: UTF-8
+      string: '{"entities":{"Q364":{"pageid":561,"ns":0,"title":"Q364","lastrevid":579748436,"modified":"2017-10-17T17:51:13Z","type":"item","id":"Q364","labels":{"en":{"language":"en","value":"GitHub"},"pl":{"language":"pl","value":"GitHub"},"fr":{"language":"fr","value":"GitHub"},"de":{"language":"de","value":"GitHub"},"zh":{"language":"zh","value":"GitHub"},"es":{"language":"es","value":"GitHub"},"fa":{"language":"fa","value":"\u06af\u06cc\u062a\u200c\u0647\u0627\u0628"},"id":{"language":"id","value":"GitHub"},"ja":{"language":"ja","value":"GitHub"},"ko":{"language":"ko","value":"\uae43\ud5c8\ube0c"},"nl":{"language":"nl","value":"GitHub"},"pt":{"language":"pt","value":"GitHub"},"ru":{"language":"ru","value":"GitHub"},"sv":{"language":"sv","value":"Github"},"uk":{"language":"uk","value":"GitHub"},"it":{"language":"it","value":"GitHub"},"ar":{"language":"ar","value":"\u063a\u064a\u062a
+        \u0647\u0628"},"hu":{"language":"hu","value":"GitHub"},"fi":{"language":"fi","value":"GitHub"},"nb":{"language":"nb","value":"GitHub"},"ca":{"language":"ca","value":"Github"},"ta":{"language":"ta","value":"\u0b9c\u0bbf\u0b9f\u0bcd\u0bb9\u0baa\u0bcd"},"oc":{"language":"oc","value":"GitHub"},"pt-br":{"language":"pt-br","value":"GitHub"},"bg":{"language":"bg","value":"GitHub"},"tr":{"language":"tr","value":"GitHub"},"hi":{"language":"hi","value":"\u0917\u093f\u091f\u0939\u092c"},"cs":{"language":"cs","value":"GitHub"},"ro":{"language":"ro","value":"GitHub"},"he":{"language":"he","value":"GitHub"},"vi":{"language":"vi","value":"GitHub"},"ka":{"language":"ka","value":"GitHub"},"sco":{"language":"sco","value":"GitHub"},"ne":{"language":"ne","value":"\u0917\u093f\u091f\u0939\u092c"},"da":{"language":"da","value":"GitHub"},"fo":{"language":"fo","value":"GitHub"},"is":{"language":"is","value":"GitHub"},"kl":{"language":"kl","value":"GitHub"},"nn":{"language":"nn","value":"GitHub"},"bs":{"language":"bs","value":"GitHub"},"ur":{"language":"ur","value":"\u06af\u0679
+        \u06c1\u0628"},"en-ca":{"language":"en-ca","value":"GitHub"},"en-gb":{"language":"en-gb","value":"GitHub"},"eo":{"language":"eo","value":"GitHub"},"tt":{"language":"tt","value":"Github"},"sr":{"language":"sr","value":"GitHub"},"sl":{"language":"sl","value":"GitHub"},"mk":{"language":"mk","value":"GitHub"},"lv":{"language":"lv","value":"GitHub"},"bn":{"language":"bn","value":"\u0997\u09bf\u099f\u09b9\u09be\u09ac"},"ml":{"language":"ml","value":"\u0d17\u0d3f\u0d31\u0d4d\u0d31\u0d4d\u0d39\u0d2c\u0d4d\u0d2c\u0d4d"}},"descriptions":{"en":{"language":"en","value":"web-based
+        hosting service for software development projects using Git"},"pl":{"language":"pl","value":"hostingowy
+        serwis internetowy przeznaczony dla projekt\u00f3w programistycznych wykorzystuj\u0105cych
+        system kontroli wersji Git"},"fr":{"language":"fr","value":"plateforme web
+        collaborative"},"de":{"language":"de","value":"webbasierter Hosting-Dienst
+        f\u00fcr Software-Entwicklungsprojekte"},"es":{"language":"es","value":"plataforma
+        de software para alojar proyectos usando el sistema Git"},"it":{"language":"it","value":"servizio
+        di hosting sul web"},"ru":{"language":"ru","value":"\u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0438\u0441
+        \u0434\u043b\u044f \u0445\u043e\u0441\u0442\u0438\u043d\u0433\u0430 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432
+        \u0438 \u0438\u0445 \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e\u0439
+        \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438"},"fi":{"language":"fi","value":"Git-j\u00e4rjestelm\u00e4\u00e4
+        k\u00e4ytt\u00e4v\u00e4 verkkopalvelu ohjelmistokehitysprojektien s\u00e4ilytykseen"},"nb":{"language":"nb","value":"nettbasert
+        programvaretjeneste"},"ca":{"language":"ca","value":"Servei hosting per projectes
+        de desenvolupament de programari usant Git"},"pt-br":{"language":"pt-br","value":"servi\u00e7o
+        de hospedagem baseado na web para projetos de desenvolvimento de software
+        utilizando Git"},"zh-hans":{"language":"zh-hans","value":"GitHub\u516c\u53f8\u7684\u5171\u4eab\u865a\u62df\u4e3b\u673a\u670d\u52a1"},"uk":{"language":"uk","value":"\u043e\u0434\u0438\u043d
+        \u0437 \u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448\u0438\u0445 \u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0456\u0441\u0456\u0432
+        \u0434\u043b\u044f \u0441\u043f\u0456\u043b\u044c\u043d\u043e\u0457 \u0440\u043e\u0437\u0440\u043e\u0431\u043a\u0438
+        \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043d\u043e\u0433\u043e \u0437\u0430\u0431\u0435\u0437\u043f\u0435\u0447\u0435\u043d\u043d\u044f"},"hu":{"language":"hu","value":"szoftver
+        fejleszt\u00e9si projekt t\u00e1rol\u00e1s\u00e1ra alkalmas internetes szolg\u00e1ltat\u00e1s"},"ne":{"language":"ne","value":"Git
+        \u0938\u092b\u094d\u091f\u0935\u0947\u092f\u0930 \u092a\u094d\u0930\u092f\u094b\u0917
+        \u0917\u0930\u094d\u0928\u0947 \u0935\u093f\u0915\u093e\u0938 \u092a\u0930\u093f\u092f\u094b\u091c\u0928\u093e\u0915\u093e
+        \u0932\u093e\u0917\u093f \u0935\u0947\u092c\u092e\u093e \u0906\u0927\u093e\u0930\u093f\u0924
+        \u0939\u094b\u0938\u094d\u091f\u093f\u0919 \u0938\u0947\u0935\u093e"},"ko":{"language":"ko","value":"Git\uc744
+        \uc0ac\uc6a9\ud558\ub294 \uc18c\ud504\ud2b8\uc6e8\uc5b4 \uac1c\ubc1c \ud504\ub85c\uc81d\ud2b8\ub97c
+        \uc704\ud55c \uc6f9 \uae30\ubc18 \ud638\uc2a4\ud305 \uc11c\ube44\uc2a4"},"en-ca":{"language":"en-ca","value":"web-based
+        hosting service for software development projects using Git"},"en-gb":{"language":"en-gb","value":"web-based
+        hosting service for software development projects using Git"},"ml":{"language":"ml","value":"\u0d17\u0d3f\u0d31\u0d4d\u0d31\u0d4d
+        \u0d09\u0d2a\u0d2f\u0d4b\u0d17\u0d3f\u0d1a\u0d4d\u0d1a\u0d41\u0d33\u0d4d\u0d33
+        \u0d35\u0d46\u0d2c\u0d4d \u0d05\u0d27\u0d3f\u0d37\u0d4d\u0d20\u0d3f\u0d24\u0d2e\u0d3e\u0d2f
+        \u0d2a\u0d24\u0d3f\u0d2a\u0d4d\u0d2a\u0d4d \u0d28\u0d3f\u0d2f\u0d28\u0d4d\u0d24\u0d4d\u0d30\u0d23\u0d24\u0d4d\u0d24\u0d3f\u0d28\u0d41\u0d33\u0d4d\u0d33
+        \u0d35\u0d46\u0d2c\u0d4d\u0d38\u0d48\u0d31\u0d4d\u0d31\u0d41\u0d02 \u0d07\u0d28\u0d4d\u0d31\u0d7c\u0d28\u0d46\u0d31\u0d4d\u0d31\u0d4d
+        \u0d39\u0d4b\u0d38\u0d4d\u0d31\u0d4d\u0d31\u0d3f\u0d02\u0d17\u0d4d \u0d38\u0d47\u0d35\u0d28\u0d35\u0d41\u0d2e\u0d3e\u0d23\u0d4d
+        \u0d17\u0d3f\u0d31\u0d4d\u0d31\u0d4d\u0d39\u0d2c\u0d4d"}},"aliases":{"en":[{"language":"en","value":"GitHub
+        Inc."},{"language":"en","value":"github.com"},{"language":"en","value":"GitHub,
+        Inc."}],"de":[{"language":"de","value":"GitHub Inc."},{"language":"de","value":"github.com"}],"fr":[{"language":"fr","value":"github"},{"language":"fr","value":"Github"},{"language":"fr","value":"github.com"}],"eo":[{"language":"eo","value":"GitHub
+        Inc."}],"ko":[{"language":"ko","value":"\uae43\ud5d9"},{"language":"ko","value":"\uae30\ud2b8\ud5c8\ube0c"},{"language":"ko","value":"GitHub"}],"mk":[{"language":"mk","value":"\u0413\u0438\u0442\u0445\u0430\u0431"}],"en-ca":[{"language":"en-ca","value":"github.com"}],"en-gb":[{"language":"en-gb","value":"github.com"}],"ml":[{"language":"ml","value":"\u0d17\u0d3f\u0d31\u0d4d\u0d31\u0d4d\u0d39\u0d2c\u0d4d"}],"pl":[{"language":"pl","value":"GitHub
+        Inc."},{"language":"pl","value":"github.com"},{"language":"pl","value":"GitHub,
+        Inc."}],"ar":[{"language":"ar","value":"\u062c\u062a \u0647\u0628"},{"language":"ar","value":"\u062c\u064a\u062a
+        \u0647\u0628"}]},"claims":{"P373":[{"mainsnak":{"snaktype":"value","property":"P373","hash":"fdd89bfff48629dcf9b87a5a91b586b265f30749","datavalue":{"value":"GitHub","type":"string"},"datatype":"string"},"type":"statement","id":"Q364$538b1205-4615-c5d6-76b0-b2020b415325","rank":"normal"}],"P112":[{"mainsnak":{"snaktype":"value","property":"P112","hash":"b847073806d2c00fadd1e8d06a13725ea28fae7a","datavalue":{"value":{"entity-type":"item","numeric-id":16602077,"id":"Q16602077"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$f0389704-4977-82d9-ed76-d831c3c6544d","rank":"normal"}],"P154":[{"mainsnak":{"snaktype":"value","property":"P154","hash":"89786ae17ef088131bd150fd24315bb037fc155a","datavalue":{"value":"GitHub
+        logo 2013.svg","type":"string"},"datatype":"commonsMedia"},"type":"statement","id":"q364$b35bab9e-4177-91ca-03e8-6c44cacc30ef","rank":"normal"}],"P31":[{"mainsnak":{"snaktype":"value","property":"P31","hash":"85d86f4783cff8e0934d3a32c4b303782f5ab558","datavalue":{"value":{"entity-type":"item","numeric-id":588365,"id":"Q588365"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$3fc07a87-4ab2-91dd-eb11-1b4d8442c9f3","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P31","hash":"7f43fe87c101b565eefe373c09ebed31539e097b","datavalue":{"value":{"entity-type":"item","numeric-id":3133368,"id":"Q3133368"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$a1a9177b-4a4a-50c1-d3b2-3e1bf3824db4","rank":"normal"}],"P856":[{"mainsnak":{"snaktype":"value","property":"P856","hash":"5042b72e8b97d71b7b67e4e06b3eadb09ff5e31a","datavalue":{"value":"https://github.com","type":"string"},"datatype":"url"},"type":"statement","id":"Q364$FEC870C9-C7FD-4841-ACC0-0B04561A34B5","rank":"normal","references":[{"hash":"fa278ebfc458360e5aed63d5058cca83c46134f1","snaks":{"P143":[{"snaktype":"value","property":"P143","hash":"e4f6d9441d0600513c4533c672b5ab472dc73694","datavalue":{"value":{"entity-type":"item","numeric-id":328,"id":"Q328"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"snaks-order":["P143"]}]}],"P159":[{"mainsnak":{"snaktype":"value","property":"P159","hash":"f277496f6fed5e9a19c40dcbb7737063a99b4e06","datavalue":{"value":{"entity-type":"item","numeric-id":62,"id":"Q62"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$e834e2ab-4e89-db51-949f-df05f41d8b44","rank":"normal"}],"P646":[{"mainsnak":{"snaktype":"value","property":"P646","hash":"7558a1a996ec11e71bc6f5f39d489dab64be98dc","datavalue":{"value":"/m/04g0kcw","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$8A2C3FCF-9A1D-40AE-BC5B-E0CA0B886B10","rank":"normal","references":[{"hash":"2b00cb481cddcac7623114367489b5c194901c4a","snaks":{"P248":[{"snaktype":"value","property":"P248","hash":"a94b740202b097dd33355e0e6c00e54b9395e5e0","datavalue":{"value":{"entity-type":"item","numeric-id":15241312,"id":"Q15241312"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}],"P577":[{"snaktype":"value","property":"P577","hash":"fde79ecb015112d2f29229ccc1ec514ed3e71fa2","datavalue":{"value":{"time":"+2013-10-28T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"},"datatype":"time"}]},"snaks-order":["P248","P577"]}]}],"P1482":[{"mainsnak":{"snaktype":"value","property":"P1482","hash":"84a6c74a0eb1c87dd40a8573ab64df763ba8d293","datavalue":{"value":"https://stackoverflow.com/tags/github","type":"string"},"datatype":"url"},"type":"statement","id":"Q364$3827AA10-1FBC-4EC8-8EAD-9A0FDFAAD690","rank":"normal"}],"P1687":[{"mainsnak":{"snaktype":"value","property":"P1687","hash":"68bdc8e5392888e3e3ec447792498a9a8ce824e9","datavalue":{"value":{"entity-type":"property","numeric-id":2037,"id":"P2037"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},"type":"statement","id":"Q364$46314eca-407c-d3de-fb71-c3233285fb32","rank":"normal"}],"P1581":[{"mainsnak":{"snaktype":"value","property":"P1581","hash":"ae0c283a61b8fb4a0809e1ebbabd067b53b7e911","datavalue":{"value":"https://github.com/blog","type":"string"},"datatype":"url"},"type":"statement","id":"Q364$dff698bd-4462-106c-1db4-51f914192f7c","rank":"normal"}],"P822":[{"mainsnak":{"snaktype":"value","property":"P822","hash":"db8dce4c1f4dcb4f93c46b262eec51e7119cb878","datavalue":{"value":{"entity-type":"item","numeric-id":21590234,"id":"Q21590234"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$c4283932-4757-f926-92a3-d895f65d858b","rank":"normal","references":[{"hash":"a907517b6abccb222e5b802f682d2fc01e4bccf4","snaks":{"P854":[{"snaktype":"value","property":"P854","hash":"c9e6e433076df31232faf3d26bc6c45e5c775a60","datavalue":{"value":"https://octodex.github.com/faq.html","type":"string"},"datatype":"url"}],"P813":[{"snaktype":"value","property":"P813","hash":"9534003b31a27f91bf00b5d4099d9cd43845ceba","datavalue":{"value":{"time":"+2015-11-29T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"},"datatype":"time"}]},"snaks-order":["P854","P813"]}]}],"P910":[{"mainsnak":{"snaktype":"value","property":"P910","hash":"45d699ed883f68a54cde3e0cd7c0b767585a4f26","datavalue":{"value":{"entity-type":"item","numeric-id":17233246,"id":"Q17233246"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$6F90B328-9C4C-4634-B1C7-03F624C28B69","rank":"normal"}],"P2002":[{"mainsnak":{"snaktype":"value","property":"P2002","hash":"dd7eeeac0c61e5c628391f0f29835bf6d65ea511","datavalue":{"value":"GitHub","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$EE1581EB-0CB5-459E-B6DA-F04C5DD878CC","rank":"normal","references":[{"hash":"0ee3b3ba1c958f4c3dcba7ed8091fe4b57311348","snaks":{"P143":[{"snaktype":"value","property":"P143","hash":"cb49f6fa327b245e4a5aaf48c44b3f503bcd4265","datavalue":{"value":{"entity-type":"item","numeric-id":30239,"id":"Q30239"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"snaks-order":["P143"]}]}],"P17":[{"mainsnak":{"snaktype":"value","property":"P17","hash":"be4c6eafa2984964f04be85667263f5642ba1a72","datavalue":{"value":{"entity-type":"item","numeric-id":30,"id":"Q30"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$9AC62B07-D79B-47CA-82A8-676D96121A01","rank":"normal","references":[{"hash":"2e7fa0083ba1c302cdcf3fa65c613f90daeb4c37","snaks":{"P143":[{"snaktype":"value","property":"P143","hash":"5a6fb73df37ac546825b07ebb80a22de88d99425","datavalue":{"value":{"entity-type":"item","numeric-id":58255,"id":"Q58255"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"snaks-order":["P143"]}]}],"P169":[{"mainsnak":{"snaktype":"value","property":"P169","hash":"2c97dc06e26fd79434a2909653f77dc46f6cd04a","datavalue":{"value":{"entity-type":"item","numeric-id":27940879,"id":"Q27940879"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$38016458-4795-b46d-dadc-a03aaf8e9401","rank":"normal"}],"P1833":[{"mainsnak":{"snaktype":"value","property":"P1833","hash":"43038f7d68a10055aa3a7a6c9af7a6ff7f77d081","datavalue":{"value":{"amount":"+18000000","unit":"1"},"type":"quantity"},"datatype":"quantity"},"type":"statement","id":"Q364$fe4eb4be-47ff-a49e-a0fc-6788389c8b43","rank":"normal","references":[{"hash":"488ea51889556868a44bc0f87047659ff421c392","snaks":{"P854":[{"snaktype":"value","property":"P854","hash":"297c6a04c830534b283b0254cf20795cd99e37ea","datavalue":{"value":"https://github.com/about/","type":"string"},"datatype":"url"}]},"snaks-order":["P854"]}]}],"P3417":[{"mainsnak":{"snaktype":"value","property":"P3417","hash":"4d1aa24c7dd4a61ba4a57aee0820ad54f477866d","datavalue":{"value":"GitHub","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$43C1125A-A1B4-4EBE-84FA-B36EE2790740","rank":"normal"}],"P2572":[{"mainsnak":{"snaktype":"value","property":"P2572","hash":"b36b2ed5204b1479c8050c174bb19a0dbbebb0d9","datavalue":{"value":"github","type":"string"},"datatype":"string"},"type":"statement","id":"Q364$43d560ba-4119-2e3d-c7cb-eb4bc2468e9b","rank":"normal"}],"P3579":[{"mainsnak":{"snaktype":"value","property":"P3579","hash":"23f3ef6891c400313232b76758770a6966171222","datavalue":{"value":"GitHub","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$766B96AE-CD4D-4B4C-9447-8EEB74158D7C","rank":"normal","references":[{"hash":"0ee3b3ba1c958f4c3dcba7ed8091fe4b57311348","snaks":{"P143":[{"snaktype":"value","property":"P143","hash":"cb49f6fa327b245e4a5aaf48c44b3f503bcd4265","datavalue":{"value":{"entity-type":"item","numeric-id":30239,"id":"Q30239"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"snaks-order":["P143"]}]}],"P3597":[{"mainsnak":{"snaktype":"value","property":"P3597","hash":"4b3aa6de689ec949ca773ae40864bf893c9cdb07","datavalue":{"value":"com.github.mobile","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$03b5084a-4b97-98f2-cf6c-7f43f3671ed1","rank":"normal"}],"P407":[{"mainsnak":{"snaktype":"value","property":"P407","hash":"daf1c4fcb58181b02dff9cc89deb084004ddae4b","datavalue":{"value":{"entity-type":"item","numeric-id":1860,"id":"Q1860"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$6e6e8aa4-47bb-ed43-0085-8fdc941b7831","rank":"normal","references":[{"hash":"c59ab141f96480e79c05ca9f0173823bae31fc52","snaks":{"P854":[{"snaktype":"value","property":"P854","hash":"0817dcf523026c82381490da84e7fcf9e3327a48","datavalue":{"value":"https://gist.github.com/a4b4fac18beb08335919","type":"string"},"datatype":"url"}]},"snaks-order":["P854"]},{"hash":"c576b674e716e7cea8e7a7a2b061c2ce7521004f","snaks":{"P854":[{"snaktype":"value","property":"P854","hash":"3b40851dc132293cf8894314c8757e19af837699","datavalue":{"value":"http://github.com/blog/679-github-in-your-language","type":"string"},"datatype":"url"}]},"snaks-order":["P854"]}]}],"P127":[{"mainsnak":{"snaktype":"value","property":"P127","hash":"bc815d9b7145f9e023d4415093032de2d5db8fc5","datavalue":{"value":{"entity-type":"item","numeric-id":28771536,"id":"Q28771536"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$7ee94a11-43eb-4e9e-687e-84f60f3dce46","rank":"normal","references":[{"hash":"288ab581e7d2d02995a26dfa8b091d96e78457fc","snaks":{"P143":[{"snaktype":"value","property":"P143","hash":"6a164248fc96bfa583bbb495cb63ae6401ec203c","datavalue":{"value":{"entity-type":"item","numeric-id":206855,"id":"Q206855"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"snaks-order":["P143"]}]}],"P571":[{"mainsnak":{"snaktype":"value","property":"P571","hash":"179efe75c77970dd56238d7404a423f219dc051f","datavalue":{"value":{"time":"+2008-04-00T00:00:00Z","timezone":0,"before":0,"after":0,"precision":10,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"},"datatype":"time"},"type":"statement","id":"Q364$de6e9821-4697-33b9-0474-cc166e49c736","rank":"normal","references":[{"hash":"ae08396d7e0fc9c1d0bf46f916ae35747260fa72","snaks":{"P854":[{"snaktype":"value","property":"P854","hash":"5fa1116bc535f063773e5e9775d6d17585609daa","datavalue":{"value":"https://github.com/blog/40-we-launched","type":"string"},"datatype":"url"}]},"snaks-order":["P854"]}]}],"P364":[{"mainsnak":{"snaktype":"value","property":"P364","hash":"cc2c15fb58feeae8fe7a641c0e2ddaf3f48e59f8","datavalue":{"value":{"entity-type":"item","numeric-id":1860,"id":"Q1860"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"Q364$AE3F7CD5-14DF-4033-8648-5927051103F5","rank":"normal","references":[{"hash":"288ab581e7d2d02995a26dfa8b091d96e78457fc","snaks":{"P143":[{"snaktype":"value","property":"P143","hash":"6a164248fc96bfa583bbb495cb63ae6401ec203c","datavalue":{"value":{"entity-type":"item","numeric-id":206855,"id":"Q206855"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"snaks-order":["P143"]}]}],"P2013":[{"mainsnak":{"snaktype":"value","property":"P2013","hash":"fd30dd08b7c6c02fbdc1730eda8428074f8d1425","datavalue":{"value":"GitHub","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$ad07c228-4d81-fc7d-f352-48c6f841a2e6","rank":"normal"}],"P2397":[{"mainsnak":{"snaktype":"value","property":"P2397","hash":"48490809734dd19f2c15e4ab656ab4b8ed27105e","datavalue":{"value":"UC7c3Kb6jYCRj4JOHHZTxKsQ","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$71802509-49ee-d010-004b-5f9c6277ef0b","rank":"normal"}],"P2037":[{"mainsnak":{"snaktype":"value","property":"P2037","hash":"472889ca7394052271ab1d1c8e531c024360d5d6","datavalue":{"value":"github","type":"string"},"datatype":"external-id"},"type":"statement","id":"Q364$f4289977-44a7-fbe1-faae-3c813703482a","rank":"normal"}],"P1814":[{"mainsnak":{"snaktype":"value","property":"P1814","hash":"6ab7792e850afe5a8368a0f90a097067a3a6bcee","datavalue":{"value":"\u30ae\u30c3\u30c8\u30cf\u30d6","type":"string"},"datatype":"string"},"type":"statement","id":"Q364$20f5e42f-46bc-2d7e-39c2-45e4b219920d","rank":"normal","references":[{"hash":"e9811e9de3c5b78439e665913e20428af5483e64","snaks":{"P854":[{"snaktype":"value","property":"P854","hash":"756ce48e56968ae2630544c41ce52d3ce672fca8","datavalue":{"value":"https://github.co.jp/about/","type":"string"},"datatype":"url"}],"P813":[{"snaktype":"value","property":"P813","hash":"8a89bb956c455030f58157d78a8b39e64b269052","datavalue":{"value":{"time":"+2017-08-06T00:00:00Z","timezone":0,"before":0,"after":0,"precision":11,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"},"datatype":"time"}],"P1683":[{"snaktype":"value","property":"P1683","hash":"c99d98a569b1dd0e5397c2393761a6efea986000","datavalue":{"value":{"text":"\u30ae\u30c3\u30c8\u30cf\u30d6\u30fb\u30b8\u30e3\u30d1\u30f3\u5408\u540c\u4f1a\u793e","language":"ja"},"type":"monolingualtext"},"datatype":"monolingualtext"}]},"snaks-order":["P854","P813","P1683"]}]}],"P1661":[{"mainsnak":{"snaktype":"value","property":"P1661","hash":"54a30e0f3ebc455ffa137c3801edc70187b41757","datavalue":{"value":{"amount":"+68","unit":"1"},"type":"quantity"},"datatype":"quantity"},"type":"statement","id":"Q364$2CB7FCBD-AB74-496A-B05F-A6B94DA5EA8A","rank":"normal"}],"P4354":[{"mainsnak":{"snaktype":"value","property":"P4354","hash":"2a495ea6ac9aff9be4c70e619843020951098527","datavalue":{"value":"https://github.com/search?q=$1","type":"string"},"datatype":"string"},"type":"statement","id":"Q364$02b02719-4946-9f27-5a8a-533fa33813aa","rank":"normal"}]},"sitelinks":{"arwiki":{"site":"arwiki","title":"\u063a\u064a\u062a
+        \u0647\u0627\u0628","badges":[]},"bgwiki":{"site":"bgwiki","title":"GitHub","badges":[]},"cawiki":{"site":"cawiki","title":"GitHub","badges":[]},"cswiki":{"site":"cswiki","title":"GitHub","badges":[]},"dewiki":{"site":"dewiki","title":"GitHub","badges":[]},"enwiki":{"site":"enwiki","title":"GitHub","badges":[]},"enwikibooks":{"site":"enwikibooks","title":"Git/GitHub","badges":[]},"eswiki":{"site":"eswiki","title":"GitHub","badges":[]},"fawiki":{"site":"fawiki","title":"\u06af\u06cc\u062a\u200c\u0647\u0627\u0628","badges":[]},"fiwiki":{"site":"fiwiki","title":"GitHub","badges":[]},"frwiki":{"site":"frwiki","title":"GitHub","badges":[]},"hewiki":{"site":"hewiki","title":"GitHub","badges":[]},"hiwiki":{"site":"hiwiki","title":"\u0917\u093f\u091f\u0939\u092c","badges":[]},"idwiki":{"site":"idwiki","title":"GitHub","badges":[]},"itwiki":{"site":"itwiki","title":"GitHub","badges":[]},"jawiki":{"site":"jawiki","title":"GitHub","badges":[]},"kawiki":{"site":"kawiki","title":"GitHub","badges":[]},"kowiki":{"site":"kowiki","title":"\uae43\ud5c8\ube0c","badges":[]},"lvwiki":{"site":"lvwiki","title":"GitHub","badges":[]},"mlwiki":{"site":"mlwiki","title":"\u0d17\u0d3f\u0d31\u0d4d\u0d31\u0d4d\u0d39\u0d2c\u0d4d\u0d2c\u0d4d","badges":[]},"nlwiki":{"site":"nlwiki","title":"GitHub","badges":[]},"plwiki":{"site":"plwiki","title":"GitHub","badges":[]},"ptwiki":{"site":"ptwiki","title":"GitHub","badges":[]},"rowiki":{"site":"rowiki","title":"GitHub","badges":[]},"ruwiki":{"site":"ruwiki","title":"GitHub","badges":[]},"ruwikinews":{"site":"ruwikinews","title":"\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f:GitHub","badges":[]},"slwiki":{"site":"slwiki","title":"GitHub","badges":[]},"srwiki":{"site":"srwiki","title":"GitHub","badges":[]},"svwiki":{"site":"svwiki","title":"Github","badges":[]},"thwiki":{"site":"thwiki","title":"\u0e01\u0e34\u0e15\u0e2e\u0e31\u0e1a","badges":[]},"trwiki":{"site":"trwiki","title":"GitHub","badges":[]},"ttwiki":{"site":"ttwiki","title":"Github","badges":[]},"ukwiki":{"site":"ukwiki","title":"GitHub","badges":[]},"urwiki":{"site":"urwiki","title":"\u06af\u0679
+        \u06c1\u0628","badges":[]},"viwiki":{"site":"viwiki","title":"GitHub","badges":[]},"zh_min_nanwiki":{"site":"zh_min_nanwiki","title":"GitHub","badges":[]},"zhwiki":{"site":"zhwiki","title":"GitHub","badges":[]}}}},"success":1}'
+    http_version:
+  recorded_at: Wed, 25 Oct 2017 07:01:12 GMT
+- request:
+    method: get
+    uri: https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=P31&sites=enwiki
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 25 Oct 2017 07:01:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Server:
+      - mw1206.eqiad.wmnet
+      X-Powered-By:
+      - HHVM/3.18.6-dev
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      P3p:
+      - CP="This is not a P3P policy! See https://www.wikidata.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      X-Frame-Options:
+      - DENY
+      Content-Disposition:
+      - inline; filename="api-result.json"
+      Vary:
+      - Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      Backend-Timing:
+      - D=121982 t=1508914873106105
+      X-Varnish:
+      - 481333506, 569838899, 204511626
+      Via:
+      - 1.1 varnish-v4, 1.1 varnish-v4, 1.1 varnish-v4
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      X-Cache:
+      - cp1054 pass, cp3040 pass, cp3030 pass
+      X-Cache-Status:
+      - pass
+      Strict-Transport-Security:
+      - max-age=106384710; includeSubDomains; preload
+      Set-Cookie:
+      - WMF-Last-Access=25-Oct-2017;Path=/;HttpOnly;secure;Expires=Sun, 26 Nov 2017
+        00:00:00 GMT, WMF-Last-Access-Global=25-Oct-2017;Path=/;Domain=.wikidata.org;HttpOnly;secure;Expires=Sun,
+        26 Nov 2017 00:00:00 GMT, GeoIP=FR:PDL:Sainte-Luce-sur-Loire:47.25:-1.48:v4;
+        Path=/; secure; Domain=.wikidata.org
+      X-Analytics:
+      - ns=-1;special=Badtitle;https=1;nocookies=1
+      X-Client-Ip:
+      - 88.168.131.229
+    body:
+      encoding: UTF-8
+      string: '{"entities":{"P31":{"pageid":3918489,"ns":120,"title":"Property:P31","lastrevid":577151676,"modified":"2017-10-14T10:07:28Z","type":"property","datatype":"wikibase-item","id":"P31","labels":{"en":{"language":"en","value":"instance
+        of"},"fr":{"language":"fr","value":"nature de l''\u00e9l\u00e9ment"},"de":{"language":"de","value":"ist
+        ein(e)"},"it":{"language":"it","value":"istanza di"},"pt-br":{"language":"pt-br","value":"inst\u00e2ncia
+        de"},"eo":{"language":"eo","value":"estas"},"he":{"language":"he","value":"\u05d4\u05d5\u05d0"},"es":{"language":"es","value":"instancia
+        de"},"fi":{"language":"fi","value":"esiintym\u00e4 kohteesta"},"hu":{"language":"hu","value":"ez
+        egy"},"ru":{"language":"ru","value":"\u044d\u0442\u043e \u0447\u0430\u0441\u0442\u043d\u044b\u0439
+        \u0441\u043b\u0443\u0447\u0430\u0439 \u043f\u043e\u043d\u044f\u0442\u0438\u044f"},"hr":{"language":"hr","value":"je"},"nl":{"language":"nl","value":"is
+        een"},"el":{"language":"el","value":"\u03b5\u03af\u03bd\u03b1\u03b9"},"pl":{"language":"pl","value":"jest
+        to"},"sr":{"language":"sr","value":"\u0458\u0435"},"ca":{"language":"ca","value":"inst\u00e0ncia
+        de"},"cs":{"language":"cs","value":"instance (\u010deho)"},"nb":{"language":"nb","value":"forekomst
+        av"},"pt":{"language":"pt","value":"inst\u00e2ncia de"},"ilo":{"language":"ilo","value":"pagarigan
+        iti"},"sl":{"language":"sl","value":"primerek od"},"be":{"language":"be","value":"\u0433\u044d\u0442\u0430"},"ko":{"language":"ko","value":"\ub2e4\uc74c
+        \uc885\ub958\uc5d0 \uc18d\ud568"},"nn":{"language":"nn","value":"f\u00f8rekomst
+        av"},"vi":{"language":"vi","value":"l\u00e0 m\u1ed9t"},"be-tarask":{"language":"be-tarask","value":"\u0430\u0441\u043e\u0431\u043d\u044b
+        \u0432\u044b\u043f\u0430\u0434\u0430\u043a \u043f\u0430\u043d\u044f\u0442\u043a\u0443"},"bs":{"language":"bs","value":"je"},"th":{"language":"th","value":"\u0e40\u0e1b\u0e47\u0e19"},"uk":{"language":"uk","value":"\u0454
+        \u043e\u0434\u043d\u0438\u043c \u0456\u0437"},"en-gb":{"language":"en-gb","value":"instance
+        of"},"en-ca":{"language":"en-ca","value":"instance of"},"ja":{"language":"ja","value":"\u5206\u985e"},"uz":{"language":"uz","value":"bu"},"lv":{"language":"lv","value":"ir"},"la":{"language":"la","value":"est"},"fa":{"language":"fa","value":"\u06cc\u06a9
+        \u0646\u0645\u0648\u0646\u0647 \u0627\u0632"},"sv":{"language":"sv","value":"instans
+        av"},"nds":{"language":"nds","value":"is en"},"ro":{"language":"ro","value":"este
+        un/o"},"ta":{"language":"ta","value":"\u0bb5\u0b95\u0bc8"},"min":{"language":"min","value":"adolah"},"id":{"language":"id","value":"adalah"},"gl":{"language":"gl","value":"\u00e9
+        un/unha"},"is":{"language":"is","value":"er"},"af":{"language":"af","value":"is
+        ''n"},"ka":{"language":"ka","value":"\u10d0\u10e0\u10d8\u10e1"},"de-at":{"language":"de-at","value":"ist
+        eine Instanz von"},"da":{"language":"da","value":"tilf\u00e6lde af"},"sco":{"language":"sco","value":"instance
+        o"},"sk":{"language":"sk","value":"je"},"de-ch":{"language":"de-ch","value":"ist
+        eine Instanz von"},"bar":{"language":"bar","value":"is a Instanz vo"},"bn":{"language":"bn","value":"\u09a8\u09bf\u09a6\u09b0\u09cd\u09b6\u09a8"},"lmo":{"language":"lmo","value":"l''\u00e8
+        un(a)"},"nds-nl":{"language":"nds-nl","value":"is n"},"sh":{"language":"sh","value":"je(su)"},"br":{"language":"br","value":"doare
+        an elfenn"},"bg":{"language":"bg","value":"\u0438\u043d\u0441\u0442\u0430\u043d\u0446\u0438\u044f
+        \u043d\u0430"},"mr":{"language":"mr","value":"\u092a\u094d\u0930\u0915\u093e\u0930"},"ckb":{"language":"ckb","value":"\u0646\u0645\u0648\u0648\u0646\u06d5\u06cc\u06d5\u06a9
+        \u0644\u06d5"},"ar":{"language":"ar","value":"\u062d\u0627\u0644\u0629 \u062e\u0627\u0635\u0629
+        \u0645\u0646"},"et":{"language":"et","value":"\u00fcksikjuht n\u00e4htusest"},"pcd":{"language":"pcd","value":"est
+        un"},"tr":{"language":"tr","value":"nedir"},"hi":{"language":"hi","value":"\u0909\u0926\u0939\u093e\u0930\u0923
+        \u0939\u0948"},"sr-ec":{"language":"sr-ec","value":"\u0458\u0435"},"co":{"language":"co","value":"istanza
+        di"},"oc":{"language":"oc","value":"natura de l''element"},"mk":{"language":"mk","value":"\u0435"},"yi":{"language":"yi","value":"\u05e4\u05bf\u05d0\u05b7\u05dc"},"zh":{"language":"zh","value":"\u6027\u8cea"},"jbo":{"language":"jbo","value":"serese
+        mupli"},"gu":{"language":"gu","value":"\u0a89\u0aa6\u0abe\u0ab9\u0ab0\u0aa3"},"ms":{"language":"ms","value":"contoh"},"tl":{"language":"tl","value":"ay
+        halimbawa ng"},"rm":{"language":"rm","value":"\u00e8 in(a)"},"ksh":{"language":"ksh","value":"es
+        e Beischpell f\u00f6r e(n(e))"},"lb":{"language":"lb","value":"ass eng/e(e)(n)"},"csb":{"language":"csb","value":"to
+        je"},"ts":{"language":"ts","value":"Nchumu"},"gsw":{"language":"gsw","value":"isch
+        e"},"mzn":{"language":"mzn","value":"\u062f\u0650\u0644\u0650\u0648\u0633"},"te":{"language":"te","value":"\u0c26\u0c40\u0c28\u0c3f\u0c2f\u0c4a\u0c15\u0c4d\u0c15
+        \u0c12\u0c15 \u0c05\u0c35\u0c24\u0c3e\u0c30\u0c02"},"or":{"language":"or","value":"\u0b26\u0b43\u0b37\u0b4d\u0b1f\u0b3e\u0b28\u0b4d\u0b24"},"sr-el":{"language":"sr-el","value":"je"},"stq":{"language":"stq","value":"is
+        n(e)"},"ia":{"language":"ia","value":"instantia de"},"nap":{"language":"nap","value":"no
+        tipo ''e"},"yue":{"language":"yue","value":"\u4fc2\u4e00\u500b"},"mg":{"language":"mg","value":"karazana"},"scn":{"language":"scn","value":"esimplari
+        di"},"eu":{"language":"eu","value":"honako hau da"},"fy":{"language":"fy","value":"is
+        in"},"ml":{"language":"ml","value":"\u0d2a\u0d4d\u0d30\u0d24\u0d4d\u0d2f\u0d47\u0d15\u0d2e\u0d3e\u0d2f
+        \u0d09\u0d26\u0d3e\u0d39\u0d30\u0d23\u0d02"},"tt":{"language":"tt","value":"\u0442\u04e9\u0448\u0435\u043d\u0447\u04d9\u043d\u0435\u04a3
+        \u0430\u0435\u0440\u044b\u043c \u043e\u0447\u0440\u0430\u0433\u044b"},"ce":{"language":"ce","value":"\u0445\u04c0\u0430\u0440\u0430
+        \u0434\u043e\u043b\u0430\u0440\u0430 \u043a\u0445\u0435\u0442\u0430\u043c
+        \u0431\u0443"},"ne":{"language":"ne","value":"\u0909\u0926\u093e\u0939\u0930\u0923"},"ast":{"language":"ast","value":"instancia
+        de"},"cy":{"language":"cy","value":"enghraifft o''r canlynol"},"lt":{"language":"lt","value":"yra"},"hy":{"language":"hy","value":"\u0570\u0561\u057d\u056f\u0561\u0581\u0578\u0582\u0569\u0575\u0561\u0576
+        \u0574\u0561\u057d\u0576\u0561\u057e\u0578\u0580 \u0564\u0565\u057a\u0584"},"mai":{"language":"mai","value":"\u0909\u0926\u093e\u0939\u0930\u0923"},"frr":{"language":"frr","value":"As
+        en"},"fo":{"language":"fo","value":"er eitt"},"kn":{"language":"kn","value":"\u0c89\u0ca6\u0cbe\u0cb9\u0cb0\u0ca3\u0cc6\u0c97\u0cc6"},"ga":{"language":"ga","value":"shampla
+        de"},"ht":{"language":"ht","value":"egzanp nan"},"io":{"language":"io","value":"esas"},"vo":{"language":"vo","value":"binon"},"zh-hant":{"language":"zh-hant","value":"\u6027\u8cea"},"zh-hans":{"language":"zh-hans","value":"\u6027\u8d28"},"zh-hk":{"language":"zh-hk","value":"\u6027\u8cea"},"zh-cn":{"language":"zh-cn","value":"\u6027\u8d28"},"zh-mo":{"language":"zh-mo","value":"\u6027\u8cea"},"zh-sg":{"language":"zh-sg","value":"\u6027\u8d28"},"zh-tw":{"language":"zh-tw","value":"\u6027\u8cea"},"pa":{"language":"pa","value":"\u0a28\u0a2e\u0a42\u0a28\u0a3e
+        \u0a39\u0a48"},"ku-latn":{"language":"ku-latn","value":"m\u00eenakek ji bo"},"sq":{"language":"sq","value":"instanc\u00eb
+        e"},"pam":{"language":"pam","value":"alimbawa ning"},"hsb":{"language":"hsb","value":"je"},"an":{"language":"an","value":"instancia
+        de"},"tg":{"language":"tg","value":"\u044f\u043a \u043d\u0430\u043c\u0443\u043d\u0430
+        \u0430\u0437"},"ky":{"language":"ky","value":"\u043a\u043b\u0430\u0441\u0441\u044b"},"ba":{"language":"ba","value":"\u0422\u04e9\u0448\u04e9\u043d\u0441\u04d9\u043d\u0435\u04a3
+        \u0448\u04d9\u0445\u0441\u04d9\u043d \u043e\u0441\u0440\u0430\u0493\u044b"},"yo":{"language":"yo","value":"\u00e0k\u00f3r\u00ed"},"tcy":{"language":"tcy","value":"\u0c89\u0ca6\u0cbe\u0cb0\u0ccd\u0cae\u0cc6\u0c97\u0ccd"},"tg-cyrl":{"language":"tg-cyrl","value":"\u044f\u043a
+        \u043d\u0430\u043c\u0443\u043d\u0430 \u0430\u0437"},"tg-latn":{"language":"tg-latn","value":"yak
+        namuna az"},"tt-latn":{"language":"tt-latn","value":"t\u00f6\u015fen\u00e7\u00e4ne\u00f1
+        ay\u0131r\u0131m o\u00e7ra\u011f\u0131"},"tt-cyrl":{"language":"tt-cyrl","value":"\u0442\u04e9\u0448\u0435\u043d\u0447\u04d9\u043d\u0435\u04a3
+        \u0430\u0435\u0440\u044b\u043c \u043e\u0447\u0440\u0430\u0433\u044b"},"az":{"language":"az","value":"anlay\u0131\u015f\u0131n
+        x\u00fcsusi hal\u0131d\u0131r"},"ur":{"language":"ur","value":"\u0645\u062b\u0627\u0644
+        \u0628\u06c1"}},"descriptions":{"en":{"language":"en","value":"that class
+        of which this subject is a particular example and member. (Subject typically
+        an individual member with Proper Name label.) Different from P279 (subclass
+        of)"},"it":{"language":"it","value":"questo elemento \u00e8 un''istanza di
+        questa classe, categoria o gruppo di oggetti"},"fr":{"language":"fr","value":"Cet
+        \u00e9l\u00e9ment est un exemple sp\u00e9cifique de cette classe qui en pr\u00e9cise
+        la nature. Ne pas confondre avec la propri\u00e9t\u00e9 P279 (sous-classe
+        de)."},"pt-br":{"language":"pt-br","value":"aquela classe a qual este sujeito
+        \u00e9 um membro e exemplo particular. (O sujeito \u00e9 tipicamente um membro
+        individual com um Nome Pr\u00f3prio). Diferente da P279 (subclasse de)"},"hu":{"language":"hu","value":"az
+        elem a m\u00e1sik elem p\u00e9ld\u00e1nya"},"hr":{"language":"hr","value":"ova
+        stavka je primjer ove druge stavke"},"de":{"language":"de","value":"Auspr\u00e4gung
+        oder Exemplar einer Sache, Mitglied einer Klasse. Unterscheide von P279 (Unterklasse
+        von)."},"el":{"language":"el","value":"\u03b1\u03c5\u03c4\u03cc \u03c4\u03bf
+        \u03b1\u03bd\u03c4\u03b9\u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf \u03b5\u03af\u03bd\u03b1\u03b9
+        \u03b5\u03be\u03b5\u03b9\u03b4\u03b9\u03ba\u03b5\u03c5\u03bc\u03ad\u03bd\u03bf
+        \u03c0\u03b1\u03c1\u03ac\u03b4\u03b5\u03b9\u03b3\u03bc\u03b1 \u03ba\u03b1\u03b9
+        \u03bc\u03ad\u03bb\u03bf\u03c2 \u03b1\u03c5\u03c4\u03ae\u03c2 \u03c4\u03b7\u03c2
+        \u03c4\u03ac\u03be\u03b7\u03c2. \u0394\u03b5\u03bd \u03b8\u03b1 \u03c0\u03c1\u03ad\u03c0\u03b5\u03b9
+        \u03bd\u03b1 \u03c3\u03c5\u03b3\u03c7\u03ad\u03b5\u03c4\u03b1\u03b9 \u03bc\u03b5
+        \u03c4\u03b7\u03bd \u0399\u03b4\u03b9\u03cc\u03c4\u03b7\u03c4\u03b1:P279"},"fi":{"language":"fi","value":"kohde,
+        johon ominaisuus liitet\u00e4\u00e4n, on esiintym\u00e4 ominaisuuden arvoksi
+        asetettavasta kohteesta"},"ilo":{"language":"ilo","value":"daytoy a banag
+        ket maysa a pagarigan iti daytoy a sabali a banag"},"nb":{"language":"nb","value":"dette
+        elementet er et konkret objekt/eksemplar (instans) av denne klassen, kategorien
+        eller objektgruppen"},"es":{"language":"es","value":"este elemento es un ejemplar
+        del otro elemento"},"vi":{"language":"vi","value":"kho\u1ea3n m\u1ee5c n\u00e0y
+        l\u00e0 m\u1ed9t th\u1ef1c th\u1ec3 c\u1ee7a kho\u1ea3n m\u1ee5c kia"},"be-tarask":{"language":"be-tarask","value":"\u0430\u0433\u0443\u043b\u044c\u043d\u0430\u0435
+        \u0430\u0437\u043d\u0430\u0447\u044d\u043d\u044c\u043d\u0435, \u0447\u044b\u043c
+        \u0437\u044c\u044f\u045e\u043b\u044f\u0435\u0446\u0446\u0430 \u0430\u0431\u2019\u0435\u043a\u0442"},"ja":{"language":"ja","value":"\u3053\u306e\u9805\u76ee\u3092\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\uff08\u5b9f\u4f53\uff09\u3068\u3059\u308b\u7a2e\u985e\u30fb\u6982\u5ff5"},"en-gb":{"language":"en-gb","value":"this
+        item is an instance of this other item"},"en-ca":{"language":"en-ca","value":"the
+        subject is an instance of the object"},"pl":{"language":"pl","value":"stanowi
+        przyk\u0142ad (jest elementem) danej klasy"},"lv":{"language":"lv","value":"\u0161\u012b
+        vien\u012bba ir \u0161\u012bs citas vien\u012bbas instance"},"ca":{"language":"ca","value":"aquest
+        element \u00e9s un objecte concret (inst\u00e0ncia) d''aquesta classe, categoria
+        o grup d''objectes"},"sv":{"language":"sv","value":"\u00e4r ett konkret objekt
+        (instans) av denna klass, kategori eller objektgrupp"},"fa":{"language":"fa","value":"\u0622\u06cc\u062a\u0645
+        \u0645\u0648\u0631\u062f \u0646\u0638\u0631 \u06cc\u06a9 \u0646\u0648\u0639
+        ... \u0627\u0633\u062a"},"gl":{"language":"gl","value":"o elemento \u00e9
+        unha instancia doutro elemento"},"is":{"language":"is","value":"\u00deessi
+        hlutur er d\u00e6mi um annan hlut"},"nl":{"language":"nl","value":"dit item
+        is een exemplaar (instantie) van deze groep elementen"},"ru":{"language":"ru","value":"\u0434\u0430\u043d\u043d\u044b\u0439
+        \u044d\u043b\u0435\u043c\u0435\u043d\u0442 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442
+        \u0441\u043e\u0431\u043e\u0439 \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u044b\u0439
+        \u043e\u0431\u044a\u0435\u043a\u0442 (\u044d\u043a\u0437\u0435\u043c\u043f\u043b\u044f\u0440
+        / \u0447\u0430\u0441\u0442\u043d\u044b\u0439 \u0441\u043b\u0443\u0447\u0430\u0439)
+        \u043a\u043b\u0430\u0441\u0441\u0430, \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0438.
+        \u041d\u0435 \u043f\u0443\u0442\u0430\u0442\u044c \u0441 Property:P279 (\"\u043f\u043e\u0434\u043a\u043b\u0430\u0441\u0441
+        \u043e\u0442\")."},"uk":{"language":"uk","value":"\u0446\u0435\u0439 \u0435\u043b\u0435\u043c\u0435\u043d\u0442
+        \u0454 \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u0438\u043c \u043f\u0440\u0438\u043a\u043b\u0430\u0434\u043e\u043c
+        \u043e\u0431''\u0454\u043a\u0442\u0430 (\u043e\u043a\u0440\u0435\u043c\u0438\u0439
+        \u0432\u0438\u043f\u0430\u0434\u043e\u043a) \u0442\u0430\u043a\u043e\u0433\u043e
+        \u043a\u043b\u0430\u0441\u0443, \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u0456
+        \u0447\u0438 \u0433\u0440\u0443\u043f\u0438 \u043e\u0431''\u0454\u043a\u0442\u0456\u0432"},"de-at":{"language":"de-at","value":"Auspr\u00e4gung
+        oder Exemplar einer Sache"},"da":{"language":"da","value":"dette emne er et
+        konkret objekt af denne kategori, klasse eller objektgruppe."},"ro":{"language":"ro","value":"acest
+        element este un exemplar din clasa definit\u0103 de acel element"},"de-ch":{"language":"de-ch","value":"Auspr\u00e4gung
+        oder Exemplar einer Sache"},"nds-nl":{"language":"nds-nl","value":"dit item
+        is n eksemplaor/instansie van t tweede item (Veurbeeld: \"Mark Rutte\" is
+        nen \"politieker\")"},"he":{"language":"he","value":"\u05d4\u05e0\u05d3\u05d5\u05df
+        \u05d4\u05d5\u05d0 \u05de\u05e7\u05e8\u05d4 \u05e9\u05dc"},"bg":{"language":"bg","value":"\u043e\u0431\u0435\u043a\u0442\u044a\u0442
+        \u0435 \u0438\u043d\u0441\u0442\u0430\u043d\u0446\u0438\u044f \u043d\u0430
+        \u0434\u0430\u0434\u0435\u043d \u043a\u043b\u0430\u0441"},"hi":{"language":"hi","value":"\u092f\u0939
+        \u0906\u0907\u091f\u092e \u0907\u0938 \u0905\u0928\u094d\u092f \u0906\u0907\u091f\u092e
+        \u0915\u093e \u0909\u0926\u0939\u093e\u0930\u0923 \u0939\u0948"},"sr":{"language":"sr","value":"\u043e\u0432\u0430
+        \u0441\u0442\u0430\u0432\u043a\u0430 \u0458\u0435 \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u0430\u043d
+        \u043e\u0431\u0458\u0435\u043a\u0430\u0442 (\u0438\u043d\u0441\u0442\u0430\u043d\u0446\u0430)
+        \u043a\u043b\u0430\u0441\u0435, \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0458\u0435
+        \u0438\u043b\u0438 \u0433\u0440\u0443\u043f\u0435 \u043e\u0431\u0458\u0435\u043a\u0430\u0442\u0430"},"sr-ec":{"language":"sr-ec","value":"\u043e\u0432\u0430
+        \u0441\u0442\u0430\u0432\u043a\u0430 \u0458\u0435 \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u0430\u043d
+        \u043e\u0431\u0458\u0435\u043a\u0430\u0442 (\u0438\u043d\u0441\u0442\u0430\u043d\u0446\u0430)
+        \u043a\u043b\u0430\u0441\u0435, \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0458\u0435
+        \u0438\u043b\u0438 \u0433\u0440\u0443\u043f\u0435 \u043e\u0431\u0458\u0435\u043a\u0430\u0442\u0430"},"mk":{"language":"mk","value":"\u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u0442
+        \u0435 \u043f\u0440\u0438\u043c\u0435\u0440\u043e\u043a/\u0441\u043b\u0443\u0447\u0430\u0458
+        \u043d\u0430 \u0434\u0440\u0443\u0433 \u043f\u0440\u0435\u0434\u043c\u0435\u0442"},"cs":{"language":"cs","value":"tato
+        polo\u017eka je jedna konkr\u00e9tn\u00ed v\u011bc (exempl\u00e1\u0159, p\u0159\u00edklad)
+        pat\u0159\u00edc\u00ed do t\u00e9to t\u0159\u00eddy, kategorie nebo skupiny
+        p\u0159edm\u011bt\u016f"},"gu":{"language":"gu","value":"\u0a86 \u0ab2\u0ac7\u0a96
+        \u0a86 \u0aaa\u0acd\u0ab0\u0a95\u0abe\u0ab0 \u0a85\u0aa5\u0ab5\u0abe \u0ab6\u0acd\u0ab0\u0ac7\u0aa3\u0ac0\u0aa8\u0abe
+        \u0a85\u0aa8\u0acd\u0aaf \u0ab2\u0ac7\u0a96\u0acb\u0aa8\u0ac1\u0a82 \u0ab8\u0a9a\u0acb\u0a9f
+        \u0a89\u0aa6\u0abe\u0ab9\u0ab0\u0aa3 \u0a9b\u0ac7."},"ksh":{"language":"ksh","value":"di
+        Saach es ene beschtemmpte, konkrete J\u00e4\u00e4jeschtand vun d\u00e4 Zoot,
+        udder Jropp, udder d\u00e4 Aat"},"eo":{"language":"eo","value":"tiu \u0109i
+        ero estas konkreta a\u0135o (instanco) de tiu \u0109i klaso, kategorio a\u016d
+        objektogrupo"},"ko":{"language":"ko","value":"\ud56d\ubaa9 \uc8fc\uc81c\ub294
+        \ub2e4\uc74c \uc885\ub958\uc5d0 \uc18d\ud568 (\ud574\ub2f9 \uc885\ub958\uc5d0
+        \uc18d\ud558\ub294 \uac83 \uc911 \ud558\ub098\ub97c \uace0\ub974\ub77c\uace0
+        \ud588\uc744 \ub54c \uc774 \ud56d\ubaa9\ub3c4 \uace0\ub97c \uc218 \uc788\uc5b4\uc57c
+        \ud568)"},"oc":{"language":"oc","value":"natura de, expression de o exemplar
+        de"},"mzn":{"language":"mzn","value":"\u0622\u06cc\u062a\u0645 \u062c\u0648\u0631"},"zh":{"language":"zh","value":"\u672c\u9805\u76ee\u6240\u5c6c\u7684\u6027\u8cea\uff0c\u672c\u4ee5\u9805\u76ee\u70ba\u5be6\u4f8b\u7684\u985e\u5225"},"pt":{"language":"pt","value":"este
+        item \u00e9 uma inst\u00e2ncia deste outro item"},"id":{"language":"id","value":"Butir
+        ini adalah contoh spesifik dan anggota dari sebuah kelas tertentu. Jangan
+        bingung dengan atribut Property:P279 (subkelas dari)."},"sr-el":{"language":"sr-el","value":"ova
+        stavka je konkretan objekat (instanca) klase, kategorije ili grupe objekata"},"br":{"language":"br","value":"bez''
+        ez eo an elfenn-ma\u00f1 lodek eus ar rummad pe renkad-ma\u00f1, pe un elfenn
+        eus ur strollad"},"sl":{"language":"sl","value":"je konkretna izvedba objekta
+        v razredu, kategoriji ali skupini objektov"},"nap":{"language":"nap","value":"sto
+        fatto o sta cosa \u00e8 no tipo ''e nato elemento"},"rif":{"language":"rif","value":"\u062d\u062c\u064a\u062c"},"yue":{"language":"yue","value":"\u5462\u4ef6\u5622\u4fc2\u4ee5\u4e0b\u6982\u5ff5\u5605\u4e00\u500b\u5be6\u4f8b"},"scn":{"language":"scn","value":"sta
+        cosa \u00e8 n''esimplari cuncretu di sta classi, di sta catigur\u00eca, o
+        di stu cuncettu"},"eu":{"language":"eu","value":"elementu hau mota, kategoria
+        edo ale talde honen ale (adibide) konkretu bat da"},"my":{"language":"my","value":"\u103b\u1019\u1014\u1039\u1019\u102c\u1018\u102c\u101e\u102c"},"ne":{"language":"ne","value":"\u0915\u0941\u0928\u0948
+        \u092a\u0928\u093f \u0935\u0938\u094d\u0924\u0941\u0915\u094b \u090f\u0915
+        \u0938\u094d\u0925\u093f\u0924\u0940 \u091c\u0928\u093e\u0909\u0901\u091b
+        \u0930 \u0915\u0941\u0928\u0948 \u092a\u0928\u093f \u0938\u092e\u0942\u0939\u0915\u094b
+        \u0938\u0926\u0938\u094d\u092f \u0930\u0939\u0947\u0915\u094b \u091c\u0928\u093e\u0909\u0901\u091b"},"ast":{"language":"ast","value":"esti
+        elementu ye un casu concretu d''esta categor\u00eda o grupu"},"ta":{"language":"ta","value":"\u0b87\u0bb5\u0bcd\u0bb5\u0bc1\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0b9f\u0bbf\u0baf\u0bbe\u0ba9\u0ba4\u0bc1,
+        \u0b95\u0bc1\u0bb1\u0bbf\u0baa\u0bcd\u0baa\u0bbf\u0b9f\u0baa\u0bcd\u0baa\u0b9f\u0bc1\u0b95\u0bbf\u0ba9\u0bcd\u0bb1
+        \u0bb5\u0b95\u0bc1\u0baa\u0bcd\u0baa\u0bc8\u0b9a\u0bcd \u0b9a\u0bc7\u0bb0\u0bcd\u0ba8\u0bcd\u0ba4\u0ba4\u0bc1\u0bae\u0bcd
+        \u0b85\u0bb5\u0bcd\u0bb5\u0b95\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0b95\u0bcd\u0b95\u0bbe\u0ba9
+        \u0b92\u0bb0\u0bc1 \u0ba4\u0bbf\u0b9f\u0bcd\u0b9f\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bbe\u0ba9
+        \u0b8e\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bcd
+        \u0b86\u0b95\u0bc1\u0bae\u0bcd."},"zh-hant":{"language":"zh-hant","value":"\u672c\u9805\u76ee\u6240\u5c6c\u7684\u6027\u8cea\uff0c\u672c\u4ee5\u9805\u76ee\u70ba\u5be6\u4f8b\u7684\u985e\u5225"},"zh-hans":{"language":"zh-hans","value":"\u672c\u9879\u76ee\u6240\u5c5e\u7684\u6027\u8d28\uff0c\u672c\u4ee5\u9879\u76ee\u4e3a\u5b9e\u4f8b\u7684\u7c7b\u522b"},"zh-hk":{"language":"zh-hk","value":"\u672c\u9805\u76ee\u6240\u5c6c\u7684\u6027\u8cea\uff0c\u672c\u4ee5\u9805\u76ee\u70ba\u5be6\u4f8b\u7684\u985e\u5225"},"zh-cn":{"language":"zh-cn","value":"\u672c\u9879\u76ee\u6240\u5c5e\u7684\u6027\u8d28\uff0c\u672c\u4ee5\u9879\u76ee\u4e3a\u5b9e\u4f8b\u7684\u7c7b\u522b"},"zh-mo":{"language":"zh-mo","value":"\u672c\u9805\u76ee\u6240\u5c6c\u7684\u6027\u8cea\uff0c\u672c\u4ee5\u9805\u76ee\u70ba\u5be6\u4f8b\u7684\u985e\u5225"},"zh-sg":{"language":"zh-sg","value":"\u672c\u9879\u76ee\u6240\u5c5e\u7684\u6027\u8d28\uff0c\u672c\u4ee5\u9879\u76ee\u4e3a\u5b9e\u4f8b\u7684\u7c7b\u522b"},"zh-tw":{"language":"zh-tw","value":"\u672c\u9805\u76ee\u6240\u5c6c\u7684\u6027\u8cea\uff0c\u672c\u4ee5\u9805\u76ee\u70ba\u5be6\u4f8b\u7684\u985e\u5225"},"ka":{"language":"ka","value":"\u10d0\u10e6\u10dc\u10d8\u10e8\u10dc\u10e3\u10da\u10d8
+        \u10d4\u10da\u10d4\u10db\u10d4\u10dc\u10e2\u10d8 \u10ec\u10d0\u10e0\u10db\u10dd\u10d0\u10d3\u10d2\u10d4\u10dc\u10e1
+        \u10d9\u10dd\u10dc\u10d9\u10e0\u10d4\u10e2\u10e3\u10da\u10d8 \u10dd\u10d1\u10d8\u10d4\u10e5\u10e2\u10d8\u10e1
+        \u10d9\u10da\u10d0\u10e1\u10e1, \u10d9\u10d0\u10e2\u10d4\u10d2\u10dd\u10e0\u10d8\u10d0\u10e1
+        \u10d0\u10dc \u10dd\u10d1\u10d8\u10d4\u10e5\u10e2\u10d7\u10d0 \u10ef\u10d2\u10e3\u10e4\u10e1"},"sq":{"language":"sq","value":"ky
+        artikull \u00ebsht\u00eb nj\u00eb shembull specifik dhe nj\u00eb an\u00ebtar
+        i asaj klase. P\u00ebr t\u00eb mos ngat\u00ebrrohet me tiparin Property:P279
+        (n\u00ebnklas\u00ebn e)"},"sk":{"language":"sk","value":"t\u00e1to polo\u017eka
+        je jedna konkr\u00e9tna vec (exempl\u00e1r, pr\u00edklad) patriaci do tejto
+        triedy, kateg\u00f3rie alebo skupiny predmetov"},"tr":{"language":"tr","value":"Bu
+        madde belirli bir \u00f6rnektir ve o s\u0131n\u0131f\u0131n bir \u00fcyesidir.
+        \u00d6zellikle kar\u0131\u015ft\u0131r\u0131lmamal\u0131d\u0131r:P279 (alt
+        s\u0131n\u0131f\u0131)"},"hsb":{"language":"hsb","value":"\u0161to je objekt?"},"ar":{"language":"ar","value":"\u0635\u0646\u0641
+        \u0645\u0646 \u0627\u0644\u0623\u0634\u064a\u0627\u0621 \u064a\u0648\u062c\u062f
+        \u0634\u064a\u0621 \u0648\u0627\u062d\u062f \u0645\u0646\u0647 \u0648\u0644\u0627
+        \u064a\u062a\u0643\u0631\u0631. \u0648\u064a\u062c\u0628 \u0623\u0646 \u0644\u0627
+        \u064a\u062a\u0645 \u0627\u0644\u062e\u0644\u0637 \u0628\u064a\u0646\u0647
+        \u0648\u0628\u064a\u0646 \u0627\u0644\u062e\u0627\u0635\u064a\u0629: P279
+        (\u0646\u0648\u0639 \u0641\u0631\u0639\u064a \u0645\u0646)."},"th":{"language":"th","value":"\u0e2a\u0e21\u0e1a\u0e31\u0e15\u0e34\u0e17\u0e35\u0e48\u0e1a\u0e48\u0e07\u0e1a\u0e2d\u0e01\u0e16\u0e36\u0e07\u0e2a\u0e34\u0e48\u0e07\u0e46
+        \u0e19\u0e31\u0e49\u0e19\u0e27\u0e48\u0e32\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\u0e01\u0e31\u0e1a\u0e2d\u0e30\u0e44\u0e23
+        (\u0e42\u0e14\u0e22\u0e1b\u0e01\u0e15\u0e34\u0e17\u0e38\u0e01\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e21\u0e35\u0e1b\u0e49\u0e32\u0e22\u0e0a\u0e37\u0e48\u0e2d\u0e17\u0e35\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07)
+        \u0e41\u0e15\u0e01\u0e15\u0e48\u0e32\u0e07\u0e08\u0e32\u0e01 P279 (\u0e01\u0e25\u0e38\u0e48\u0e21\u0e22\u0e48\u0e2d\u0e22\u0e02\u0e2d\u0e07)"},"lb":{"language":"lb","value":"Element
+        vun enger Grupp, Kategorie oder Klass"},"tcy":{"language":"tcy","value":"\u0c88
+        \u0cb5\u0cbf\u0cb8\u0caf\u0cca \u0c92\u0c82\u0c9c\u0cbf \u0ca8\u0cbf\u0cb0\u0ccd\u0ca6\u0cbf\u0cb8\u0ccd\u0c9f\u0cca
+        \u0c89\u0ca6\u0cbe\u0cb0\u0ccd\u0cae\u0cc6 \u0cac\u0cc1\u0c95\u0ccd\u0c95\u0cca
+        \u0cb8\u0ca6\u0cb8\u0ccd\u0caf\u0cc6 \u0c86\u0ca6\u0cbf\u0caa\u0ccd\u0caa\u0cc1\u0ca8
+        \u0cb9\u0ccd\u0caf\u0cbe\u0c9f\u0ccd \u0cb5\u0cb0\u0ccd\u0c97\u0cca."},"sco":{"language":"sco","value":"that
+        cless o that this subject is a particular exemple an member. (Subject teepically
+        an individual member wi Proper Name label.) Different frae P279 (subcless
+        o)."},"az":{"language":"az","value":"bu element m\u00fc\u0259yy\u0259n anlay\u0131\u015f\u0131n
+        x\u00fcsusi hal\u0131n\u0131 t\u0259svir edir. P279 (yar\u0131msinif) il\u0259
+        s\u0259hv salmay\u0131n."}},"aliases":{"fr":[{"language":"fr","value":"est
+        un"},{"language":"fr","value":"est une"},{"language":"fr","value":"instance
+        de"},{"language":"fr","value":"\u2208"},{"language":"fr","value":"a pour classe"},{"language":"fr","value":"est
+        un exemple de"}],"de":[{"language":"de","value":"ist Instanz von"},{"language":"de","value":"war
+        ein(e)"},{"language":"de","value":"\u2208"},{"language":"de","value":"Beispiel
+        von"},{"language":"de","value":"Exemplar von"},{"language":"de","value":"Einzelfall
+        von"},{"language":"de","value":"Mitglied von"},{"language":"de","value":"ist
+        eine"},{"language":"de","value":"war eine"}],"he":[{"language":"he","value":"\u05d4\u05d9\u05d0"},{"language":"he","value":"\u05d3\u05d5\u05d2\u05de\u05d4
+        \u05e9\u05dc"},{"language":"he","value":"\u05de\u05e7\u05e8\u05d4 \u05e9\u05dc"},{"language":"he","value":"\u2208"}],"en":[{"language":"en","value":"is
+        a"},{"language":"en","value":"is an"},{"language":"en","value":"has class"},{"language":"en","value":"has
+        type"},{"language":"en","value":"is a particular"},{"language":"en","value":"is
+        a specific"},{"language":"en","value":"is an individual"},{"language":"en","value":"is
+        a unique"},{"language":"en","value":"is an example of"},{"language":"en","value":"member
+        of"},{"language":"en","value":"unique individual of"},{"language":"en","value":"distinct
+        member of"},{"language":"en","value":"non-type member of"},{"language":"en","value":"unsubclassable
+        example of"},{"language":"en","value":"uninstantiable instance of"},{"language":"en","value":"unsubclassifiable
+        member of"},{"language":"en","value":"not a type but is instance of"},{"language":"en","value":"unsubtypable
+        particular"},{"language":"en","value":"unitary element of class"},{"language":"en","value":"distinct
+        element of"},{"language":"en","value":"distinct individual member of"},{"language":"en","value":"occurrence
+        of"},{"language":"en","value":"\u2208"},{"language":"en","value":"rdf:type"},{"language":"en","value":"type"}],"nb":[{"language":"nb","value":"element
+        av"},{"language":"nb","value":"eksempel p\u00e5"},{"language":"nb","value":"utgave
+        av"},{"language":"nb","value":"eksemplar av"},{"language":"nb","value":"instans
+        av"},{"language":"nb","value":"er"},{"language":"nb","value":"\u2208"}],"ru":[{"language":"ru","value":"\u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442
+        \u0441\u043e\u0431\u043e\u0439"},{"language":"ru","value":"\u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f"},{"language":"ru","value":"\u0447\u0430\u0441\u0442\u043d\u044b\u0439
+        \u0441\u043b\u0443\u0447\u0430\u0439 \u0434\u043b\u044f"},{"language":"ru","value":"\u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f
+        \u043e\u0434\u043d\u0438\u043c \u0438\u0437 \u044d\u043a\u0437\u0435\u043c\u043f\u043b\u044f\u0440\u043e\u0432"},{"language":"ru","value":"\u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u0438\u0442
+        \u043a\u043b\u0430\u0441\u0441\u0443"},{"language":"ru","value":"\u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f
+        \u043e\u0434\u043d\u0438\u043c \u0438\u0437"},{"language":"ru","value":"\u044d\u043a\u0437\u0435\u043c\u043f\u043b\u044f\u0440
+        \u043e\u0442"},{"language":"ru","value":"\u043a\u043b\u0430\u0441\u0441 \u043e\u0431\u044a\u0435\u043a\u0442\u0430:"},{"language":"ru","value":"\u0432\u0438\u0434
+        \u0441\u0443\u0449\u043d\u043e\u0441\u0442\u0438"},{"language":"ru","value":"\u044d\u0442\u043e"},{"language":"ru","value":"\u043e\u0434\u0438\u043d
+        \u0438\u0437"},{"language":"ru","value":"\u044d\u0442\u043e \u043f\u0440\u0438\u043c\u0435\u0440"},{"language":"ru","value":"\u043f\u0440\u0438\u043c\u0435\u0440"},{"language":"ru","value":"\u2208"}],"vi":[{"language":"vi","value":"l\u00e0
+        c\u00e1i"},{"language":"vi","value":"\u2208"},{"language":"vi","value":"l\u00e0
+        m\u1ed9t th\u1ef1c th\u1ec3 c\u1ee7a"},{"language":"vi","value":"l\u00e0 m\u1ed9t
+        trong nh\u1eefng"},{"language":"vi","value":"l\u00e0 v\u00ed d\u1ee5"},{"language":"vi","value":"l\u00e0
+        th\u00ed d\u1ee5"}],"ca":[{"language":"ca","value":"\u00e9s un"},{"language":"ca","value":"\u00e9s
+        una"},{"language":"ca","value":"inst\u00e0ncia de"},{"language":"ca","value":"\u00e9s
+        inst\u00e0ncia de"},{"language":"ca","value":"\u2208"}],"th":[{"language":"th","value":"\u0e04\u0e37\u0e2d"},{"language":"th","value":"\u2208"}],"uk":[{"language":"uk","value":"\u0454"},{"language":"uk","value":"\u0446\u0435"},{"language":"uk","value":"\u043d\u0430\u043b\u0435\u0436\u0438\u0442\u044c
+        \u0434\u043e"},{"language":"uk","value":"\u043f\u0440\u0438\u043a\u043b\u0430\u0434"},{"language":"uk","value":"\u0432\u0438\u043f\u0430\u0434\u043e\u043a"},{"language":"uk","value":"\u044f\u0432\u043b\u044f\u0454
+        \u0441\u043e\u0431\u043e\u044e"},{"language":"uk","value":"\u043e\u043a\u0440\u0435\u043c\u0438\u0439
+        \u043f\u0440\u0438\u043a\u043b\u0430\u0434"},{"language":"uk","value":"\u0435\u043a\u0437\u0435\u043c\u043f\u043b\u044f\u0440"},{"language":"uk","value":"\u043e\u0434\u0438\u043d
+        \u0437"},{"language":"uk","value":"\u2208"}],"ilo":[{"language":"ilo","value":"ket
+        maysa a"},{"language":"ilo","value":"ket maysa nga"},{"language":"ilo","value":"\u2208"}],"fa":[{"language":"fa","value":"\u0647\u0633\u062a
+        \u06cc\u06a9"},{"language":"fa","value":"\u0627\u0633\u062a \u06cc\u06a9:"},{"language":"fa","value":"\u06cc\u06a9
+        \u0645\u062b\u0627\u0644 \u0627\u0632"},{"language":"fa","value":"\u0646\u0645\u0648\u0646\u0647
+        \u0627\u06cc \u0627\u0632"},{"language":"fa","value":"\u0645\u062b\u0627\u0644\u06cc
+        \u0627\u0632"},{"language":"fa","value":"\u0627\u0633\u062a \u06cc\u06a9"},{"language":"fa","value":"\u0632\u06cc\u0631\u0645\u062c\u0645\u0648\u0639\u0647\u0654"},{"language":"fa","value":"\u2208"}],"ro":[{"language":"ro","value":"este
+        o"},{"language":"ro","value":"este un"},{"language":"ro","value":"este o/un"},{"language":"ro","value":"\u2208"}],"es":[{"language":"es","value":"es
+        una"},{"language":"es","value":"es un"},{"language":"es","value":"\u2208"},{"language":"es","value":"ejemplar
+        de"},{"language":"es","value":"ejemplo de"}],"it":[{"language":"it","value":"\u00e8
+        un"},{"language":"it","value":"\u00e8 una"},{"language":"it","value":"\u00e8
+        uno"},{"language":"it","value":"\u2208"}],"en-ca":[{"language":"en-ca","value":"is
+        a"},{"language":"en-ca","value":"is an"},{"language":"en-ca","value":"\u2208"}],"en-gb":[{"language":"en-gb","value":"is
+        a"},{"language":"en-gb","value":"is an"},{"language":"en-gb","value":"\u2208"}],"ja":[{"language":"ja","value":"\u7a2e\u985e"},{"language":"ja","value":"\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\u306e\u5143"},{"language":"ja","value":"\u5b9f\u4f53\u306e\u5143"},{"language":"ja","value":"is
+        a"},{"language":"ja","value":"is-a"},{"language":"ja","value":"\u30af\u30e9\u30b9"},{"language":"ja","value":"\u4ee5\u4e0b\u306e\u5b9f\u4f53"},{"language":"ja","value":"\u2208"}],"de-at":[{"language":"de-at","value":"ist
+        ein"},{"language":"de-at","value":"ist eine"},{"language":"de-at","value":"ist
+        Instanz von"},{"language":"de-at","value":"Instanz von"},{"language":"de-at","value":"\u2208"}],"nl":[{"language":"nl","value":"instantie
+        van"},{"language":"nl","value":"was een"},{"language":"nl","value":"is"},{"language":"nl","value":"exemplaar
+        van (algemeen)"},{"language":"nl","value":"\u2208"}],"de-ch":[{"language":"de-ch","value":"ist
+        ein"},{"language":"de-ch","value":"ist eine"},{"language":"de-ch","value":"ist
+        Instanz von"},{"language":"de-ch","value":"Instanz von"},{"language":"de-ch","value":"\u2208"}],"bar":[{"language":"bar","value":"is
+        a"},{"language":"bar","value":"is a Instanz vo"},{"language":"bar","value":"Instanz
+        vo"},{"language":"bar","value":"\u2208"}],"sh":[{"language":"sh","value":"je"},{"language":"sh","value":"su"},{"language":"sh","value":"jest"},{"language":"sh","value":"\u2208"}],"bg":[{"language":"bg","value":"e"},{"language":"bg","value":"\u2208"}],"zh":[{"language":"zh","value":"\u662f\u4e00\u500b"},{"language":"zh","value":"\u5c6c\u65bc"},{"language":"zh","value":"\u5c6c\u6027"},{"language":"zh","value":"\u2208"}],"yi":[{"language":"yi","value":"\u05d0\u05d9\u05d6
+        \u05d0"},{"language":"yi","value":"\u05d0\u05d9\u05d6 \u05d0\u05df"},{"language":"yi","value":"\u2208"}],"cs":[{"language":"cs","value":"je"},{"language":"cs","value":"\u2208"}],"fi":[{"language":"fi","value":"on"},{"language":"fi","value":"kuuluu
+        ryhm\u00e4\u00e4n"},{"language":"fi","value":"\u2208"}],"be-tarask":[{"language":"be-tarask","value":"\u0432\u044b\u043a\u043b\u044e\u0447\u043d\u044b
+        \u0432\u044b\u043f\u0430\u0434\u0430\u043a \u043f\u0430\u043d\u044f\u0442\u043a\u0443"},{"language":"be-tarask","value":"\u2208"}],"pt":[{"language":"pt","value":"\u00e9
+        um"},{"language":"pt","value":"\u00e9 uma"},{"language":"pt","value":"natureza
+        do elemento"},{"language":"pt","value":"\u2208"}],"te":[{"language":"te","value":"\u0c30\u0c15\u0c02"},{"language":"te","value":"\u0c07\u0c26\u0c3f
+        \u0c12\u0c15"},{"language":"te","value":"\u2208"},{"language":"te","value":"\u0c05\u0c02\u0c36"},{"language":"te","value":"\u0c09\u0c26\u0c3e\u0c39\u0c30\u0c23"}],"or":[{"language":"or","value":"\u0b09\u0b26\u0b3e\u0b39\u0b30\u0b23"},{"language":"or","value":"\u2208"}],"hu":[{"language":"hu","value":"kateg\u00f3ria"},{"language":"hu","value":"p\u00e9ld\u00e1nya
+        ennek"},{"language":"hu","value":"p\u00e9lda erre"},{"language":"hu","value":"\u2208"}],"scn":[{"language":"scn","value":"\u00e8
+        nu"},{"language":"scn","value":"\u00e8 na"},{"language":"scn","value":"\u00e8
+        un"},{"language":"scn","value":"\u2208"}],"da":[{"language":"da","value":"er
+        en"},{"language":"da","value":"er et"},{"language":"da","value":"\u2208"},{"language":"da","value":"type"},{"language":"da","value":"eksemplar
+        af"}],"nn":[{"language":"nn","value":"er ein"},{"language":"nn","value":"er
+        ei"},{"language":"nn","value":"er eit"},{"language":"nn","value":"\u2208"},{"language":"nn","value":"er
+        ein f\u00f8rekomst av"},{"language":"nn","value":"instans av"},{"language":"nn","value":"er
+        ein instans av"}],"sv":[{"language":"sv","value":"\u00e4r en"},{"language":"sv","value":"\u00e4r
+        ett"},{"language":"sv","value":"\u2208"}],"ast":[{"language":"ast","value":"ye
+        un"},{"language":"ast","value":"ye una"},{"language":"ast","value":"\u2208"}],"lt":[{"language":"lt","value":"instancija"},{"language":"lt","value":"\u2208"}],"cy":[{"language":"cy","value":"enghraifft
+        o"},{"language":"cy","value":"\u2208"}],"pt-br":[{"language":"pt-br","value":"\u00e9
+        um"},{"language":"pt-br","value":"\u00e9 uma"},{"language":"pt-br","value":"natureza
+        do elemento"},{"language":"pt-br","value":"\u2208"},{"language":"pt-br","value":"\u00e9
+        membro de"},{"language":"pt-br","value":"possui classe"},{"language":"pt-br","value":"\u00e9
+        do tipo"},{"language":"pt-br","value":"\u00e9 um indiv\u00edduo"},{"language":"pt-br","value":"\u00e9
+        um exemplo de"},{"language":"pt-br","value":"rdf:type"}],"ko":[{"language":"ko","value":"\uc740"},{"language":"ko","value":"\ub294"},{"language":"ko","value":"\uc18d\ud55c
+        \uc885\ub958"},{"language":"ko","value":"\ub2e4\uc74c\uc5d0 \uc18d\ud574 \uc788\uc74c"},{"language":"ko","value":"\uc18d\ud55c
+        \ubc94\uc8fc"},{"language":"ko","value":"\ub2e4\uc74c\uc758 \ubc94\uc8fc\uc5d0
+        \uc18d\ud568"},{"language":"ko","value":"\ud0c0\uc785"},{"language":"ko","value":"\uc885\ub958"},{"language":"ko","value":"\ubd80\ub958"},{"language":"ko","value":"\ubd84\ub958"},{"language":"ko","value":"\uc774\uac83\uc758
+        \uc885\ub958"},{"language":"ko","value":"\uc774\uac83\uc758 \ubc94\uc8fc"},{"language":"ko","value":"\ub2e4\uc74c
+        \ubd80\ub958\uc5d0 \uc18d\ud568"},{"language":"ko","value":"\ub2e4\uc74c \ubd84\ub958\uc5d0
+        \uc18d\ud568"},{"language":"ko","value":"\ubc94\uc8fc"},{"language":"ko","value":"\ub2e4\uc74c\uc758
+        \uc885\ub958\uc5d0 \uc18d\ud568"},{"language":"ko","value":"\u2208"},{"language":"ko","value":"\ub2e4\uc74c\uc5d0
+        \uc18d\ud568"},{"language":"ko","value":"\ub2e4\uc74c \uc911 \ud558\ub098\ub85c
+        \ubcfc \uc218 \uc788\uc74c"}],"id":[{"language":"id","value":"merupakan"},{"language":"id","value":"\u2208"}],"eu":[{"language":"eu","value":"zer
+        da?"},{"language":"eu","value":"\u2208"}],"fo":[{"language":"fo","value":"er
+        ein"},{"language":"fo","value":"\u2208"}],"gu":[{"language":"gu","value":"\u0a86
+        \u0ab6\u0ac1\u0a82 \u0a9b\u0ac7 \u0aa4\u0ac7"},{"language":"gu","value":"\u2208"}],"io":[{"language":"io","value":"es"},{"language":"io","value":"\u2208"}],"sq":[{"language":"sq","value":"natyra
+        e elmentit"},{"language":"sq","value":"shembull i"},{"language":"sq","value":"\u00ebsht\u00eb
+        nj\u00eb shembull i"},{"language":"sq","value":"lloj i"},{"language":"sq","value":"\u2208"}],"pam":[{"language":"pam","value":"metung
+        yang"},{"language":"pam","value":"\u2208"}],"sk":[{"language":"sk","value":"in\u0161tancie
+        (\u010doho)"},{"language":"sk","value":"\u2208"}],"el":[{"language":"el","value":"\u03b5\u03af\u03bd\u03b1\u03b9
+        \u03ad\u03bd\u03b1\u03c2"},{"language":"el","value":"\u03b5\u03af\u03bd\u03b1\u03b9
+        \u03bc\u03af\u03b1"},{"language":"el","value":"\u03b5\u03af\u03bd\u03b1\u03b9
+        \u03ad\u03bd\u03b1"},{"language":"el","value":"\u2208"}],"la":[{"language":"la","value":"\u2208"}],"af":[{"language":"af","value":"\u2208"}],"an":[{"language":"an","value":"\u2208"}],"ar":[{"language":"ar","value":"\u2208"},{"language":"ar","value":"\u064a\u0643\u0648\u0646"},{"language":"ar","value":"\u0646\u0648\u0639
+        \u0645\u0639\u064a\u0646 \u0645\u0646"},{"language":"ar","value":"\u0641\u0631\u062f
+        \u0645\u0646"},{"language":"ar","value":"\u0646\u0648\u0639 \u0645\u0646"}],"be":[{"language":"be","value":"\u2208"}],"bn":[{"language":"bn","value":"\u2208"}],"br":[{"language":"br","value":"\u2208"}],"bs":[{"language":"bs","value":"\u2208"}],"ce":[{"language":"ce","value":"\u2208"}],"ckb":[{"language":"ckb","value":"\u2208"}],"co":[{"language":"co","value":"\u2208"}],"csb":[{"language":"csb","value":"\u2208"}],"eo":[{"language":"eo","value":"\u2208"}],"et":[{"language":"et","value":"\u2208"}],"frr":[{"language":"frr","value":"\u2208"}],"fy":[{"language":"fy","value":"\u2208"}],"ga":[{"language":"ga","value":"\u2208"}],"gl":[{"language":"gl","value":"\u2208"}],"gsw":[{"language":"gsw","value":"\u2208"}],"hi":[{"language":"hi","value":"\u2208"}],"hr":[{"language":"hr","value":"\u2208"}],"hsb":[{"language":"hsb","value":"\u2208"}],"ht":[{"language":"ht","value":"\u2208"}],"hy":[{"language":"hy","value":"\u2208"}],"ia":[{"language":"ia","value":"\u2208"},{"language":"ia","value":"instantia"},{"language":"ia","value":"es
+        un"},{"language":"ia","value":"es"}],"is":[{"language":"is","value":"\u2208"}],"jbo":[{"language":"jbo","value":"\u2208"}],"ka":[{"language":"ka","value":"\u2208"}],"kn":[{"language":"kn","value":"\u2208"}],"ksh":[{"language":"ksh","value":"\u2208"}],"ku-latn":[{"language":"ku-latn","value":"\u2208"}],"lb":[{"language":"lb","value":"\u2208"}],"lmo":[{"language":"lmo","value":"\u2208"}],"lv":[{"language":"lv","value":"\u2208"}],"mai":[{"language":"mai","value":"\u2208"}],"mg":[{"language":"mg","value":"\u2208"}],"min":[{"language":"min","value":"\u2208"}],"mk":[{"language":"mk","value":"\u2208"}],"ml":[{"language":"ml","value":"\u2208"}],"mr":[{"language":"mr","value":"\u2208"}],"ms":[{"language":"ms","value":"\u2208"}],"my":[{"language":"my","value":"\u2208"}],"mzn":[{"language":"mzn","value":"\u2208"}],"nap":[{"language":"nap","value":"\u2208"}],"nds":[{"language":"nds","value":"\u2208"}],"nds-nl":[{"language":"nds-nl","value":"\u2208"}],"ne":[{"language":"ne","value":"\u2208"}],"oc":[{"language":"oc","value":"\u2208"},{"language":"oc","value":"es
+        un"},{"language":"oc","value":"es una"}],"pa":[{"language":"pa","value":"\u2208"}],"pcd":[{"language":"pcd","value":"\u2208"}],"pl":[{"language":"pl","value":"\u2208"}],"rif":[{"language":"rif","value":"\u2208"}],"rm":[{"language":"rm","value":"\u2208"}],"sco":[{"language":"sco","value":"\u2208"},{"language":"sco","value":"is
+        a"}],"sl":[{"language":"sl","value":"\u2208"}],"sr":[{"language":"sr","value":"\u2208"}],"sr-ec":[{"language":"sr-ec","value":"\u2208"}],"sr-el":[{"language":"sr-el","value":"\u2208"}],"stq":[{"language":"stq","value":"\u2208"}],"ta":[{"language":"ta","value":"\u2208"}],"tl":[{"language":"tl","value":"\u2208"}],"tr":[{"language":"tr","value":"\u2208"}],"ts":[{"language":"ts","value":"\u2208"}],"tt":[{"language":"tt","value":"\u2208"}],"uz":[{"language":"uz","value":"\u2208"}],"vo":[{"language":"vo","value":"\u2208"}],"yue":[{"language":"yue","value":"\u2208"},{"language":"yue","value":"\u6027\u8cea"}],"zh-cn":[{"language":"zh-cn","value":"\u2208"}],"zh-hans":[{"language":"zh-hans","value":"\u2208"}],"zh-hant":[{"language":"zh-hant","value":"\u2208"}],"zh-hk":[{"language":"zh-hk","value":"\u2208"}],"zh-mo":[{"language":"zh-mo","value":"\u2208"}],"zh-sg":[{"language":"zh-sg","value":"\u2208"}],"zh-tw":[{"language":"zh-tw","value":"\u2208"}],"tcy":[{"language":"tcy","value":"\u0c92\u0c82\u0c9c\u0cbf"},{"language":"tcy","value":"\u0c92\u0c82\u0c9c\u0cbf
+        \u0cb5\u0cb0\u0ccd\u0c97\u0cca"},{"language":"tcy","value":"\u0c92\u0cb0\u0cbf
+        \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf"},{"language":"tcy","value":"\u0c92\u0c82\u0c9c\u0cbf
+        \u0c89\u0ca6\u0ccd\u0c86\u0cb0\u0ccd\u0cae\u0cc6"},{"language":"tcy","value":"\u0cb8\u0cae\u0cbe\u0ca8\u0cca
+        \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf"}],"tt-latn":[{"language":"tt-latn","value":"\u2208"}],"tt-cyrl":[{"language":"tt-cyrl","value":"\u2208"}],"az":[{"language":"az","value":"n\u00fcmun\u0259sidir"}]},"claims":{"P1628":[{"mainsnak":{"snaktype":"value","property":"P1628","hash":"6c0ff43601b15682fcbf2dfd3da5e77a4bf096b6","datavalue":{"value":"http://www.w3.org/1999/02/22-rdf-syntax-ns#type","type":"string"},"datatype":"url"},"type":"statement","id":"P31$696d3f45-4cba-b3db-1648-0da6c3b29380","rank":"normal"}],"P1855":[{"mainsnak":{"snaktype":"value","property":"P1855","hash":"5ad9d8ca45966bfe1e0398945bfb6007df631860","datavalue":{"value":{"entity-type":"item","numeric-id":8023,"id":"Q8023"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P31":[{"snaktype":"value","property":"P31","hash":"ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9","datavalue":{"value":{"entity-type":"item","numeric-id":5,"id":"Q5"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P31"],"id":"P31$978be9f2-42bd-5a53-31a6-4776e1623194","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P1855","hash":"9f18ca854311ce2c48fb9e776a215df1da9106de","datavalue":{"value":{"entity-type":"item","numeric-id":212180,"id":"Q212180"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P31":[{"snaktype":"value","property":"P31","hash":"611eded04fae278fa0785b72a6e6185624da5de7","datavalue":{"value":{"entity-type":"item","numeric-id":571,"id":"Q571"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P31"],"id":"P31$9f0bdb07-44ce-6ebf-5530-0495e4afeedf","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P1855","hash":"7553ee9a3d16f99172974a44b4d5e93e6387a2b5","datavalue":{"value":{"entity-type":"item","numeric-id":772466,"id":"Q772466"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P31":[{"snaktype":"value","property":"P31","hash":"7e91cb90de22249b6a2dc9b4ba99de6b69cbb81b","datavalue":{"value":{"entity-type":"item","numeric-id":43513,"id":"Q43513"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P31"],"id":"P31$4d06056b-4142-5b71-8af0-ec2c8e215cba","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P1855","hash":"c0c2ca661f7733f63d9333089d8ce60bcc34c8ec","datavalue":{"value":{"entity-type":"item","numeric-id":177866,"id":"Q177866"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P31":[{"snaktype":"value","property":"P31","hash":"5ff6e63e2f39587f9d461b31cfc42484ea0330d1","datavalue":{"value":{"entity-type":"item","numeric-id":13406463,"id":"Q13406463"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P31"],"id":"P31$75115ba2-485e-4014-3252-7f8adc0a861a","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P1855","hash":"0015450d8b608dc536519fa425e6fcc74260972b","datavalue":{"value":{"entity-type":"item","numeric-id":2225,"id":"Q2225"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P31":[{"snaktype":"value","property":"P31","hash":"91144fc3790a22c27899d20a491fca0f5f739f17","datavalue":{"value":{"entity-type":"item","numeric-id":22675015,"id":"Q22675015"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P31"],"id":"P31$cb321691-4088-825b-853f-c3977cce34ef","rank":"normal"}],"P1896":[{"mainsnak":{"snaktype":"value","property":"P1896","hash":"9edd681e3fc6dffc671569c731bd8f74e25119c8","datavalue":{"value":"http://www.w3.org/TR/rdf-schema/#ch_type","type":"string"},"datatype":"url"},"type":"statement","id":"P31$AAC38658-4318-4262-8CA9-9C7E17DC899C","rank":"normal"}],"P31":[{"mainsnak":{"snaktype":"value","property":"P31","hash":"08b5585eff668aa953dc32090c693bfa39d67979","datavalue":{"value":{"entity-type":"item","numeric-id":18616576,"id":"Q18616576"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"P31$9d042001-4a7e-2432-a7e1-233360062379","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P31","hash":"1bc2e7917d1ef70d97e76db7d143955ad2179d14","datavalue":{"value":{"entity-type":"item","numeric-id":28326730,"id":"Q28326730"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"P31$69a194b3-40e4-fce6-881a-f2028f61a8d6","rank":"normal"}],"P1659":[{"mainsnak":{"snaktype":"value","property":"P1659","hash":"fb1829ef5e32a7295fc19b866257979d2f6f1593","datavalue":{"value":{"entity-type":"property","numeric-id":279,"id":"P279"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},"type":"statement","id":"P31$13ad0b4a-4444-3f67-78f4-be9f4b224c7f","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P1659","hash":"581a373ed7cf1345944b4332c00607c7b8231aa6","datavalue":{"value":{"entity-type":"property","numeric-id":361,"id":"P361"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},"type":"statement","id":"P31$57d58932-4d4e-b6a9-d9fb-aea718f0db89","rank":"normal"}],"P2559":[{"mainsnak":{"snaktype":"value","property":"P2559","hash":"ceb63e81c42ad3b33d491276369076c5070ef808","datavalue":{"value":{"text":"https://www.wikidata.org/wiki/Help:Basic_membership_properties","language":"en"},"type":"monolingualtext"},"datatype":"monolingualtext"},"type":"statement","id":"P31$8ed11daf-478d-fd34-f578-37c68ae28174","rank":"normal"}],"P2875":[{"mainsnak":{"snaktype":"value","property":"P2875","hash":"d1ecec4b47fb6dc1887f377b874d5d722880b2f3","datavalue":{"value":{"entity-type":"item","numeric-id":20117426,"id":"Q20117426"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"P31$a0533236-4f18-546c-07bd-40e236933a9a","rank":"normal"}],"P1629":[{"mainsnak":{"snaktype":"value","property":"P1629","hash":"0e2dc1d3c8202ef673257aa8fc35192862b3fa7c","datavalue":{"value":{"entity-type":"item","numeric-id":21503252,"id":"Q21503252"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"P31$4a077d4e-428a-c946-574a-71f4ca12797f","rank":"normal"}],"P487":[{"mainsnak":{"snaktype":"value","property":"P487","hash":"cd7c80bcbd5769f7051fcb4f3cfc0c15fef40369","datavalue":{"value":"\u2208","type":"string"},"datatype":"string"},"type":"statement","id":"P31$b975985a-4b45-3b2f-bf7a-2dd48436ec51","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P487","hash":"7bec7f32dee58c3e5d075dea504f5b8ee3b0a2c1","datavalue":{"value":"\u220a","type":"string"},"datatype":"string"},"type":"statement","id":"P31$b460036e-4554-07a5-8c61-aa1e2332b836","rank":"normal"}],"P3254":[{"mainsnak":{"snaktype":"novalue","property":"P3254","hash":"3c18212310d8b1a139eed68887f86ce6b7e5416c","datatype":"url"},"type":"statement","id":"P31$8adb42d4-4a4c-d653-7a2e-d6f45d1c0395","rank":"normal"}],"P2302":[{"mainsnak":{"snaktype":"value","property":"P2302","hash":"6dc8a4d7709a521bc0d1672c9450283d7da7330b","datavalue":{"value":{"entity-type":"item","numeric-id":21510864,"id":"Q21510864"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P2306":[{"snaktype":"value","property":"P2306","hash":"a053b8635aeb647dc23c8b4676ed43ce077381e6","datavalue":{"value":{"entity-type":"property","numeric-id":279,"id":"P279"},"type":"wikibase-entityid"},"datatype":"wikibase-property"}],"P2303":[{"snaktype":"value","property":"P2303","hash":"fed97a3ecee1c00189965e6c74be1bba345c3f40","datavalue":{"value":{"entity-type":"item","numeric-id":35120,"id":"Q35120"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P2306","P2303"],"id":"P31$BBCF739D-1197-4F08-B1F9-7F76D0CA4445","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P2302","hash":"60d5b5bf5da8d7ec1e010402497e0015713c2bbf","datavalue":{"value":{"entity-type":"item","numeric-id":21502838,"id":"Q21502838"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P2306":[{"snaktype":"value","property":"P2306","hash":"030bb48464a824ba096402e188e4852d0822cbb8","datavalue":{"value":{"entity-type":"property","numeric-id":1092,"id":"P1092"},"type":"wikibase-entityid"},"datatype":"wikibase-property"}]},"qualifiers-order":["P2306"],"id":"P31$33E45554-9B58-42FF-AF4F-35784658D0D7","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P2302","hash":"60d5b5bf5da8d7ec1e010402497e0015713c2bbf","datavalue":{"value":{"entity-type":"item","numeric-id":21502838,"id":"Q21502838"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P2306":[{"snaktype":"value","property":"P2306","hash":"c80b10b5e1e231d8fb29c63903aa48da0afe0b3e","datavalue":{"value":{"entity-type":"property","numeric-id":31,"id":"P31"},"type":"wikibase-entityid"},"datatype":"wikibase-property"}],"P2305":[{"snaktype":"value","property":"P2305","hash":"db94a3a40bb9bcda539c4524e08d677f04132e80","datavalue":{"value":{"entity-type":"item","numeric-id":8441,"id":"Q8441"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},{"snaktype":"value","property":"P2305","hash":"226950a080ec5e39bcdc25f286908d33f4f4eff1","datavalue":{"value":{"entity-type":"item","numeric-id":467,"id":"Q467"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},{"snaktype":"value","property":"P2305","hash":"d8a7553c94e19545e85ebc9d3db8e2c1b3823d47","datavalue":{"value":{"entity-type":"item","numeric-id":6581097,"id":"Q6581097"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},{"snaktype":"value","property":"P2305","hash":"e54608da98f08c6f5c9e1cd3b3bbcd92e360d777","datavalue":{"value":{"entity-type":"item","numeric-id":6581072,"id":"Q6581072"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}],"P2316":[{"snaktype":"value","property":"P2316","hash":"d50c571a43e6102d65b729ccc7049a0a2f867e34","datavalue":{"value":{"entity-type":"item","numeric-id":21502408,"id":"Q21502408"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P2306","P2305","P2316"],"id":"P31$82ADD2D3-B226-465F-9F6C-EAE946E193F0","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P2302","hash":"60d5b5bf5da8d7ec1e010402497e0015713c2bbf","datavalue":{"value":{"entity-type":"item","numeric-id":21502838,"id":"Q21502838"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P2306":[{"snaktype":"value","property":"P2306","hash":"c80b10b5e1e231d8fb29c63903aa48da0afe0b3e","datavalue":{"value":{"entity-type":"property","numeric-id":31,"id":"P31"},"type":"wikibase-entityid"},"datatype":"wikibase-property"}],"P2305":[{"snaktype":"value","property":"P2305","hash":"b0d4e182809d19c897fcef1f42b8fcc75d795fcc","datavalue":{"value":{"entity-type":"item","numeric-id":215627,"id":"Q215627"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},{"snaktype":"value","property":"P2305","hash":"2fc64215120dffd092b038125bd07788d286ab63","datavalue":{"value":{"entity-type":"item","numeric-id":171283,"id":"Q171283"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}],"P2316":[{"snaktype":"value","property":"P2316","hash":"d50c571a43e6102d65b729ccc7049a0a2f867e34","datavalue":{"value":{"entity-type":"item","numeric-id":21502408,"id":"Q21502408"},"type":"wikibase-entityid"},"datatype":"wikibase-item"}]},"qualifiers-order":["P2306","P2305","P2316"],"id":"P31$FB2C298B-5C28-40D0-A5C8-10656FA1DC57","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P2302","hash":"55cfe775ff19641cea395be018002e38e05f3749","datavalue":{"value":{"entity-type":"item","numeric-id":21510851,"id":"Q21510851"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","qualifiers":{"P2306":[{"snaktype":"value","property":"P2306","hash":"19850a98eedea3be9662dbb2355471d158030ed1","datavalue":{"value":{"entity-type":"property","numeric-id":460,"id":"P460"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"171ef54fd33c5b5ca621c79e8cda155217dda447","datavalue":{"value":{"entity-type":"property","numeric-id":642,"id":"P642"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"9a99a64b4596a8cb9b717b1767429ba1005f9074","datavalue":{"value":{"entity-type":"property","numeric-id":580,"id":"P580"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"61755e1eefd33667d21b0112121d758b514c3310","datavalue":{"value":{"entity-type":"property","numeric-id":361,"id":"P361"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"4b76d9db644c246cdd1e55eb443f3fca41f70102","datavalue":{"value":{"entity-type":"property","numeric-id":582,"id":"P582"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"c16098c36ff9509d376c56c03c46f818854ab111","datavalue":{"value":{"entity-type":"property","numeric-id":155,"id":"P155"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"9ec5302ab3f4f27f17277077f0edf230f41bef59","datavalue":{"value":{"entity-type":"property","numeric-id":156,"id":"P156"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"f4213edb3e031923d95a387aad0dca082df29c07","datavalue":{"value":{"entity-type":"property","numeric-id":1545,"id":"P1545"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"88fe15bd41089ce041e62a854deb284bf5a5fdb2","datavalue":{"value":{"entity-type":"property","numeric-id":1264,"id":"P1264"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"7a09570a989393a15dce7d4f01f5b6899be99e3d","datavalue":{"value":{"entity-type":"property","numeric-id":1366,"id":"P1366"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"50dff7ea0eeaa59ae5e0f26edcd8dfec54decfe3","datavalue":{"value":{"entity-type":"property","numeric-id":2241,"id":"P2241"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"f953abe6217ec939277937890ad3c37bb02f8da8","datavalue":{"value":{"entity-type":"property","numeric-id":1013,"id":"P1013"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"120e32b5762238c633c6419011d2ba67227d0b32","datavalue":{"value":{"entity-type":"property","numeric-id":1629,"id":"P1629"},"type":"wikibase-entityid"},"datatype":"wikibase-property"},{"snaktype":"value","property":"P2306","hash":"0d85218d4870b85d6f01e18466b7975f935d7581","datavalue":{"value":{"entity-type":"property","numeric-id":1534,"id":"P1534"},"type":"wikibase-entityid"},"datatype":"wikibase-property"}]},"qualifiers-order":["P2306"],"id":"P31$A89E967D-82B7-4081-BAE3-BADF28B4E7E3","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P2302","hash":"d5e7d5e412e372792f72cf6fca2a6a1885c989ca","datavalue":{"value":{"entity-type":"item","numeric-id":25796498,"id":"Q25796498"},"type":"wikibase-entityid"},"datatype":"wikibase-item"},"type":"statement","id":"P31$8e029cbc-4240-fa47-4e39-14a87f6362b4","rank":"normal"}]}}},"success":1}'
+    http_version:
+  recorded_at: Wed, 25 Oct 2017 07:01:13 GMT
+recorded_with: VCR 2.9.3
