@@ -148,6 +148,18 @@ describe Wikidata::Entity, :vcr do
           end
         end
       end
+
+      context 'keys of all properties' do
+        it 'can get a list of all property keys' do
+          github.property_keys.size.should be > 0
+        end
+      end
+
+      context 'name of a property' do
+        it 'can get the name of a property' do
+          github.property_name("P31").should eq 'instance of'
+        end
+      end
     end
   end
 end
