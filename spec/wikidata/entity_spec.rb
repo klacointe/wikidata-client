@@ -5,6 +5,7 @@ describe Wikidata::Entity, :vcr do
   let(:homer) { Wikidata::Item.find_by_title 'Homer Simpson' }
   let(:batofar) { Wikidata::Item.find_by_title 'Le Batofar' }
   let(:github) { Wikidata::Item.find_by_title 'GitHub' }
+  let(:james)  {Wikidata::Item.find_by_title 'James Joyce'}
 
   describe 'properties' do
 
@@ -158,6 +159,11 @@ describe Wikidata::Entity, :vcr do
       context 'name of a property' do
         it 'can get the name of a property' do
           github.property_name("P31").should eq 'instance of'
+        end
+      end
+      context 'Quantity data type' do
+        it 'should return hard coded number of children' do
+          james.property('P1971').amount.should eq 2
         end
       end
     end
