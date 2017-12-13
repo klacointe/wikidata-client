@@ -17,6 +17,8 @@ module Wikidata
         Wikidata::Property::CommonsMedia.new attribute
       when 'monolingualtext'
         Wikidata::Property::MonolingualText.new attribute
+        when 'quantity'
+          Wikidata::Property::Quantity.new attribute
       else
         puts "Unkown property type #{attribute.mainsnak.datatype}"
       end
