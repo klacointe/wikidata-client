@@ -28,7 +28,7 @@ describe Wikidata::Entity, :vcr do
     end
 
     it 'should return descriptions' do
-      sid.descriptions.en.value.should eq 'Bassist, songwriter, composer'
+      sid.descriptions.en.value.should match /assist|ongwriter|musician|composer/
     end
 
     it 'should return sitelinks' do
@@ -39,26 +39,26 @@ describe Wikidata::Entity, :vcr do
 
       it 'should return entities property from an id (P40 for children here)' do
         homer.properties('P40').tap do |children|
-          children.size.should eq 3
+          children.size.should >= 3
           children.each{|c| c.should be_kind_of Wikidata::Item }
-          children.map{|c| c.labels['en']['value'] }.should eq ['Bart Simpson', 'Lisa Simpson', 'Maggie Simpson']
+          children.map{|c| c.labels['en']['value'] }.should include('Bart Simpson', 'Lisa Simpson', 'Maggie Simpson')
         end
       end
 
       it 'should return entities property from a key (children here)' do
         homer.children.tap do |children|
-          children.size.should eq 3
+          children.size.should >= 3
           children.each{|c| c.should be_kind_of Wikidata::Item }
-          children.map{|c| c.labels['en']['value'] }.should eq ['Bart Simpson', 'Lisa Simpson', 'Maggie Simpson']
+          children.map{|c| c.labels['en']['value'] }.should include('Bart Simpson', 'Lisa Simpson', 'Maggie Simpson')
         end
       end
 
       it 'should allow to return only entities ids from an id' do
-        homer.property_ids('P40').should eq ["Q5480", "Q5846", "Q7834"]
+        homer.property_ids('P40').should include("Q5480", "Q5846", "Q7834")
       end
 
       it 'should allow to return only entities ids from a key' do
-        homer.children_ids.should eq ["Q5480", "Q5846", "Q7834"]
+        homer.children_ids.should include("Q5480", "Q5846", "Q7834")
       end
     end
 
@@ -68,14 +68,14 @@ describe Wikidata::Entity, :vcr do
         it 'should return Time from a property id (P569 for date of birth here)' do
           homer.property('P569').tap do |date|
             date.should be_kind_of Wikidata::Property::Time
-            date.date.should eq DateTime.new(1956, 6, 18)
+            date.date.should eq DateTime.new(1956, 5, 12)
           end
         end
 
         it 'should return Time from a a key (date_of_birth here)' do
           homer.date_of_birth.tap do |date|
             date.should be_kind_of Wikidata::Property::Time
-            date.date.should eq DateTime.new(1956, 6, 18)
+            date.date.should eq DateTime.new(1956, 5, 12)
           end
         end
       end

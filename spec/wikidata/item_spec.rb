@@ -62,7 +62,7 @@ describe Wikidata::Item, :vcr do
     end
 
     it 'should fetch all all items of the collection' do
-      search.results.first.descriptions.pl.value.should eq 'amerykański muzyk, kompozytor i autor tekstów'
+      search.results.first.descriptions.pl.value.should match /amerykański|muzyk|kompozytor|tekstów/
     end
   end
 end
