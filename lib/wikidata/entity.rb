@@ -6,7 +6,7 @@ module Wikidata
     def_delegators :@hash, :id, :labels, :aliases, :descriptions, :sitelinks
 
     def initialize hash
-      @hash = Hashie::Mash.new hash
+      @hash = Haschie.new hash
       @_properties = {}
     end
 

@@ -5,7 +5,7 @@ module Wikidata
       attr_reader :property
 
       def initialize property
-        @property = Hashie::Mash.new(property)
+        @property = Haschie.new(property)
       end
 
       def value
