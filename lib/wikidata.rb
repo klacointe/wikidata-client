@@ -1,5 +1,5 @@
 require 'faraday'
-require 'faraday_middleware'
+require 'faraday/excon'
 require 'hashie'
 require 'yaml'
 
@@ -7,12 +7,12 @@ require 'wikidata/config'
 
 module Wikidata
   class << self
-    def configure &block
-      Config.configure &block
+    def configure(&block)
+      Config.configure(&block)
     end
 
-    def faraday
-      Config.faraday
+    def adapter
+      Config.adapter
     end
 
     def options

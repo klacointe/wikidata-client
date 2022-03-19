@@ -16,13 +16,13 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency('excon', '~> 0.92')
-  s.add_dependency('faraday', '~> 0.9')
-  s.add_dependency('faraday_middleware', '~> 0.9')
-  s.add_dependency('hashie', '~> 3.3')
+  s.add_dependency('faraday', '~> 2.2')
+  s.add_dependency('faraday-excon', '~> 2.1')
+  s.add_dependency('hashie', '~> 5.0')
 
   s.add_development_dependency('pry', '~> 0.10')
   s.add_development_dependency('rake', '~> 13.0')
   s.add_development_dependency('rspec', '~> 3.1')
-  s.add_development_dependency('vcr', '~> 2.9')
-  s.add_development_dependency('webmock', '~> 1.18')
+  s.add_development_dependency('vcr', '~> 6.1')
+  s.add_development_dependency('webmock', '~> 3.14')
 end
