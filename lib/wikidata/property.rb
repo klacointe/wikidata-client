@@ -1,7 +1,8 @@
 module Wikidata
   module Property
-    def self.build attribute
-      return if %w{somevalue novalue}.include? attribute.mainsnak.snaktype
+    def self.build(attribute)
+      return if %w[somevalue novalue].include? attribute.mainsnak.snaktype
+
       case attribute.mainsnak.datatype
       when 'string', 'external-id'
         Wikidata::Property::String.new attribute
@@ -17,8 +18,8 @@ module Wikidata
         Wikidata::Property::CommonsMedia.new attribute
       when 'monolingualtext'
         Wikidata::Property::MonolingualText.new attribute
-        when 'quantity'
-          Wikidata::Property::Quantity.new attribute
+      when 'quantity'
+        Wikidata::Property::Quantity.new attribute
       else
         puts "Unkown property type #{attribute.mainsnak.datatype}"
       end

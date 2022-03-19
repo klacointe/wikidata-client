@@ -2,16 +2,16 @@ module Wikidata
   module Property
     class Time < Wikidata::Property::Base
       DATE_PRECISION = {
-        0  => { key: nil, value: 1_000_000_000 * 365 * 24 * 3600 },
-        1  => { key: nil, value: 100_000_000 * 365 * 24 * 3600 },
-        2  => { key: nil, value: 10_000_000 * 365 * 24 * 3600 },
-        3  => { key: nil, value: 1_000_000 * 365 * 24 * 3600 },
-        4  => { key: nil, value: 100_000 * 365 * 24 * 3600 },
-        5  => { key: nil, value: 10_000 * 365 * 24 * 3600 },
-        6  => { key: nil, value: 1000 * 365 * 24 * 3600 },
-        7  => { key: :century, value: 100 * 365 * 24 * 3600 },
-        8  => { key: :decade, value: 10 * 365 * 24 * 3600 },
-        9  => { key: :year, value: 365 * 24 * 3600 },
+        0 => { key: nil, value: 1_000_000_000 * 365 * 24 * 3600 },
+        1 => { key: nil, value: 100_000_000 * 365 * 24 * 3600 },
+        2 => { key: nil, value: 10_000_000 * 365 * 24 * 3600 },
+        3 => { key: nil, value: 1_000_000 * 365 * 24 * 3600 },
+        4 => { key: nil, value: 100_000 * 365 * 24 * 3600 },
+        5 => { key: nil, value: 10_000 * 365 * 24 * 3600 },
+        6 => { key: nil, value: 1000 * 365 * 24 * 3600 },
+        7 => { key: :century, value: 100 * 365 * 24 * 3600 },
+        8 => { key: :decade, value: 10 * 365 * 24 * 3600 },
+        9 => { key: :year, value: 365 * 24 * 3600 },
         10 => { key: :month, value: 30 * 24 * 3600 },
         11 => { key: :day, value: 24 * 3600 },
         12 => { key: nil, value: 3600 },
@@ -36,13 +36,14 @@ module Wikidata
 
       def date
         return @_date if @_date
-        d = Hash[[:year, :month, :day, :hour, :min, :sec].zip(
+
+        d = ::Hash[%i[year month day hour min sec].zip(
           value.time.scan(/(-?\d+)-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/).first.map(&:to_i)
         )]
-        [:month, :day].each do |k|
+        %i[month day].each do |k|
           d[k] = (d[k] == 0 ? 1 : d[k])
         end
-        @_date ||= DateTime.new *d.values
+        @_date ||= DateTime.new(*d.values)
       end
 
       def timestamp
@@ -78,12 +79,18 @@ module Wikidata
       protected
 
       def generic_range
-        from = before > 0 ?
-           timestamp - (before.to_i * precision) : timestamp
-        to = after > 0 ?
-          timestamp + (after.to_i * precision) : timestamp
+        from = if before > 0
+                 timestamp - (before.to_i * precision)
+               else
+                 timestamp
+               end
+        to = if after > 0
+               timestamp + (after.to_i * precision)
+             else
+               timestamp
+             end
 
-        @_range ||= (to_datetime ::Time.at(from).utc)..(to_datetime ::Time::at(to).utc)
+        @_range ||= (to_datetime ::Time.at(from).utc)..(to_datetime ::Time.at(to).utc)
       end
 
       def century_range
@@ -117,11 +124,11 @@ module Wikidata
       end
 
       def month_range
-        if date.month == 2 && self.class.leap_year?(date.year)
-          last_day = 29
-        else
-          last_day = DAYS_IN_MONTH[date.month]
-        end
+        last_day = if date.month == 2 && self.class.leap_year?(date.year)
+                     29
+                   else
+                     DAYS_IN_MONTH[date.month]
+                   end
         from = DateTime.new(date.year, date.month, 1, 0, 0, 0)
         to = DateTime.new(date.year, date.month, last_day, 23, 59, 59)
         @_range ||= (from..to)
@@ -137,7 +144,7 @@ module Wikidata
         DateTime.new t.year, t.month, t.day, t.hour, t.min, t.sec
       end
 
-      def self.leap_year? year
+      def self.leap_year?(year)
         (year % 4 == 0) && !(year % 100 == 0) || (year % 400 == 0)
       end
     end
