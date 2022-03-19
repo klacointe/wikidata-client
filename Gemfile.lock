@@ -3,9 +3,9 @@ PATH
   specs:
     wikidata-client (0.0.11)
       excon (~> 0.92)
-      faraday (~> 0.9)
-      faraday_middleware (~> 0.9)
-      hashie (~> 3.3)
+      faraday (~> 2.2)
+      faraday-excon (~> 2.1)
+      hashie (~> 5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -17,14 +17,16 @@ GEM
       rexml
     diff-lcs (1.5.0)
     excon (0.92.0)
-    faraday (0.17.5)
-      multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.14.0)
-      faraday (>= 0.7.4, < 1.0)
+    faraday (2.2.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-excon (2.1.0)
+      excon (>= 0.27.4)
+      faraday (~> 2.0)
+    faraday-net_http (2.0.1)
     hashdiff (1.0.1)
-    hashie (3.6.0)
+    hashie (5.0.0)
     method_source (1.0.0)
-    multipart-post (2.1.1)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -44,11 +46,12 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
-    vcr (2.9.3)
-    webmock (1.24.6)
-      addressable (>= 2.3.6)
+    ruby2_keywords (0.0.5)
+    vcr (6.1.0)
+    webmock (3.14.0)
+      addressable (>= 2.8.0)
       crack (>= 0.3.2)
-      hashdiff
+      hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
   x86_64-linux
@@ -57,8 +60,8 @@ DEPENDENCIES
   pry (~> 0.10)
   rake (~> 13.0)
   rspec (~> 3.1)
-  vcr (~> 2.9)
-  webmock (~> 1.18)
+  vcr (~> 6.1)
+  webmock (~> 3.14)
   wikidata-client!
 
 BUNDLED WITH

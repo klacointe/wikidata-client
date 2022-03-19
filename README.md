@@ -29,7 +29,7 @@ Wikidata.configure do |config|
       open_timeout: 2
     }
   }
-  config.faraday = -> (builder) { builder.adapter :patron }
+  config.adapter = :excon
 end
 ```
 

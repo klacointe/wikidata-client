@@ -1,23 +1,23 @@
 module Wikidata
   class Config
     class << self
-      attr_accessor :options, :faraday, :settings, :mapping
+      attr_accessor :options, :adapter, :settings, :mapping
 
-      def configure &block
+      def configure
         yield self
       end
     end
 
     @options = {}
-    @faraday = ->(builder) { builder.adapter :excon }
+    @adapter = :excon
     @settings = Hashie::Mash.new(
       YAML.load_file(
-        File.expand_path('../../../config/settings.yml', __FILE__)
+        File.expand_path('../../config/settings.yml', __dir__)
       )
     )
     @mapping = Hashie::Mash.new(
       YAML.load_file(
-        File.expand_path('../../../config/mapping.yml', __FILE__)
+        File.expand_path('../../config/mapping.yml', __dir__)
       )
     )
   end
