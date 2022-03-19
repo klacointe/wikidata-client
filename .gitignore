@@ -1,3 +1,4 @@
 .irb_history
 .ruby-version
 coverage
+*.gem

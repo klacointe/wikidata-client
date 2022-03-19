@@ -1,3 +1,3 @@
 module Wikidata
-  VERSION = "0.0.11".freeze
+  VERSION = "0.1.0-rc1".freeze
 end
