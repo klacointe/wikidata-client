@@ -10,12 +10,12 @@ module Wikidata
 
     @options = {}
     @faraday = ->(builder) { builder.adapter :excon }
-    @settings = Hashie::Mash.new(
+    @settings = Haschie.new(
       YAML.load_file(
         File.expand_path('../../../config/settings.yml', __FILE__)
       )
     )
-    @mapping = Hashie::Mash.new(
+    @mapping = Haschie.new(
       YAML.load_file(
         File.expand_path('../../../config/mapping.yml', __FILE__)
       )

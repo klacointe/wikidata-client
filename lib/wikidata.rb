@@ -3,14 +3,19 @@ require 'faraday_middleware'
 require 'hashie'
 require 'yaml'
 
+class Haschie <  Hashie::Mash
+   disable_warnings :hash, :min
+end
+
 require 'wikidata/config'
+
+
 
 module Wikidata
   class << self
     def configure &block
       Config.configure &block
     end
-
     def faraday
       Config.faraday
     end
