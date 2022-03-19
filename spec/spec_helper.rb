@@ -1,6 +1,3 @@
-require "simplecov"
-SimpleCov.start
-
 require 'wikidata'
 require 'vcr'
 require 'pry'
