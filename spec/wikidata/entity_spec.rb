@@ -168,4 +168,36 @@ describe Wikidata::Entity, :vcr do
       end
     end
   end
+
+  describe '#title' do
+    it 'should prefer the en label' do
+      entity = Wikidata::Entity.new('labels' => { 'en' => { 'value' => 'Sid Vicious' }, 'mul' => { 'value' => 'Sid' } })
+      entity.title.should eq 'Sid Vicious'
+    end
+
+    it 'should fall back to the mul label' do
+      entity = Wikidata::Entity.new('labels' => { 'mul' => { 'value' => 'Sid' } })
+      entity.title.should eq 'Sid'
+    end
+
+    it 'should fall back to the mul label when the en label has no value' do
+      entity = Wikidata::Entity.new('labels' => { 'en' => {}, 'mul' => { 'value' => 'Sid' } })
+      entity.title.should eq 'Sid'
+    end
+
+    it 'should fall back to the enwiki sitelink' do
+      entity = Wikidata::Entity.new('labels' => {}, 'sitelinks' => { 'enwiki' => { 'site' => 'enwiki', 'title' => 'Sid Vicious' } })
+      entity.title.should eq 'Sid Vicious'
+    end
+
+    it 'should fall back to the entity id without recursing' do
+      entity = Wikidata::Entity.new('title' => 'Q47878', 'labels' => {}, 'sitelinks' => {})
+      entity.title.should eq 'Q47878'
+    end
+
+    it 'should return an empty string when nothing is available' do
+      Wikidata::Entity.new({}).title.should eq ''
+    end
+  end
+
 end
