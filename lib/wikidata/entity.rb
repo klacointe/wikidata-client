@@ -14,16 +14,12 @@ module Wikidata
     end
 
     def title
-      if labels && labels.key?('mul')
-        return labels['mul'].value
+      # fetch, because missing keys return the Mash default ({}) rather than nil
+      [%w[labels en value], %w[labels mul value], %w[sitelinks enwiki title]].each do |path|
+        value = path.reduce(self) { |hash, key| hash.is_a?(Hash) ? hash.fetch(key, nil) : nil }
+        return value if value
       end
-      if labels && labels.key?('en')
-        return labels['en'].value
-      end
-      if sitelinks && sitelinks.key?('en')
-        return sitelinks['en'].value
-      end
-      ""
+      fetch('title', '')
     end
 
     def url
